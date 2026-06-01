@@ -1,0 +1,22 @@
+{
+  "showFooter": true,
+  "showFloating": true,
+  "openInNewTab": true,
+  "links": [
+    {
+      "platform": "facebook",
+      "label": "Facebook",
+      "url": "https://www.facebook.com/hdpth"
+    },
+    {
+      "platform": "instagram",
+      "label": "Instagram",
+      "url": "https://www.instagram.com/hdpth"
+    },
+    {
+      "platform": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/company/hdpth"
+    }
+  ]
+}

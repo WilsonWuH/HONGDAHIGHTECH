@@ -1,0 +1,138 @@
+{
+  "locale": "ar",
+  "language": {
+    "name": "Arabic",
+    "native": "العربية",
+    "dir": "rtl"
+  },
+  "pages": {
+    "/": {
+      "seoTitle": "HDPTH | معدات تحويل الأقمشة غير المنسوجة",
+      "metaDescription": "تصنع HDPTH آلات الشق وإعادة اللف والتثقيب وأنظمة السكاكين الأوتوماتيكية لعملاء B2B حول العالم.",
+      "h1": "معدات تحويل الأقمشة غير المنسوجة عالية السرعة"
+    },
+    "/products/": {
+      "seoTitle": "المنتجات | معدات HDPTH لغير المنسوجات",
+      "metaDescription": "استكشف آلات الشق وإعادة اللف والتثقيب وأنظمة السكاكين الأوتوماتيكية من HDPTH.",
+      "h1": "معدات تحويل الأقمشة غير المنسوجة"
+    },
+    "/products/high-speed-slitting-machines/": {
+      "seoTitle": "آلات شق الأقمشة غير المنسوجة عالية السرعة | HDPTH",
+      "metaDescription": "شق نظيف، شد ثابت، خيارات سكاكين أوتوماتيكية ومعايير من دليل المنتج.",
+      "h1": "آلات شق الأقمشة غير المنسوجة عالية السرعة"
+    },
+    "/products/nonwoven-rewinding-machines/": {
+      "seoTitle": "آلات إعادة لف الأقمشة غير المنسوجة | HDPTH",
+      "metaDescription": "معدات إعادة لف لتكوين لفات ثابتة ومشاريع تصدير مخصصة.",
+      "h1": "آلات إعادة لف الأقمشة غير المنسوجة"
+    },
+    "/products/automatic-knife-systems/": {
+      "seoTitle": "أنظمة السكاكين الأوتوماتيكية | HDPTH",
+      "metaDescription": "أنظمة سكاكين أوتوماتيكية للإعداد السريع والقطع المتكرر.",
+      "h1": "أنظمة السكاكين الأوتوماتيكية"
+    },
+    "/applications/": {
+      "seoTitle": "التطبيقات | معدات HDPTH",
+      "metaDescription": "تطبيقات في النظافة والطب والمناديل والمواد الصناعية الملفوفة.",
+      "h1": "تطبيقات معدات غير المنسوجات"
+    },
+    "/about/": {
+      "seoTitle": "حول HDPTH",
+      "metaDescription": "HDPTH مصنع صيني لمعدات شق وإعادة لف وتثقيب الأقمشة غير المنسوجة.",
+      "h1": "حول HDPTH"
+    },
+    "/factory/": {
+      "seoTitle": "قدرة المصنع | HDPTH",
+      "metaDescription": "تدير HDPTH قاعدة تصنيع بمساحة 6,000 م2 لمعدات تحويل غير المنسوجات.",
+      "h1": "قدرة المصنع"
+    },
+    "/cases/": {
+      "seoTitle": "المشاريع والحالات | HDPTH",
+      "metaDescription": "أمثلة مشاريع HDPTH للمشترين الدوليين.",
+      "h1": "المشاريع والحالات"
+    },
+    "/resources/": {
+      "seoTitle": "الموارد | أدلة HDPTH",
+      "metaDescription": "أدلة للمشترين لاختيار معدات الشق وإعادة اللف والتحويل.",
+      "h1": "موارد المشترين"
+    },
+    "/faq/": {
+      "seoTitle": "الأسئلة الشائعة | HDPTH",
+      "metaDescription": "أسئلة شائعة للمشترين حول معدات HDPTH.",
+      "h1": "أسئلة المشترين الشائعة"
+    },
+    "/contact/": {
+      "seoTitle": "اتصل بـ HDPTH | طلب عرض سعر",
+      "metaDescription": "تواصل مع Wilson Wu في HDPTH لطلب عرض سعر.",
+      "h1": "طلب تكوين آلة"
+    },
+    "/inquiry/": {
+      "seoTitle": "نموذج الاستفسار | HDPTH",
+      "metaDescription": "أرسل طلب RFQ لمعدات الشق وإعادة اللف والتثقيب.",
+      "h1": "أخبرنا بمتطلبات الإنتاج لديك."
+    },
+    "/download/": {
+      "seoTitle": "Download Catalog | HDPTH",
+      "metaDescription": "Request the HDPTH catalog for nonwoven slitting, rewinding, perforating and automatic knife systems.",
+      "h1": "تحميل كتالوج HDPTH"
+    },
+    "/guides/nonwoven-slitting-machine-buying-guide/": {
+      "seoTitle": "Nonwoven Slitting Machine Buying Guide | HDPTH",
+      "metaDescription": "A practical buying guide for nonwoven slitting machines covering material, roll width, speed, knife system and RFQ information.",
+      "h1": "كيفية اختيار آلة شق للأقمشة غير المنسوجة"
+    },
+    "/blog/choosing-nonwoven-slitting-rewinding-machine/": {
+      "seoTitle": "How to Choose a Nonwoven Slitting Rewinding Machine | HDPTH",
+      "metaDescription": "A practical buyer guide to choosing a nonwoven slitting rewinding machine for hygiene, medical and wipes production.",
+      "h1": "How to Choose a Nonwoven Slitting Rewinding Machine for Hygiene, Medical and Wipes Production"
+    },
+    "/blog/slitting-rewinding-perforating-comparison/": {
+      "seoTitle": "Slitting vs Rewinding vs Perforating Machines | HDPTH",
+      "metaDescription": "Understand the difference between slitting, rewinding and perforating machines for nonwoven and wipes production.",
+      "h1": "Slitting vs Rewinding vs Perforating: Which Nonwoven Converting Line Do You Need?"
+    },
+    "/blog/automatic-tension-control-nonwoven-slitter-rewinder/": {
+      "seoTitle": "Automatic Tension Control in Nonwoven Slitter Rewinders | HDPTH",
+      "metaDescription": "Learn why automatic tension control matters in nonwoven slitter rewinders for clean cutting and stable rolls.",
+      "h1": "Automatic Tension Control in Nonwoven Slitter Rewinders: Why It Matters for Clean Cutting and Stable Rolls"
+    }
+  },
+  "common": {
+    "Products": "المنتجات",
+    "Applications": "التطبيقات",
+    "Factory": "المصنع",
+    "About": "من نحن",
+    "Contact": "اتصل بنا",
+    "Resources": "الموارد",
+    "FAQ": "الأسئلة الشائعة",
+    "Get a Quote": "اطلب عرض سعر",
+    "Request a Quote": "اطلب عرض سعر",
+    "Download Catalog": "تحميل الكتالوج",
+    "View Products": "عرض المنتجات",
+    "View detail": "عرض التفاصيل",
+    "Request details": "طلب التفاصيل",
+    "Submit Inquiry": "إرسال الاستفسار",
+    "Contact Sales": "تواصل مع المبيعات",
+    "Product Categories": "فئات المنتجات",
+    "Product Matrix": "مصفوفة المنتجات",
+    "High-Speed Slitting Machines": "آلات الشق عالية السرعة",
+    "Nonwoven Rewinding Machines": "آلات إعادة لف غير المنسوجات",
+    "Automatic Knife Systems": "أنظمة السكاكين الأوتوماتيكية",
+    "Perforating Production Lines": "خطوط التثقيب",
+    "Cases & Projects": "المشاريع والحالات",
+    "Technical Data from Product Manual": "البيانات الفنية من دليل المنتج",
+    "Manual Parameter": "معيار الدليل",
+    "Production Speed": "سرعة الإنتاج",
+    "Materials": "المواد",
+    "Air Supply": "إمداد الهواء",
+    "Installed Power": "القدرة المركبة",
+    "Effective Operating Power": "قدرة التشغيل الفعلية",
+    "Wilson Wu WhatsApp": "واتساب Wilson Wu",
+    "Manufacturing base": "قاعدة التصنيع"
+  },
+  "apiProviderPlaceholder": {
+    "deeplApiKeyEnv": "DEEPL_API_KEY",
+    "googleCloudTranslationKeyEnv": "GOOGLE_CLOUD_TRANSLATION_API_KEY",
+    "note": "Use these environment variables if the static dictionary is later regenerated through a translation API."
+  }
+}

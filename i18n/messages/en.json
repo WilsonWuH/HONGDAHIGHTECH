@@ -1,0 +1,106 @@
+{
+  "locale": "en",
+  "language": {
+    "name": "English",
+    "native": "English",
+    "dir": "ltr"
+  },
+  "pages": {
+    "/": {
+      "seoTitle": "HDPTH | High-Speed Nonwoven Converting Machinery",
+      "metaDescription": "HDPTH manufactures nonwoven slitting, rewinding, perforating and automatic knife systems for overseas B2B manufacturers.",
+      "h1": "High-Speed Nonwoven Converting Machinery"
+    },
+    "/products/": {
+      "seoTitle": "Products | HDPTH Nonwoven Converting Machinery",
+      "metaDescription": "Explore HDPTH slitting machines, rewinding machines, perforating lines and automatic knife systems for nonwoven converting.",
+      "h1": "Nonwoven Converting Machinery"
+    },
+    "/products/high-speed-slitting-machines/": {
+      "seoTitle": "High-Speed Nonwoven Slitting Machines | HDPTH",
+      "metaDescription": "High-speed nonwoven slitting machines with clean cutting, stable tension, automatic knife options and manual-based parameters.",
+      "h1": "High-Speed Nonwoven Slitting Machines"
+    },
+    "/products/nonwoven-rewinding-machines/": {
+      "seoTitle": "Nonwoven Rewinding Machines | HDPTH",
+      "metaDescription": "Nonwoven rewinding machines for stable roll formation, custom width, controlled tension and export-oriented projects.",
+      "h1": "Nonwoven Rewinding Machines"
+    },
+    "/products/automatic-knife-systems/": {
+      "seoTitle": "Automatic Knife Systems for Nonwoven Converting | HDPTH",
+      "metaDescription": "Automatic knife systems for faster setup, repeatable slitting configuration and HDPTH high-speed converting lines.",
+      "h1": "Automatic Knife Systems"
+    },
+    "/applications/": {
+      "seoTitle": "Applications | HDPTH Nonwoven Machinery",
+      "metaDescription": "Applications for HDPTH nonwoven converting machinery in hygiene, medical, wipes and industrial roll material production.",
+      "h1": "Nonwoven Machinery Applications"
+    },
+    "/about/": {
+      "seoTitle": "About HDPTH | Nonwoven Machinery Manufacturer",
+      "metaDescription": "Learn about HDPTH, a China-based manufacturer of nonwoven slitting, rewinding, perforating and auxiliary converting machinery.",
+      "h1": "About HDPTH"
+    },
+    "/factory/": {
+      "seoTitle": "Factory Strength | HDPTH",
+      "metaDescription": "HDPTH operates a 6,000 m2 manufacturing base for nonwoven slitting, rewinding and converting machinery.",
+      "h1": "Factory Strength"
+    },
+    "/cases/": {
+      "seoTitle": "Cases & Projects | HDPTH Nonwoven Machinery",
+      "metaDescription": "HDPTH project examples for overseas buyers evaluating nonwoven slitting, rewinding, perforating and converting machinery.",
+      "h1": "Cases & Projects"
+    },
+    "/resources/": {
+      "seoTitle": "Resources | HDPTH Nonwoven Machinery Guides",
+      "metaDescription": "Buyer guides and SEO resources for selecting nonwoven slitting, rewinding and converting equipment.",
+      "h1": "Buyer Resources"
+    },
+    "/faq/": {
+      "seoTitle": "FAQ | Nonwoven Slitting & Rewinding Machines | HDPTH",
+      "metaDescription": "Buyer FAQ for HDPTH nonwoven slitting machines, rewinding machines, perforating lines and automatic knife systems.",
+      "h1": "Buyer FAQ"
+    },
+    "/contact/": {
+      "seoTitle": "Contact HDPTH | Request a Quote",
+      "metaDescription": "Contact Wilson Wu at HDPTH to request a quote for nonwoven slitting, rewinding and converting machinery.",
+      "h1": "Request a Machine Configuration"
+    },
+    "/inquiry/": {
+      "seoTitle": "Inquiry Form | HDPTH Nonwoven Machinery",
+      "metaDescription": "Send an RFQ to HDPTH for nonwoven slitting, rewinding, perforating and converting machinery.",
+      "h1": "Tell us your production requirement."
+    },
+    "/download/": {
+      "seoTitle": "Download Catalog | HDPTH",
+      "metaDescription": "Request the HDPTH catalog for nonwoven slitting, rewinding, perforating and automatic knife systems.",
+      "h1": "Download HDPTH Catalog"
+    },
+    "/guides/nonwoven-slitting-machine-buying-guide/": {
+      "seoTitle": "Nonwoven Slitting Machine Buying Guide | HDPTH",
+      "metaDescription": "A practical buying guide for nonwoven slitting machines covering material, roll width, speed, knife system and RFQ information.",
+      "h1": "How to Choose a Nonwoven Slitting Machine"
+    },
+    "/blog/choosing-nonwoven-slitting-rewinding-machine/": {
+      "seoTitle": "How to Choose a Nonwoven Slitting Rewinding Machine | HDPTH",
+      "metaDescription": "A practical buyer guide to choosing a nonwoven slitting rewinding machine for hygiene, medical and wipes production.",
+      "h1": "How to Choose a Nonwoven Slitting Rewinding Machine for Hygiene, Medical and Wipes Production"
+    },
+    "/blog/slitting-rewinding-perforating-comparison/": {
+      "seoTitle": "Slitting vs Rewinding vs Perforating Machines | HDPTH",
+      "metaDescription": "Understand the difference between slitting, rewinding and perforating machines for nonwoven and wipes production.",
+      "h1": "Slitting vs Rewinding vs Perforating: Which Nonwoven Converting Line Do You Need?"
+    },
+    "/blog/automatic-tension-control-nonwoven-slitter-rewinder/": {
+      "seoTitle": "Automatic Tension Control in Nonwoven Slitter Rewinders | HDPTH",
+      "metaDescription": "Learn why automatic tension control matters in nonwoven slitter rewinders for clean cutting and stable rolls.",
+      "h1": "Automatic Tension Control in Nonwoven Slitter Rewinders: Why It Matters for Clean Cutting and Stable Rolls"
+    }
+  },
+  "common": {},
+  "apiProviderPlaceholder": {
+    "deeplApiKeyEnv": "DEEPL_API_KEY",
+    "googleCloudTranslationKeyEnv": "GOOGLE_CLOUD_TRANSLATION_API_KEY",
+    "note": "Use these environment variables if the static dictionary is later regenerated through a translation API."
+  }
+}

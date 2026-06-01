@@ -1,0 +1,138 @@
+{
+  "locale": "ru",
+  "language": {
+    "name": "Russian",
+    "native": "Русский",
+    "dir": "ltr"
+  },
+  "pages": {
+    "/": {
+      "seoTitle": "HDPTH | Оборудование для переработки нетканых материалов",
+      "metaDescription": "HDPTH производит машины для резки, перемотки, перфорации и автоматические ножевые системы для B2B клиентов.",
+      "h1": "Высокоскоростное оборудование для переработки нетканых материалов"
+    },
+    "/products/": {
+      "seoTitle": "Продукция | Оборудование HDPTH",
+      "metaDescription": "Оборудование HDPTH для резки, перемотки, перфорации и автоматической настройки ножей.",
+      "h1": "Оборудование для переработки нетканых материалов"
+    },
+    "/products/high-speed-slitting-machines/": {
+      "seoTitle": "Высокоскоростные машины резки нетканых материалов | HDPTH",
+      "metaDescription": "Чистая резка, стабильное натяжение и параметры из руководства HDPTH.",
+      "h1": "Высокоскоростные машины резки нетканых материалов"
+    },
+    "/products/nonwoven-rewinding-machines/": {
+      "seoTitle": "Машины перемотки нетканых материалов | HDPTH",
+      "metaDescription": "Перемоточные машины для стабильного формирования рулона и экспортных проектов.",
+      "h1": "Машины перемотки нетканых материалов"
+    },
+    "/products/automatic-knife-systems/": {
+      "seoTitle": "Автоматические ножевые системы | HDPTH",
+      "metaDescription": "Автоматические ножевые системы для быстрой настройки и повторяемой резки.",
+      "h1": "Автоматические ножевые системы"
+    },
+    "/applications/": {
+      "seoTitle": "Области применения | HDPTH",
+      "metaDescription": "Применение оборудования HDPTH в гигиене, медицине, салфетках и промышленных материалах.",
+      "h1": "Области применения оборудования"
+    },
+    "/about/": {
+      "seoTitle": "О компании HDPTH",
+      "metaDescription": "HDPTH - китайский производитель оборудования для резки, перемотки и перфорации нетканых материалов.",
+      "h1": "О компании HDPTH"
+    },
+    "/factory/": {
+      "seoTitle": "Производственная база | HDPTH",
+      "metaDescription": "HDPTH имеет производственную базу 6 000 м2 для оборудования переработки нетканых материалов.",
+      "h1": "Производственная база"
+    },
+    "/cases/": {
+      "seoTitle": "Проекты и кейсы | HDPTH",
+      "metaDescription": "Примеры проектов HDPTH для зарубежных покупателей оборудования.",
+      "h1": "Проекты и кейсы"
+    },
+    "/resources/": {
+      "seoTitle": "Ресурсы | Руководства HDPTH",
+      "metaDescription": "Руководства для выбора оборудования резки, перемотки и конвертинга.",
+      "h1": "Ресурсы для покупателей"
+    },
+    "/faq/": {
+      "seoTitle": "FAQ | Оборудование HDPTH",
+      "metaDescription": "Частые вопросы покупателей оборудования HDPTH.",
+      "h1": "Частые вопросы"
+    },
+    "/contact/": {
+      "seoTitle": "Связаться с HDPTH | Запросить предложение",
+      "metaDescription": "Свяжитесь с Wilson Wu в HDPTH для запроса предложения.",
+      "h1": "Запрос конфигурации машины"
+    },
+    "/inquiry/": {
+      "seoTitle": "Форма запроса | HDPTH",
+      "metaDescription": "Отправьте RFQ по оборудованию для резки, перемотки и перфорации.",
+      "h1": "Расскажите о ваших производственных требованиях."
+    },
+    "/download/": {
+      "seoTitle": "Download Catalog | HDPTH",
+      "metaDescription": "Request the HDPTH catalog for nonwoven slitting, rewinding, perforating and automatic knife systems.",
+      "h1": "Скачать каталог HDPTH"
+    },
+    "/guides/nonwoven-slitting-machine-buying-guide/": {
+      "seoTitle": "Nonwoven Slitting Machine Buying Guide | HDPTH",
+      "metaDescription": "A practical buying guide for nonwoven slitting machines covering material, roll width, speed, knife system and RFQ information.",
+      "h1": "Как выбрать машину резки нетканых материалов"
+    },
+    "/blog/choosing-nonwoven-slitting-rewinding-machine/": {
+      "seoTitle": "How to Choose a Nonwoven Slitting Rewinding Machine | HDPTH",
+      "metaDescription": "A practical buyer guide to choosing a nonwoven slitting rewinding machine for hygiene, medical and wipes production.",
+      "h1": "How to Choose a Nonwoven Slitting Rewinding Machine for Hygiene, Medical and Wipes Production"
+    },
+    "/blog/slitting-rewinding-perforating-comparison/": {
+      "seoTitle": "Slitting vs Rewinding vs Perforating Machines | HDPTH",
+      "metaDescription": "Understand the difference between slitting, rewinding and perforating machines for nonwoven and wipes production.",
+      "h1": "Slitting vs Rewinding vs Perforating: Which Nonwoven Converting Line Do You Need?"
+    },
+    "/blog/automatic-tension-control-nonwoven-slitter-rewinder/": {
+      "seoTitle": "Automatic Tension Control in Nonwoven Slitter Rewinders | HDPTH",
+      "metaDescription": "Learn why automatic tension control matters in nonwoven slitter rewinders for clean cutting and stable rolls.",
+      "h1": "Automatic Tension Control in Nonwoven Slitter Rewinders: Why It Matters for Clean Cutting and Stable Rolls"
+    }
+  },
+  "common": {
+    "Products": "Продукция",
+    "Applications": "Применения",
+    "Factory": "Фабрика",
+    "About": "О нас",
+    "Contact": "Контакты",
+    "Resources": "Ресурсы",
+    "FAQ": "FAQ",
+    "Get a Quote": "Запросить предложение",
+    "Request a Quote": "Запросить предложение",
+    "Download Catalog": "Скачать каталог",
+    "View Products": "Смотреть продукцию",
+    "View detail": "Подробнее",
+    "Request details": "Запросить детали",
+    "Submit Inquiry": "Отправить запрос",
+    "Contact Sales": "Связаться с продажами",
+    "Product Categories": "Категории продукции",
+    "Product Matrix": "Матрица продукции",
+    "High-Speed Slitting Machines": "Высокоскоростные машины резки",
+    "Nonwoven Rewinding Machines": "Машины перемотки нетканых материалов",
+    "Automatic Knife Systems": "Автоматические ножевые системы",
+    "Perforating Production Lines": "Линии перфорации",
+    "Cases & Projects": "Проекты и кейсы",
+    "Technical Data from Product Manual": "Технические данные из руководства",
+    "Manual Parameter": "Параметр руководства",
+    "Production Speed": "Скорость производства",
+    "Materials": "Материалы",
+    "Air Supply": "Подача воздуха",
+    "Installed Power": "Установленная мощность",
+    "Effective Operating Power": "Рабочая мощность",
+    "Wilson Wu WhatsApp": "WhatsApp Wilson Wu",
+    "Manufacturing base": "Производственная база"
+  },
+  "apiProviderPlaceholder": {
+    "deeplApiKeyEnv": "DEEPL_API_KEY",
+    "googleCloudTranslationKeyEnv": "GOOGLE_CLOUD_TRANSLATION_API_KEY",
+    "note": "Use these environment variables if the static dictionary is later regenerated through a translation API."
+  }
+}

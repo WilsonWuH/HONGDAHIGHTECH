@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de consulta | HDPTH</title>
+  <link rel="canonical" href="https://www.hdprotech.cn/es/inquiry/">
+  <meta name="description" content="Envíe una solicitud RFQ para maquinaria de corte, rebobinado y perforación.">
+  <link rel="alternate" hreflang="en" href="https://www.hdprotech.cn/en/inquiry/">
+  <link rel="alternate" hreflang="es" href="https://www.hdprotech.cn/es/inquiry/">
+  <link rel="alternate" hreflang="ru" href="https://www.hdprotech.cn/ru/inquiry/">
+  <link rel="alternate" hreflang="ar" href="https://www.hdprotech.cn/ar/inquiry/">
+  <link rel="alternate" hreflang="fr" href="https://www.hdprotech.cn/fr/inquiry/">
+  <link rel="alternate" hreflang="pt" href="https://www.hdprotech.cn/pt/inquiry/">
+  <link rel="alternate" hreflang="x-default" href="https://www.hdprotech.cn/en/inquiry/">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="inquiry-page">
+  <main class="inquiry-shell">
+    <section class="inquiry-hero">
+      <div class="inquiry-brand">
+        <a class="brand" href="../index.html"><span class="brand-mark inquiry-mark"></span>HDPTH</a>
+        <a class="inquiry-back" href="../index.html">Back to website</a>
+      <details class="language-switcher"><summary>ES</summary><div class="language-menu"><a class="" hreflang="en" href="./"><span>English</span><small>EN</small></a><a class="is-active" hreflang="es" href="./"><span>Español</span><small>ES</small></a><a class="" hreflang="ru" href="./"><span>Русский</span><small>RU</small></a><a class="" hreflang="ar" href="./"><span>العربية</span><small>AR</small></a><a class="" hreflang="fr" href="./"><span>Français</span><small>FR</small></a><a class="" hreflang="pt" href="./"><span>Português</span><small>PT</small></a></div></details></div>
+
+      <div class="inquiry-grid">
+        <div class="inquiry-copy">
+          <p class="inquiry-kicker">B2B Machine Inquiry</p>
+          <h1>Cuéntenos su requisito de producción.</h1>
+          <p>Share your material, target width, speed and application. Our team will review your request and recommend a suitable nonwoven converting machine configuration.</p>
+          <div class="inquiry-proof">
+            <span>Slitting</span>
+            <span>Rewinding</span>
+            <span>Perforating</span>
+            <span>Sistemas de cuchillas automáticas</span>
+            <span>WhatsApp de Wilson Wu +86 13645700210</span>
+          </div>
+        </div>
+
+        <form class="inquiry-form" id="b2bInquiryForm" novalidate data-endpoint="">
+          <input class="form-trap" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form-head">
+            <p class="inquiry-kicker">Solicitar cotización</p>
+            <h2>Machine RFQ Form</h2>
+            <p><span class="required-dot"></span> Required fields</p>
+          </div>
+
+          <div class="field-grid">
+            <label class="field">
+              <span>Name <b>*</b></span>
+              <input name="name" autocomplete="name" placeholder="Your full name" required>
+              <small data-error-for="name">Please enter your name.</small>
+            </label>
+
+            <label class="field">
+              <span>Email <b>*</b></span>
+              <input name="email" type="email" autocomplete="email" placeholder="name@company.com" required>
+              <small data-error-for="email">Please enter a valid business email.</small>
+            </label>
+
+            <label class="field">
+              <span>Phone / WhatsApp <b>*</b></span>
+              <input name="phone" type="tel" autocomplete="tel" placeholder="+1 555 123 4567" required inputmode="tel">
+              <small data-error-for="phone">Please enter a valid international phone number.</small>
+            </label>
+
+            <label class="field">
+              <span>Company</span>
+              <input name="company" autocomplete="organization" placeholder="Company name">
+              <small data-error-for="company"></small>
+            </label>
+
+            <label class="field">
+              <span>Country / Region</span>
+              <input name="country" autocomplete="country-name" placeholder="United States, Germany, UAE...">
+              <small data-error-for="country"></small>
+            </label>
+
+            <label class="field">
+              <span>Product Requirement</span>
+              <select name="product">
+                <option value="">Select product type</option>
+                <option>Máquinas cortadoras de alta velocidad</option>
+                <option>Máquinas rebobinadoras de no tejidos</option>
+                <option>Líneas de perforación</option>
+                <option>Sistemas de cuchillas automáticas</option>
+                <option>Complete Nonwoven Converting Solution</option>
+              </select>
+              <small data-error-for="product"></small>
+            </label>
+          </div>
+
+          <label class="field">
+            <span>Message</span>
+            <textarea name="message" placeholder="Tell us material type, parent roll width, finished roll width, speed target, roll diameter and application."></textarea>
+            <small data-error-for="message"></small>
+          </label>
+
+          <label class="field captcha-field">
+            <span>Anti-spam Check <b>*</b></span>
+            <input name="captcha" inputmode="numeric" placeholder="What is 6 + 3?" required>
+            <small data-error-for="captcha">Please answer the anti-spam question.</small>
+          </label>
+
+          <button class="inquiry-submit" type="submit">
+            <span>Enviar consulta</span>
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-note">Integration note: set <code>data-endpoint</code> to your email, CRM, or database API endpoint before production launch.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../inquiry/inquiry-form.js"></script>
+<script src="../../social-links.js" defer></script></body>
+</html>
