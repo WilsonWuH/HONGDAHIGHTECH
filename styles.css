@@ -21,7 +21,9 @@ body {
   line-height: 1.55;
 }
 a { color: inherit; text-decoration: none; }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
+picture { display: block; }
+@font-face { font-family: "HDPTHSystem"; src: local("Arial"); font-display: swap; }
 
 .container {
   width: min(1180px, calc(100% - 40px));
@@ -204,7 +206,7 @@ img { max-width: 100%; display: block; }
   color: #fff;
   background:
     linear-gradient(145deg, rgba(11,17,24,.94), rgba(21,29,39,.92)),
-    url("assets/images/manual-slitting-machine.jpg") center / cover no-repeat;
+    image-set(url("assets/images/manual-slitting-machine.avif") type("image/avif"), url("assets/images/manual-slitting-machine.webp") type("image/webp"), url("assets/images/manual-slitting-machine.jpg") type("image/jpeg")) center / cover no-repeat;
   overflow: hidden;
 }
 .mega-cta h3 {
@@ -252,7 +254,7 @@ img { max-width: 100%; display: block; }
   inset: 0;
   background:
     linear-gradient(90deg, rgba(3,7,12,.92) 0%, rgba(3,7,12,.72) 38%, rgba(3,7,12,.18) 72%, rgba(3,7,12,.1) 100%),
-    url("assets/images/hero-banner-clean.png") center / cover no-repeat;
+    image-set(url("assets/images/hero-banner-clean.avif") type("image/avif"), url("assets/images/hero-banner-clean.webp") type("image/webp"), url("assets/images/hero-banner-clean.png") type("image/png")) center / cover no-repeat;
 }
 .hero .container { position: relative; z-index: 1; }
 .hero-content { width: min(720px, 100%); padding: 76px 0 120px; }
