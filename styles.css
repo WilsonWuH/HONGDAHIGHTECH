@@ -688,6 +688,65 @@ h1 {
   gap: 24px;
 }
 
+.digest-category-tabs {
+  position: sticky;
+  top: 75px;
+  z-index: 8;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 26px;
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,.52);
+  border-radius: 8px;
+  background: rgba(255,255,255,.86);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 12px 28px rgba(8, 17, 28, .1);
+}
+
+.digest-category-tabs a {
+  display: flex;
+  justify-content: center;
+  padding: 12px 14px;
+  border-radius: 6px;
+  background: #0b1118;
+  color: #ffc72c;
+  font-weight: 950;
+}
+
+.digest-category-tabs a:hover {
+  background: var(--red);
+  color: #fff;
+}
+
+.digest-category {
+  scroll-margin-top: 140px;
+  margin-bottom: 46px;
+}
+
+.digest-category-head {
+  padding: clamp(24px, 4vw, 38px);
+  margin-bottom: 18px;
+  border-radius: 8px;
+  color: #fff;
+  background:
+    linear-gradient(135deg, rgba(11,17,24,.96), rgba(20,29,40,.9)),
+    linear-gradient(90deg, rgba(255,199,44,.2), transparent);
+  box-shadow: var(--shadow);
+}
+
+.digest-category-head h2 {
+  margin-bottom: 10px;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.06;
+}
+
+.digest-category-head p:not(.eyebrow) {
+  max-width: 740px;
+  color: rgba(255,255,255,.76);
+  font-size: 17px;
+}
+
 .digest-headlines {
   background: #fff;
   border: 1px solid var(--line);
@@ -698,6 +757,11 @@ h1 {
 
 .digest-headlines h2 {
   font-size: clamp(24px, 3vw, 34px);
+  margin-bottom: 18px;
+}
+
+.digest-headlines h3 {
+  font-size: clamp(22px, 2.4vw, 30px);
   margin-bottom: 18px;
 }
 
@@ -753,6 +817,10 @@ h1 {
   border-radius: 8px;
   padding: clamp(22px, 4vw, 38px);
   box-shadow: 0 12px 30px rgba(8, 17, 28, .08);
+}
+
+.digest-category .digest-story + .digest-story {
+  margin-top: 22px;
 }
 
 .digest-story-kicker {
@@ -820,6 +888,18 @@ h1 {
 .digest-sources a {
   color: #0b4f83;
   font-weight: 800;
+}
+
+.digest-source-line {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.digest-source-line a {
+  color: #0b4f83;
+  font-weight: 900;
 }
 
 .digest-read-link {
@@ -1678,9 +1758,16 @@ textarea { min-height: 122px; resize: vertical; }
     align-items: flex-start;
     flex-direction: column;
   }
+  .digest-category-tabs {
+    position: static;
+    grid-template-columns: 1fr;
+  }
   .digest-headlines,
   .digest-story {
     padding: 20px;
+  }
+  .digest-category-head {
+    padding: 22px;
   }
   .digest-headlines a {
     grid-template-columns: 36px minmax(0, 1fr);
