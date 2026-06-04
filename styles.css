@@ -817,7 +817,7 @@ h1 {
   border: 1px solid var(--line);
   border-radius: 8px;
   display: grid;
-  grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
   gap: 22px;
   align-items: start;
   padding: 20px;
@@ -867,7 +867,7 @@ h1 {
 
 .digest-story img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1.35 / 1;
   object-fit: cover;
   border-radius: 8px;
   background: var(--steel);
