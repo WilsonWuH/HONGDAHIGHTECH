@@ -683,6 +683,18 @@ h1 {
   font-weight: 800;
 }
 
+.digest-market-intro {
+  margin: 0 0 18px;
+  color: rgba(255,255,255,.82);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.digest-market-intro a {
+  color: #ffc72c;
+  font-weight: 800;
+}
+
 .digest-layout {
   display: grid;
   gap: 24px;
