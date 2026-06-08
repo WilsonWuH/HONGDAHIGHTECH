@@ -247,7 +247,7 @@ picture { display: block; }
   display: grid;
   align-items: center;
   overflow: hidden;
-  background: image-set(url("assets/images/homepage-banner-poster.avif") type("image/avif"), url("assets/images/homepage-banner-poster.webp") type("image/webp"), url("assets/images/homepage-banner-poster.jpg") type("image/jpeg")) center / cover no-repeat;
+  background: image-set(url("assets/images/homepage-banner-premium-poster.avif") type("image/avif"), url("assets/images/homepage-banner-premium-poster.webp") type("image/webp"), url("assets/images/homepage-banner-premium-poster.jpg") type("image/jpeg")) center / cover no-repeat;
 }
 .hero::before {
   content: "";
