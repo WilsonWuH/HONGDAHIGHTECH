@@ -701,14 +701,28 @@ h1 {
 
 .digest-market-intro {
   margin: 0 0 18px;
-  color: rgba(255,255,255,.82);
+  padding: 18px 20px;
+  border: 1px solid #d8dee7;
+  border-left: 4px solid #e0ad00;
+  border-radius: 6px;
+  background: #fff;
+  color: #263444;
   font-size: 16px;
+  font-weight: 600;
   line-height: 1.7;
+  box-shadow: 0 8px 22px rgba(11, 17, 24, .07);
 }
 
 .digest-market-intro a {
-  color: #ffc72c;
-  font-weight: 800;
+  color: #9b7000;
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.digest-market-intro a:hover {
+  color: #151b23;
 }
 
 .digest-layout {
