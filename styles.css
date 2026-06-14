@@ -60,20 +60,20 @@ picture { display: block; }
   min-height: 74px;
 }
 .brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 800;
-  letter-spacing: 0;
-  color: var(--red);
-  font-size: 26px;
+  flex: 0 0 auto;
+  line-height: 0;
 }
-.brand-mark {
-  width: 38px;
-  height: 28px;
-  border-radius: 4px;
-  background: linear-gradient(135deg, var(--red), #ff3b3b);
-  transform: skew(-14deg);
+.brand picture {
+  display: block;
+}
+.brand-logo {
+  display: block;
+  width: clamp(132px, 11vw, 164px);
+  height: auto;
+  aspect-ratio: 640 / 173;
+  object-fit: contain;
 }
 .nav-links {
   display: flex;
