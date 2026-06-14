@@ -363,7 +363,12 @@ h1 {
 .card-body { padding: 24px; }
 .card h3 { font-size: 22px; line-height: 1.18; margin-bottom: 10px; }
 .card p { color: var(--muted); }
-.card img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; background: var(--steel); }
+.card img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  background: var(--steel);
+}
 .card-link { color: var(--red); font-weight: 900; }
 
 .news-hero {
@@ -1325,12 +1330,15 @@ td { color: #394656; }
   aspect-ratio: 16 / 9;
   object-fit: contain;
   padding: 22px;
-  background: linear-gradient(135deg, #fff, #f1f4f7);
+  background: #fff;
 }
 .product-gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
+}
+.product-gallery figure:only-child {
+  grid-column: 1 / -1;
 }
 .product-gallery figure {
   margin: 0;
@@ -1346,7 +1354,21 @@ td { color: #394656; }
 .product-gallery img {
   aspect-ratio: 16 / 10;
   object-fit: contain;
-  background: linear-gradient(135deg, #fff, #f1f4f7);
+  background: #fff;
+}
+
+picture:has(img[src*="product-renders/"]) {
+  background: #fff;
+}
+img[src*="product-renders/"],
+img[src*="manual-slitting-machine"],
+img[src*="manual-rewinding-machine"],
+img[src*="manual-knife-system"],
+img[src*="manual-perforating-line"],
+img[src*="product-slitting-machine"],
+img[src*="product-rewinding-machine"] {
+  background-color: #fff !important;
+  object-fit: contain;
 }
 .product-gallery figcaption {
   padding: 12px 14px;
