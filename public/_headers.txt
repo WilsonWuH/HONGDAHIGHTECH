@@ -1,0 +1,1 @@
+Static files are generated from the project root by scripts/sync-public.mjs.
