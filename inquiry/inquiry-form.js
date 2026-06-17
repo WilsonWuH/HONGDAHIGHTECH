@@ -41,16 +41,13 @@ function validateForm() {
 
 function formPayload() {
   const data = new FormData(form);
-  return {
-    name: data.get("name")?.toString().trim(),
-    email: data.get("email")?.toString().trim(),
-    phone: data.get("phone")?.toString().trim(),
-    company: data.get("company")?.toString().trim(),
-    country: data.get("country")?.toString().trim(),
-    product: data.get("product")?.toString().trim(),
-    message: data.get("message")?.toString().trim(),
-    source: "HDPTH website inquiry page",
-  };
+  const payload = {};
+
+  data.forEach((value, key) => {
+    payload[key] = value?.toString().trim();
+  });
+
+  return payload;
 }
 
 form?.addEventListener("input", (event) => {
@@ -74,24 +71,24 @@ form?.addEventListener("submit", async (event) => {
     return;
   }
 
-  const endpoint = form.dataset.endpoint?.trim();
+  const endpoint = form.dataset.endpoint?.trim() || "/api/inquiry";
   submitButton.disabled = true;
   submitButton.querySelector("span").textContent = "Submitting...";
   statusEl.textContent = "";
   statusEl.className = "form-status";
 
   try {
-    if (endpoint) {
-      const response = await fetch(endpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formPayload()),
-      });
-      if (!response.ok) throw new Error("Request failed");
-    } else {
-      await new Promise((resolve) => setTimeout(resolve, 700));
-      console.info("Demo inquiry payload:", formPayload());
-    }
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        fields: formPayload(),
+        page: window.location.href,
+        source: "HDPTH website inquiry page",
+      }),
+    });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok || result.ok !== true) throw new Error(result.message || "Request failed");
 
     statusEl.textContent = "Submitted successfully. Our team will contact you soon.";
     statusEl.className = "form-status is-success";
