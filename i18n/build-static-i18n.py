@@ -7,7 +7,7 @@ from html import escape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE_URL = "https://www.hdprotech.cn"
+BASE_URL = "https://www.hdpth.com"
 
 LOCALES = {
     "en": {"name": "English", "native": "English", "dir": "ltr"},
