@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Braked vs Driven Unwind for Slitter Rewinders | HDPTH</title>
+  <meta name="description" content="Compare braked and motor-driven unwind systems for slitter rewinders, including tension control, roll inertia, RFQ data, FAT checks and safety planning.">
+  <link rel="canonical" href="https://www.hdpth.com/blog/braked-vs-driven-unwind-slitter-rewinder/">
+  <link rel="preload" as="style" href="../../styles.css">
+  <style data-critical="true">body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#0b1118;background:#fff}.topbar{background:#0b1118;color:rgba(255,255,255,.78);font-size:13px}.header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid #d9dee6}.container{width:min(1180px,calc(100% - 40px));margin:0 auto}.nav{display:flex;align-items:center;justify-content:space-between;min-height:74px}.hero,.page-hero{background:#0b1118;color:#fff}img{max-width:100%;height:auto;display:block}</style>
+  <link rel="stylesheet" href="../../styles.css">
+  <style data-article-responsive="true">
+    @media (max-width: 560px) {
+      body { overflow-x: clip; }
+      .header .container.nav { width: calc(100% - 28px); max-width: calc(100% - 28px); gap: 12px; }
+      .header .nav > .btn { width: auto; flex: 0 0 auto; padding: 12px 16px; }
+      .header .nav-links { min-width: 0; }
+      .page-hero .container,
+      .section .container { width: calc(100% - 28px); max-width: calc(100% - 28px); }
+      .page-hero h1,
+      .page-hero p { max-width: 100%; overflow-wrap: anywhere; }
+      .article-layout,
+      .article-body { width: 100%; min-width: 0; max-width: 100%; }
+      .article-body { padding: 22px; }
+      .article-body figure { margin: 28px 0; max-width: 100%; }
+      .article-body picture,
+      .article-body img { width: 100%; max-width: 100%; }
+      .answer-box,
+      .article-cta,
+      .table-wrap { width: 100%; min-width: 0; max-width: 100%; }
+      .table-wrap { display: block; overflow-x: auto; }
+    }
+  </style>
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Article","headline":"Braked vs Driven Unwind for Slitter Rewinders: How to Choose","description":"Compare braked and motor-driven unwind systems for slitter rewinders, including tension control, roll inertia, RFQ data, FAT checks and safety planning.","image":"https://www.hdpth.com/assets/images/blog/braked-vs-driven-unwind.webp","author":{"@type":"Organization","name":"HDPTH Technical Editorial Team"},"publisher":{"@type":"Organization","name":"HDPTH"},"datePublished":"2026-06-29","dateModified":"2026-06-29","mainEntityOfPage":"https://www.hdpth.com/blog/braked-vs-driven-unwind-slitter-rewinder/"}
+  </script>
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hdpth.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.hdpth.com/blog/"},{"@type":"ListItem","position":3,"name":"Braked vs Driven Unwind","item":"https://www.hdpth.com/blog/braked-vs-driven-unwind-slitter-rewinder/"}]}
+  </script>
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between a braked and driven unwind?","acceptedAnswer":{"@type":"Answer","text":"A braked unwind creates web tension by resisting the pull of downstream driven rollers. A driven unwind uses a motor and drive to control roll torque and can actively assist acceleration or absorb energy during deceleration, depending on the design."}},{"@type":"Question","name":"When should a buyer specify a driven unwind?","acceptedAnswer":{"@type":"Answer","text":"Consider a driven unwind when parent-roll inertia, rapid speed changes or very tension-sensitive material cannot be controlled adequately by a correctly sized brake system. The choice should be supported by roll data, operating profiles and representative trials."}},{"@type":"Question","name":"Can a braked unwind use closed-loop tension control?","acceptedAnswer":{"@type":"Answer","text":"Yes. A load cell or dancer can provide feedback to a controller that adjusts brake torque as roll diameter and operating conditions change. Braked does not automatically mean manual or open-loop control."}},{"@type":"Question","name":"What data is needed to size an unwind system?","acceptedAnswer":{"@type":"Answer","text":"Provide material, web width, basis weight or thickness, roll mass, maximum and minimum diameter, core size, speed, acceleration and stopping profiles, tension range, shaft or chuck arrangement, electrical supply and normal job recipes."}},{"@type":"Question","name":"How should braked and driven unwinds be checked during FAT?","acceptedAnswer":{"@type":"Answer","text":"Run representative rolls through start, acceleration, steady speed, normal stop and agreed fault-stop tests. Record tension response, slack or stretch, tracking, roll behavior, alarms and repeatability at both full and near-core diameters."}}]}
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="../../index.html"><span class="brand-mark"></span>HDPTH</a>
+      <nav class="nav-links">
+        <div class="nav-item">
+          <a class="mega-trigger" href="../../products/index.html">Products</a>
+          <div class="mega-menu">
+            <div class="mega-grid">
+              <div class="mega-section">
+                <p class="mega-kicker">Product Matrix</p>
+                <div class="mega-list">
+                  <a class="mega-link" href="../../products/high-speed-slitting-machines/index.html"><strong>High-Speed Slitting Machines</strong><span>Clean cutting and stable tension for roll converting.</span></a>
+                  <a class="mega-link" href="../../products/nonwoven-rewinding-machines/index.html"><strong>Nonwoven Rewinding Machines</strong><span>Consistent roll formation for downstream production.</span></a>
+                  <a class="mega-link" href="../../products/automatic-knife-systems/index.html"><strong>Automatic Knife Systems</strong><span>Faster setup and repeatable cutting configuration.</span></a>
+                  <a class="mega-link" href="../../products/index.html"><strong>All Converting Equipment</strong><span>Perforating lines, combined machines and auxiliary systems.</span></a>
+                </div>
+              </div>
+              <div class="mega-section">
+                <p class="mega-kicker">Applications</p>
+                <div class="mega-plain">
+                  <a href="../../applications/index.html">Hygiene Products</a>
+                  <a href="../../applications/index.html">Medical Nonwoven Materials</a>
+                  <a href="../../applications/index.html">Disposable Wipes &amp; Flexible Materials</a>
+                  <a href="../../guides/nonwoven-slitting-machine-buying-guide/index.html">Buying Guide</a>
+                </div>
+              </div>
+              <div class="mega-cta">
+                <h3>Need a machine configuration?</h3>
+                <p>Send material, width, speed and application details. HDPTH will recommend the suitable converting setup.</p>
+                <a class="btn btn-red" href="../../inquiry/index.html">Request a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="../../applications/index.html">Applications</a>
+        <a href="../index.html">Blog</a>
+        <a href="../../certificates/index.html">Certificates</a>
+        <a href="../../news/index.html">News</a>
+        <a href="../../contact/index.html">Contact</a>
+      </nav>
+      <a class="btn btn-red" href="../../inquiry/index.html">Get a Quote</a>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">Home / Blog / Braked vs Driven Unwind</div>
+        <h1>Braked vs Driven Unwind for Slitter Rewinders: How to Choose</h1>
+        <p>Match unwind torque control to the parent roll, material sensitivity and real operating cycle.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container article-layout">
+        <article class="article-body">
+          <p class="eyebrow">Published June 29, 2026 | By HDPTH Technical Editorial Team</p>
+          <div class="answer-box">
+            <strong>Short answer:</strong> choose a braked unwind when a correctly sized brake can maintain the required tension across the roll-diameter range and control the parent roll during acceleration and stopping. Specify a motor-driven unwind when large roll inertia, demanding speed changes or tension-sensitive material requires active torque in both running and transient conditions. Do not decide from line speed alone. Give the supplier roll mass, diameters, material, tension range and acceleration/deceleration profile, then verify the complete control loop during FAT.
+          </div>
+
+          <figure>
+            <picture>
+              <source type="image/webp" srcset="../../assets/images/blog/braked-vs-driven-unwind-720.webp 720w, ../../assets/images/blog/braked-vs-driven-unwind.webp 1440w" sizes="(max-width: 760px) 100vw, 850px">
+              <img src="../../assets/images/blog/braked-vs-driven-unwind.webp" alt="Technical illustration comparing a braked parent-roll unwind with a motor-driven unwind" width="1440" height="960" decoding="async" loading="eager" fetchpriority="high">
+            </picture>
+            <figcaption>Generic comparison of brake-resisted and motor-driven unwind concepts; the final web path and guarding depend on the project.</figcaption>
+          </figure>
+
+          <p>The unwind is not simply a stand that lets a parent roll rotate. It must release material at the rate demanded by the line while keeping the first tension zone stable. A poor choice can show up as slack web during acceleration, tension spikes near the core, stretched film, unstable knife entry or an uncontrolled roll during stopping.</p>
+          <p>Buyers often mix two separate decisions. <em>Shafted versus shaftless</em> describes how the roll is supported and loaded. <em>Braked versus driven</em> describes how torque is applied to the rotating roll. Either support arrangement may use a brake or a motor, subject to the machine design. If roll handling is your first question, review the separate <a href="../shafted-vs-shaftless-unwind-slitter-rewinder/index.html">shafted versus shaftless unwind guide</a>.</p>
+
+          <h2>Braked vs driven unwind: practical comparison</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Decision Point</th><th>Braked Unwind</th><th>Driven Unwind</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>How tension is created</td><td>Brake resists downstream pull</td><td>Motor controls roll torque and speed relationship</td></tr>
+                <tr><td>Acceleration</td><td>Downstream drive must pull roll into motion while brake control releases correctly</td><td>Motor can help accelerate the roll</td></tr>
+                <tr><td>Deceleration</td><td>Brake supplies retarding torque</td><td>Drive can apply controlled negative torque; an additional holding or emergency brake may still be required</td></tr>
+                <tr><td>Typical reason to choose</td><td>Proven, economical control for a suitable roll and speed envelope</td><td>High inertia, demanding transients or sensitive low-tension webs</td></tr>
+                <tr><td>Controls</td><td>Manual/open-loop or closed-loop with dancer or load-cell feedback</td><td>Usually coordinated drive control with diameter and/or tension feedback</td></tr>
+                <tr><td>Engineering focus</td><td>Brake heat, torque range, low-torque behavior and wear</td><td>Motor/drive sizing, regeneration, low-speed control and safe stopping</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>This table is a screening tool, not a specification. A well-engineered brake system can outperform a poorly tuned driven unwind. Conversely, installing a motor does not compensate for incorrect roll data, unsuitable feedback placement or unstable downstream draw.</p>
+
+          <h2>How a braked unwind controls tension</h2>
+          <p>In a conventional braked unwind, driven rollers downstream pull the web from the parent roll. The brake opposes rotation, creating web tension. Dover Flexo Electronics describes the unwind roll on a slitter rewinder as typically controlled by either a brake or a motor attached to the shaft or core chuck.</p>
+          <p>The basic relationship is straightforward: roll torque must change as radius changes if web tension is to remain constant. If brake torque stayed fixed while the roll became smaller, web tension would increase. A control system therefore reduces commanded torque as the diameter falls. Diameter may be calculated, measured or inferred, while tension feedback may come from a dancer or load cells.</p>
+          <p>Braked does not mean crude. A closed-loop braked unwind can continuously compare actual tension with the setpoint and adjust pneumatic or magnetic-particle brake output. For many paper, nonwoven and flexible-material jobs, that architecture can be appropriate when it has enough controllable torque at full roll and smooth resolution near the core.</p>
+
+          <h3>Where brake selection can go wrong</h3>
+          <p>The brake has to work across a wide torque range. A full parent roll may require substantial braking torque, especially during deceleration. Near the core, the same web tension requires much less torque. A brake that is oversized only for the worst case may control poorly at the low end; an undersized brake can overheat or fail to manage the roll during a stop.</p>
+          <p>Ask the supplier about continuous heat dissipation, minimum controllable torque, response time, wear parts and cooling assumptions. Long runs at high speed and frequent starts or stops create a different thermal duty from steady low-speed rewinding. Maintenance teams should know how wear is inspected and how replacement affects calibration.</p>
+
+          <h2>What a driven unwind changes</h2>
+          <p>A driven unwind couples the roll to a motor and drive. Universal Converting Equipment defines it as an unwind in which the shaft or shaftless roll support is motor driven, and notes its use for tension-sensitive materials because driving the roll can reduce the effect of parent-roll inertia.</p>
+          <p>The important benefit appears during changes in speed. When the line accelerates, a full heavy roll resists acceleration. With a passive unwind, downstream traction must provide the force to bring that roll up to speed. A driven unwind can contribute positive torque, reducing the transient load imposed on the web. During controlled deceleration, the drive can command negative torque and manage energy according to its electrical design.</p>
+          <p>That does not make a driven unwind universally better. It adds a motor, drive hardware, control logic, feedback requirements and energy-management questions. The supplier must explain what happens during a normal stop, a rapid controlled stop, loss of power and an emergency-stop condition. Depending on the design, regenerated energy may be dissipated or returned through the drive system, and a separate brake may remain necessary for holding or safety functions.</p>
+
+          <h2>Choose from operating conditions, not labels</h2>
+          <h3>Parent-roll inertia and speed changes</h3>
+          <p>Roll mass alone is insufficient. The distribution of that mass relative to the axis, the full and core diameters, line speed and required acceleration determine how difficult the roll is to control. Two rolls of similar weight can behave differently if their diameters and material density differ. Send maximum actual production roll data rather than a nominal catalog value.</p>
+          <h3>Material tension window</h3>
+          <p>Thin PE or PET film, light nonwoven and extensible webs may have a narrow acceptable tension window. The issue is not only steady-state accuracy. A short spike can stretch or break the web; a short loss of tension can create wrinkles or disturb tracking before the knives. Representative material trials are more useful than a general claim of “automatic tension control.”</p>
+          <h3>Job mix and changeover range</h3>
+          <p>A plant that runs one stable paper grade has a different control problem from a converter alternating among light nonwoven, film, laminates and paper. State the lowest and highest tension jobs, not just the normal product. HDPTH's <a href="../../products/slitting-rewinding-lines/index.html">slitting and rewinding lines</a> are configured around project requirements, so the RFQ should describe the full production range that the unwind must handle.</p>
+          <h3>Stop frequency and process interruptions</h3>
+          <p>Inspection, splicing, defect removal and downstream interruptions can make a nominally continuous line cycle frequently. Include starts per shift, normal stopping time and any required rapid-stop condition. This operating profile affects brake heating and drive sizing as much as top speed does.</p>
+
+          <div class="article-cta">
+            <h3>Need an unwind configuration review?</h3>
+            <p>Send HDPTH the parent-roll data, material, tension range, speed profile and loading method. The unwind can then be reviewed as part of the complete slitting and rewinding line.</p>
+            <a class="btn btn-red" href="../../inquiry/index.html">Request a Configuration Review</a>
+          </div>
+
+          <h2>Feedback and tension-zone design still matter</h2>
+          <p>Both unwind types need a defined control strategy. Open-loop control estimates the required torque from diameter and known machine behavior. Closed-loop control measures web response and corrects the actuator command. A dancer introduces a movable roller and position signal; load cells measure force at a sensing roller. Each approach has mechanical, tuning and maintenance implications.</p>
+          <p>Feedback must represent the unwind zone rather than a disturbance from another section. The driven draw roller that isolates unwind tension, the sensor location, web wrap and roller friction all affect what the controller sees. HDPTH's guide to <a href="../automatic-tension-control-web-guiding-nonwoven-converting/index.html">automatic tension control and web guiding</a> explains why tension and lateral position are related but separate control tasks.</p>
+          <p>Ask what variables are shown and stored at the operator interface: setpoint, measured tension, roll diameter, actuator output, dancer position and alarms. Recipe handling can improve repeatability, but only if limits, units and operator permissions are defined. Avoid accepting a screenshot as proof; test response on actual material.</p>
+
+          <h2>RFQ data required for a defensible selection</h2>
+          <ul class="check-list">
+            <li>Material family, construction, thickness or basis weight, and whether it stretches, slips, sheds dust or marks easily.</li>
+            <li>Minimum, normal and maximum web width.</li>
+            <li>Maximum parent-roll mass, outside diameter, core inside diameter and minimum usable diameter.</li>
+            <li>Shafted or shaftless support, core condition and roll-loading method.</li>
+            <li>Minimum, normal and maximum line speed.</li>
+            <li>Target acceleration time, normal stop time and agreed rapid-stop requirement.</li>
+            <li>Required web-tension range and acceptable deviation or transient behavior.</li>
+            <li>Load-cell, dancer or diameter-feedback preference, if dictated by plant standards.</li>
+            <li>Electrical supply, drive standard, control-network requirements and available regenerative arrangement.</li>
+            <li>Typical recipes, changeover frequency and starts or stops per shift.</li>
+            <li>Destination-country safety requirements and plant risk-assessment expectations.</li>
+            <li>Representative rolls or sufficient material for factory trials.</li>
+          </ul>
+          <p>Require the supplier to state assumptions. If maximum roll mass, stopping time or tension range is missing, the proposed brake, motor and drive cannot be evaluated on a common basis. A quotation should identify whether stated performance depends on a particular material, roll build or speed.</p>
+
+          <h2>Factory acceptance testing for the unwind</h2>
+          <p>FAT should test the operating envelope, not one convenient steady-speed run. Begin with a full or representative large-diameter parent roll. Record start-up, acceleration, stable running, normal deceleration and stopping. Repeat near the minimum operating diameter because the required actuator torque and rotational speed differ substantially.</p>
+          <p>Observe measured tension, dancer position if fitted, roll diameter, brake or drive output and web behavior. Look for slack loops, sudden corrections, stretching, wrinkles and lateral instability at knife entry. Run at least one low-tension material if it is part of the purchase specification.</p>
+          <p>Agree in advance how rapid and emergency stops will be demonstrated safely. An emergency stop is a safety function, not a production tension-control test, so acceptance criteria must account for the machine risk assessment and the behavior expected after the safety circuit is triggered. OSHA 29 CFR 1910.212 requires guarding against hazards including ingoing nip points and rotating parts; buyers must also apply the standards of the destination country.</p>
+          <p>Document setpoints and results so the same recipe can be repeated. The broader <a href="../slitter-rewinder-factory-acceptance-test-checklist/index.html">slitter rewinder FAT checklist</a> can be used to connect unwind results with slitting accuracy and finished-roll quality.</p>
+
+          <h2>Shipment inspection and installation preparation</h2>
+          <p>Before shipment, verify the unwind actuator identification, roll-support components, guards, sensors, cables, cooling or pneumatic connections, spare wear parts and calibration records. Photograph components removed for transport and mark their installed orientation. Confirm that manuals describe brake inspection or drive setup in terms maintenance personnel can use.</p>
+          <p>At the plant, foundation level, frame alignment and electrical supply can affect results seen during commissioning. Prepare the parent-roll handling route and lifting equipment before arrival. Confirm compressed-air quality where pneumatic braking is used, and confirm drive ventilation and any braking-resistor location where a driven unwind is used.</p>
+          <p>Do not bypass guards to make threading or observation easier. Plan safe threading, cleaning and roll-change procedures, including lockout/tagout requirements and access around rotating roll ends. The final commissioning trial should repeat key FAT conditions with plant utilities and production material.</p>
+
+          <h2>Common purchasing mistakes</h2>
+          <ul class="check-list">
+            <li>Choosing a driven unwind only because the quoted line speed is high.</li>
+            <li>Choosing a brake only because it has a lower purchase price.</li>
+            <li>Providing roll diameter but not maximum roll mass or core diameter.</li>
+            <li>Ignoring acceleration, normal stopping and frequent process stops.</li>
+            <li>Using “closed loop” as a specification without defining the sensor and acceptance response.</li>
+            <li>Confusing shaftless roll loading with motor-driven tension control.</li>
+            <li>Testing only at mid-diameter with a forgiving material.</li>
+            <li>Leaving brake heat, wear parts, regenerative energy or power-loss behavior unresolved.</li>
+          </ul>
+
+          <h2>Buyer FAQs</h2>
+          <h3>What is the difference between a braked and driven unwind?</h3>
+          <p>A braked unwind creates web tension by resisting the pull of downstream driven rollers. A driven unwind uses a motor and drive to control roll torque and can actively assist acceleration or absorb energy during deceleration, depending on the design.</p>
+          <h3>When should a buyer specify a driven unwind?</h3>
+          <p>Consider a driven unwind when parent-roll inertia, rapid speed changes or very tension-sensitive material cannot be controlled adequately by a correctly sized brake system. The choice should be supported by roll data, operating profiles and representative trials.</p>
+          <h3>Can a braked unwind use closed-loop tension control?</h3>
+          <p>Yes. A load cell or dancer can provide feedback to a controller that adjusts brake torque as roll diameter and operating conditions change. Braked does not automatically mean manual or open-loop control.</p>
+          <h3>What data is needed to size an unwind system?</h3>
+          <p>Provide material, web width, basis weight or thickness, roll mass, maximum and minimum diameter, core size, speed, acceleration and stopping profiles, tension range, shaft or chuck arrangement, electrical supply and normal job recipes.</p>
+          <h3>How should braked and driven unwinds be checked during FAT?</h3>
+          <p>Run representative rolls through start, acceleration, steady speed, normal stop and agreed fault-stop tests. Record tension response, slack or stretch, tracking, roll behavior, alarms and repeatability at both full and near-core diameters.</p>
+
+          <h2>Sources</h2>
+          <ul>
+            <li><a href="https://dfe.com/applications/slitter-rewinder-tension-control/">Dover Flexo Electronics: Slitter-rewinder tension control</a></li>
+            <li><a href="https://www.universalconvertingequipment.com/slitter-glossary">Universal Converting Equipment: Braked and driven unwind definitions</a></li>
+            <li><a href="https://acim.nidec.com/drives/control-techniques/-/media/Project/Nidec/ControlTechniques/Documents/industry-solutions/ES-WebHandling.pdf">Nidec Control Techniques: Web handling drive applications</a></li>
+            <li><a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.212">OSHA 29 CFR 1910.212: General machine guarding requirements</a></li>
+          </ul>
+
+          <div class="article-cta">
+            <h3>Specify the unwind from real production data</h3>
+            <p>Send your material, parent-roll dimensions and mass, tension range, speed cycle, finished-roll requirements and destination standards. HDPTH can review them as one slitting and rewinding requirement.</p>
+            <a class="btn btn-red" href="../../inquiry/index.html">Send Your Machinery RFQ</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-bottom">HDPTH | <a href="../../inquiry/index.html">Discuss slitter rewinder unwind requirements</a></div>
+  </footer>
+  <script src="../../social-links.js" defer async></script>
+</body>
+</html>
