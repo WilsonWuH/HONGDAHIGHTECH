@@ -2165,6 +2165,15 @@ textarea { min-height: 122px; resize: vertical; }
 }
 
 @media (max-width: 560px) {
+  .news-hero h1,
+  .news-hero p,
+  .news-digest-section .digest-brand-band strong,
+  .news-digest-section .digest-headlines a,
+  .news-digest-section .digest-story-copy {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
   .certificate-grid {
     grid-template-columns: 1fr;
     gap: 16px;
