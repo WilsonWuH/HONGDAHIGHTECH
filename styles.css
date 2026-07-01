@@ -2165,6 +2165,20 @@ textarea { min-height: 122px; resize: vertical; }
 }
 
 @media (max-width: 560px) {
+  .news-daily-page .topbar .container span {
+    display: block;
+    overflow-wrap: anywhere;
+  }
+  .news-daily-page .topbar .container span + span {
+    margin-top: 3px;
+  }
+  .news-daily-page .header .nav {
+    width: calc(100% - 28px);
+  }
+  .news-daily-page .nav-links {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px 10px;
+  }
   .news-hero h1,
   .news-hero p,
   .news-digest-section .digest-brand-band strong,
