@@ -1464,6 +1464,13 @@ td { color: #394656; }
 .product-gallery img {
   width: 100%;
 }
+.product-gallery video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #05080c;
+}
 .product-gallery img {
   aspect-ratio: 16 / 10;
   object-fit: contain;
