@@ -55,7 +55,7 @@ const meta = {
   en: {
     "/": ["HDPTH | High-Speed Nonwoven Converting Machinery", "HDPTH manufactures nonwoven slitting, rewinding, perforating and automatic knife systems for overseas B2B manufacturers.", "High-Speed Nonwoven Converting Machinery"],
     "/products/": ["Products | HDPTH Nonwoven Converting Machinery", "Explore HDPTH slitting machines, rewinding machines, perforating production lines, automatic knife systems and auxiliary converting equipment.", "Nonwoven Converting Machinery"],
-    "/products/high-speed-slitting-machines/": ["High-Speed Nonwoven Slitting Machines | HDPTH", "HDPTH high-speed nonwoven slitting machines support clean cutting, stable tension control and custom roll converting for global manufacturers.", "High-Speed Nonwoven Slitting Machines"],
+    "/products/high-speed-slitting-machines/": ["High-Speed Nonwoven Slitting Machines | HDPTH", "Upgraded HDPTH high-speed slitting machines reduce noise and vibration while supporting spunbond, spunlace, needle-punched, wood pulp, meltblown, composite, flushable, hot-air, film and paper materials.", "High-Speed Nonwoven Slitting Machines"],
     "/products/nonwoven-rewinding-machines/": ["Nonwoven Rewinding Machines | HDPTH", "Nonwoven rewinding machines for stable roll formation, custom width, controlled tension and export-oriented converting projects.", "Nonwoven Rewinding Machines"],
     "/products/automatic-knife-systems/": ["Automatic Knife Systems for Nonwoven Converting | HDPTH", "Automatic knife systems for faster setup, repeatable slitting configuration and HDPTH high-speed converting lines.", "Automatic Knife Systems"],
     "/products/slitting-rewinding-lines/": ["Slitting and Rewinding Lines for Wide Roll Materials | HDPTH", "Integrated slitting and rewinding lines for nonwoven, paper and flexible wide roll materials with custom unwind, cutting and roll handling layouts.", "Integrated Slitting and Rewinding Lines"],
@@ -76,7 +76,7 @@ const meta = {
   es: {
     "/": ["HDPTH | Maquinaria de conversión de no tejidos de alta velocidad", "HDPTH fabrica cortadoras, rebobinadoras, líneas de perforación y sistemas de cuchillas automáticas para fabricantes B2B internacionales.", "Maquinaria de conversión de no tejidos de alta velocidad"],
     "/products/": ["Productos | Maquinaria HDPTH para no tejidos", "Explore cortadoras, rebobinadoras, líneas de perforación, sistemas de cuchillas automáticas y equipos auxiliares HDPTH.", "Maquinaria de conversión para no tejidos"],
-    "/products/high-speed-slitting-machines/": ["Cortadoras de no tejido de alta velocidad | HDPTH", "Cortadoras HDPTH para corte limpio, tensión estable y conversión de rollos personalizada para fabricantes globales.", "Cortadoras de no tejido de alta velocidad"],
+    "/products/high-speed-slitting-machines/": ["Cortadoras de no tejido de alta velocidad | HDPTH", "Cortadoras HDPTH actualizadas para reducir ruido y vibración, compatibles con spunbond, spunlace, punzonado, pulpa de madera, meltblown, compuestos, materiales dispersables, aire caliente, film y papel.", "Cortadoras de no tejido de alta velocidad"],
     "/products/nonwoven-rewinding-machines/": ["Rebobinadoras de no tejidos | HDPTH", "Rebobinadoras de no tejidos para formación estable de rollos, ancho personalizado y proyectos de exportación.", "Rebobinadoras de no tejidos"],
     "/products/automatic-knife-systems/": ["Sistemas de cuchillas automáticas | HDPTH", "Sistemas de cuchillas automáticas para cambios rápidos, configuración repetible y líneas de conversión HDPTH.", "Sistemas de cuchillas automáticas"],
     "/products/slitting-rewinding-lines/": ["Líneas de corte y rebobinado para rollos anchos | HDPTH", "Líneas integradas de corte y rebobinado para no tejidos, papel y materiales flexibles en rollo.", "Líneas integradas de corte y rebobinado"],
@@ -97,7 +97,7 @@ const meta = {
   ru: {
     "/": ["HDPTH | Высокоскоростное оборудование для переработки нетканых материалов", "HDPTH производит машины для резки, перемотки, перфорации и автоматические ножевые системы для международных B2B производителей.", "Высокоскоростное оборудование для переработки нетканых материалов"],
     "/products/": ["Продукция | Оборудование HDPTH для нетканых материалов", "Оборудование HDPTH для резки, перемотки, перфорации, автоматической настройки ножей и вспомогательных операций.", "Оборудование для переработки нетканых материалов"],
-    "/products/high-speed-slitting-machines/": ["Высокоскоростные машины резки нетканых материалов | HDPTH", "Машины HDPTH обеспечивают чистый рез, стабильное натяжение и индивидуальную переработку рулонов.", "Высокоскоростные машины резки нетканых материалов"],
+    "/products/high-speed-slitting-machines/": ["Высокоскоростные машины резки нетканых материалов | HDPTH", "Обновленные высокоскоростные машины HDPTH снижают шум и вибрацию и подходят для spunbond, spunlace, иглопробивных, древесно-целлюлозных, meltblown, композитных, смываемых, hot-air, пленочных и бумажных материалов.", "Высокоскоростные машины резки нетканых материалов"],
     "/products/nonwoven-rewinding-machines/": ["Машины перемотки нетканых материалов | HDPTH", "Перемоточные машины для стабильного формирования рулонов, индивидуальной ширины и экспортных проектов.", "Машины перемотки нетканых материалов"],
     "/products/automatic-knife-systems/": ["Автоматические ножевые системы | HDPTH", "Автоматические ножевые системы для быстрой настройки, повторяемой резки и линий переработки HDPTH.", "Автоматические ножевые системы"],
     "/products/slitting-rewinding-lines/": ["Линии резки и перемотки широких рулонов | HDPTH", "Интегрированные линии резки и перемотки для нетканых материалов, бумаги и гибких рулонных материалов.", "Интегрированные линии резки и перемотки"],
@@ -118,7 +118,7 @@ const meta = {
   ar: {
     "/": ["HDPTH | معدات تحويل الأقمشة غير المنسوجة عالية السرعة", "تصنع HDPTH آلات الشق وإعادة اللف والتثقيب وأنظمة السكاكين الأوتوماتيكية لمصنعي B2B حول العالم.", "معدات تحويل الأقمشة غير المنسوجة عالية السرعة"],
     "/products/": ["المنتجات | معدات HDPTH للأقمشة غير المنسوجة", "استكشف آلات الشق وإعادة اللف وخطوط التثقيب وأنظمة السكاكين الأوتوماتيكية والمعدات المساعدة من HDPTH.", "معدات تحويل الأقمشة غير المنسوجة"],
-    "/products/high-speed-slitting-machines/": ["آلات شق الأقمشة غير المنسوجة عالية السرعة | HDPTH", "تدعم آلات HDPTH الشق النظيف والتحكم المستقر في الشد وتحويل اللفات حسب متطلبات المصنع.", "آلات شق الأقمشة غير المنسوجة عالية السرعة"],
+    "/products/high-speed-slitting-machines/": ["آلات شق الأقمشة غير المنسوجة عالية السرعة | HDPTH", "آلات HDPTH المطورة تقلل الضوضاء والاهتزاز وتدعم مواد spunbond وspunlace والمثقوبة بالإبر ولب الخشب وmeltblown والمركبة والقابلة للتشتت والهواء الساخن والأفلام والورق.", "آلات شق الأقمشة غير المنسوجة عالية السرعة"],
     "/products/nonwoven-rewinding-machines/": ["آلات إعادة لف الأقمشة غير المنسوجة | HDPTH", "آلات إعادة لف لتكوين لفات مستقرة وعرض مخصص ومشاريع تصدير.", "آلات إعادة لف الأقمشة غير المنسوجة"],
     "/products/automatic-knife-systems/": ["أنظمة السكاكين الأوتوماتيكية | HDPTH", "أنظمة سكاكين أوتوماتيكية للإعداد السريع والقطع المتكرر وخطوط تحويل HDPTH.", "أنظمة السكاكين الأوتوماتيكية"],
     "/products/slitting-rewinding-lines/": ["خطوط الشق وإعادة اللف لللفات العريضة | HDPTH", "خطوط متكاملة للشق وإعادة اللف للأقمشة غير المنسوجة والورق والمواد المرنة الملفوفة.", "خطوط شق وإعادة لف متكاملة"],
@@ -139,7 +139,7 @@ const meta = {
   fr: {
     "/": ["HDPTH | Machines de conversion non-tissé haute vitesse", "HDPTH fabrique des machines de refente, rembobinage, perforation et systèmes de couteaux automatiques pour fabricants B2B internationaux.", "Machines de conversion non-tissé haute vitesse"],
     "/products/": ["Produits | Machines HDPTH pour non-tissés", "Découvrez les machines HDPTH de refente, rembobinage, perforation, couteaux automatiques et équipements auxiliaires.", "Machines de conversion pour non-tissés"],
-    "/products/high-speed-slitting-machines/": ["Machines de refente non-tissé haute vitesse | HDPTH", "Machines HDPTH pour coupe nette, tension stable et conversion de rouleaux personnalisée.", "Machines de refente non-tissé haute vitesse"],
+    "/products/high-speed-slitting-machines/": ["Machines de refente non-tissé haute vitesse | HDPTH", "Machines de refente HDPTH mises à niveau pour réduire le bruit et les vibrations, compatibles avec spunbond, spunlace, aiguilleté, pâte de bois, meltblown, composite, dispersible, air chaud, film et papier.", "Machines de refente non-tissé haute vitesse"],
     "/products/nonwoven-rewinding-machines/": ["Machines de rembobinage non-tissé | HDPTH", "Rembobineuses pour formation stable des rouleaux, largeur personnalisée et projets export.", "Machines de rembobinage non-tissé"],
     "/products/automatic-knife-systems/": ["Systèmes de couteaux automatiques | HDPTH", "Systèmes de couteaux automatiques pour réglage rapide, refente répétable et lignes de conversion HDPTH.", "Systèmes de couteaux automatiques"],
     "/products/slitting-rewinding-lines/": ["Lignes de refente et rembobinage pour rouleaux larges | HDPTH", "Lignes intégrées de refente et rembobinage pour non-tissés, papier et matériaux flexibles en rouleaux.", "Lignes intégrées de refente et rembobinage"],
@@ -160,7 +160,7 @@ const meta = {
   pt: {
     "/": ["HDPTH | Máquinas de conversão para não tecidos de alta velocidade", "A HDPTH fabrica cortadeiras, rebobinadeiras, linhas de perfuração e sistemas de facas automáticas para fabricantes B2B globais.", "Máquinas de conversão para não tecidos de alta velocidade"],
     "/products/": ["Produtos | Máquinas HDPTH para não tecidos", "Explore máquinas HDPTH de corte, rebobinamento, perfuração, sistemas de facas automáticas e equipamentos auxiliares.", "Máquinas de conversão para não tecidos"],
-    "/products/high-speed-slitting-machines/": ["Máquinas de corte de não tecido de alta velocidade | HDPTH", "Máquinas HDPTH para corte limpo, tensão estável e conversão personalizada de rolos.", "Máquinas de corte de não tecido de alta velocidade"],
+    "/products/high-speed-slitting-machines/": ["Máquinas de corte de não tecido de alta velocidade | HDPTH", "Máquinas HDPTH atualizadas reduzem ruído e vibração e processam spunbond, spunlace, agulhado, polpa de madeira, meltblown, compostos, dispersíveis, hot-air, filme e papel.", "Máquinas de corte de não tecido de alta velocidade"],
     "/products/nonwoven-rewinding-machines/": ["Máquinas rebobinadeiras para não tecidos | HDPTH", "Rebobinadeiras para formação estável de rolos, largura personalizada e projetos de exportação.", "Máquinas rebobinadeiras para não tecidos"],
     "/products/automatic-knife-systems/": ["Sistemas de facas automáticas | HDPTH", "Sistemas de facas automáticas para setup rápido, corte repetível e linhas de conversão HDPTH.", "Sistemas de facas automáticas"],
     "/products/slitting-rewinding-lines/": ["Linhas de corte e rebobinamento para rolos largos | HDPTH", "Linhas integradas de corte e rebobinamento para não tecidos, papel e materiais flexíveis em rolo.", "Linhas integradas de corte e rebobinamento"],
@@ -181,7 +181,7 @@ const meta = {
   zh: {
     "/": ["HDPTH | 高速无纺布后整理与分切复卷设备", "HDPTH 为全球 B2B 制造商提供无纺布分切、复卷、打孔、自动排刀及辅助后整理设备。", "高速无纺布后整理与分切复卷设备"],
     "/products/": ["产品中心 | HDPTH 无纺布后整理设备", "了解 HDPTH 分切机、复卷机、打孔生产线、自动排刀系统及辅助后整理设备。", "无纺布后整理设备"],
-    "/products/high-speed-slitting-machines/": ["高速无纺布分切机 | HDPTH", "HDPTH 高速无纺布分切机支持整洁切边、稳定张力控制和按项目定制的卷材分切方案。", "高速无纺布分切机"],
+    "/products/high-speed-slitting-machines/": ["高速无纺布分切机 | HDPTH", "升级版 HDPTH 高速分切机通过驱动系统与基础工艺升级降低运行噪声和振动，并支持纺粘、水刺、针刺、木浆、熔喷、复合、可冲散、热风、薄膜、纸张等材料。", "高速无纺布分切机"],
     "/products/nonwoven-rewinding-machines/": ["无纺布复卷机 | HDPTH", "用于稳定成卷、定制幅宽、张力控制和出口项目的无纺布复卷设备。", "无纺布复卷机"],
     "/products/automatic-knife-systems/": ["自动排刀系统 | HDPTH", "自动排刀系统用于快速换规格、重复性分切配置和 HDPTH 高速后整理产线。", "自动排刀系统"],
     "/products/slitting-rewinding-lines/": ["宽幅卷材分切复卷联线 | HDPTH", "面向无纺布、纸张及柔性卷材的集成式分切复卷联线，支持定制放卷、分切和收卷布局。", "集成式分切复卷联线"],
@@ -231,6 +231,65 @@ const common = {
     "Products": "产品", "Applications": "应用", "Factory": "工厂", "Cases": "案例", "Certificates": "证书", "Blog": "博客", "News": "新闻", "About": "关于我们", "Contact": "联系", "FAQ": "常见问题", "Resources": "资源",
     "Get a Quote": "获取报价", "Request a Quote": "获取报价", "Submit Inquiry": "提交询盘", "Contact Sales": "联系销售", "View detail": "查看详情", "View machine": "查看设备", "Request details": "索取详情", "Send RFQ": "发送 RFQ", "Request Catalog": "索取目录",
     "Product Matrix": "产品矩阵", "Product Categories": "产品分类", "High-Speed Slitting Machines": "高速分切机", "Nonwoven Rewinding Machines": "无纺布复卷机", "Automatic Knife Systems": "自动排刀系统", "Perforating Production Lines": "打孔生产线", "Auxiliary Equipment": "辅助设备", "Cases & Projects": "案例与项目"
+  }
+};
+
+const routeSpecificCopy = {
+  "/products/high-speed-slitting-machines/": {
+    es: {
+      "Upgraded Model": "Modelo actualizado",
+      "Lower noise, lower vibration and wider material compatibility.": "Menor ruido, menor vibración y mayor compatibilidad de materiales.",
+      "The new high-speed slitting machine rendering shows the upgraded model. HDPTH has improved the drive system and base process design to support quieter, more stable operation for modern converting workshops.": "El nuevo render de la cortadora de alta velocidad muestra el modelo actualizado. HDPTH ha mejorado el sistema de accionamiento y el diseño del proceso base para ofrecer una operación más silenciosa y estable en talleres modernos de conversión.",
+      "Upgraded drive system helps reduce running noise during high-speed production.": "El sistema de accionamiento actualizado ayuda a reducir el ruido durante la producción a alta velocidad.",
+      "Upgraded base process design helps lower machine vibration and improve operating stability.": "El diseño actualizado del proceso base ayuda a reducir la vibración de la máquina y mejorar la estabilidad operativa.",
+      "One slitting platform can process different material categories, helping buyers avoid purchasing separate machines for every material change.": "Una sola plataforma de corte puede procesar diferentes categorías de materiales, ayudando a evitar la compra de máquinas separadas para cada cambio de material.",
+      "Applicable materials include spunbond, spunlace, needle-punched, wood pulp, meltblown, composite, flushable, hot-air nonwoven, film and paper.": "Los materiales aplicables incluyen spunbond, spunlace, punzonado, pulpa de madera, meltblown, compuestos, dispersables, no tejido de aire caliente, film y papel."
+    },
+    ru: {
+      "Upgraded Model": "Обновленная модель",
+      "Lower noise, lower vibration and wider material compatibility.": "Ниже шум, ниже вибрация и шире совместимость материалов.",
+      "The new high-speed slitting machine rendering shows the upgraded model. HDPTH has improved the drive system and base process design to support quieter, more stable operation for modern converting workshops.": "Новый рендер высокоскоростной машины резки показывает обновленную модель. HDPTH улучшила приводную систему и базовую технологическую конструкцию для более тихой и стабильной работы в современных цехах переработки.",
+      "Upgraded drive system helps reduce running noise during high-speed production.": "Обновленная приводная система помогает снизить рабочий шум при высокоскоростном производстве.",
+      "Upgraded base process design helps lower machine vibration and improve operating stability.": "Обновленная базовая конструкция помогает снизить вибрацию машины и повысить стабильность работы.",
+      "One slitting platform can process different material categories, helping buyers avoid purchasing separate machines for every material change.": "Одна платформа резки может обрабатывать разные категории материалов, помогая покупателям не приобретать отдельные машины под каждую смену материала.",
+      "Applicable materials include spunbond, spunlace, needle-punched, wood pulp, meltblown, composite, flushable, hot-air nonwoven, film and paper.": "Подходящие материалы: spunbond, spunlace, иглопробивные, древесная целлюлоза, meltblown, композитные, смываемые, hot-air nonwoven, пленка и бумага."
+    },
+    ar: {
+      "Upgraded Model": "الطراز المطور",
+      "Lower noise, lower vibration and wider material compatibility.": "ضوضاء أقل واهتزاز أقل وتوافق أوسع مع المواد.",
+      "The new high-speed slitting machine rendering shows the upgraded model. HDPTH has improved the drive system and base process design to support quieter, more stable operation for modern converting workshops.": "يوضح التصيير الجديد لآلة الشق عالية السرعة الطراز المطور. حسنت HDPTH نظام القيادة وتصميم العملية الأساسية لدعم تشغيل أكثر هدوءًا وثباتًا في ورش التحويل الحديثة.",
+      "Upgraded drive system helps reduce running noise during high-speed production.": "يساعد نظام القيادة المطور على تقليل ضوضاء التشغيل أثناء الإنتاج عالي السرعة.",
+      "Upgraded base process design helps lower machine vibration and improve operating stability.": "يساعد تصميم العملية الأساسية المطور على تقليل اهتزاز الآلة وتحسين ثبات التشغيل.",
+      "One slitting platform can process different material categories, helping buyers avoid purchasing separate machines for every material change.": "يمكن لمنصة شق واحدة معالجة فئات مختلفة من المواد، مما يساعد المشترين على تجنب شراء آلات منفصلة لكل تغيير في المادة.",
+      "Applicable materials include spunbond, spunlace, needle-punched, wood pulp, meltblown, composite, flushable, hot-air nonwoven, film and paper.": "تشمل المواد المناسبة spunbond وspunlace والمواد المثقوبة بالإبر ولب الخشب وmeltblown والمركبة والقابلة للتشتت والهواء الساخن والأفلام والورق."
+    },
+    fr: {
+      "Upgraded Model": "Modèle mis à niveau",
+      "Lower noise, lower vibration and wider material compatibility.": "Moins de bruit, moins de vibrations et une compatibilité matière plus large.",
+      "The new high-speed slitting machine rendering shows the upgraded model. HDPTH has improved the drive system and base process design to support quieter, more stable operation for modern converting workshops.": "Le nouveau rendu de la machine de refente haute vitesse présente le modèle mis à niveau. HDPTH a amélioré le système d'entraînement et la conception du procédé de base pour offrir un fonctionnement plus silencieux et plus stable aux ateliers de conversion modernes.",
+      "Upgraded drive system helps reduce running noise during high-speed production.": "Le système d'entraînement mis à niveau aide à réduire le bruit de fonctionnement en production haute vitesse.",
+      "Upgraded base process design helps lower machine vibration and improve operating stability.": "La conception de base améliorée aide à réduire les vibrations de la machine et à renforcer la stabilité de fonctionnement.",
+      "One slitting platform can process different material categories, helping buyers avoid purchasing separate machines for every material change.": "Une seule plateforme de refente peut traiter différentes catégories de matériaux, ce qui évite d'acheter une machine séparée à chaque changement de matériau.",
+      "Applicable materials include spunbond, spunlace, needle-punched, wood pulp, meltblown, composite, flushable, hot-air nonwoven, film and paper.": "Les matériaux compatibles incluent spunbond, spunlace, aiguilleté, pâte de bois, meltblown, composite, dispersible, non-tissé à air chaud, film et papier."
+    },
+    pt: {
+      "Upgraded Model": "Modelo atualizado",
+      "Lower noise, lower vibration and wider material compatibility.": "Menor ruído, menor vibração e compatibilidade mais ampla de materiais.",
+      "The new high-speed slitting machine rendering shows the upgraded model. HDPTH has improved the drive system and base process design to support quieter, more stable operation for modern converting workshops.": "A nova renderização da máquina de corte de alta velocidade mostra o modelo atualizado. A HDPTH melhorou o sistema de acionamento e o desenho do processo de base para uma operação mais silenciosa e estável em convertedoras modernas.",
+      "Upgraded drive system helps reduce running noise during high-speed production.": "O sistema de acionamento atualizado ajuda a reduzir o ruído durante a produção em alta velocidade.",
+      "Upgraded base process design helps lower machine vibration and improve operating stability.": "O processo de base atualizado ajuda a reduzir a vibração da máquina e melhorar a estabilidade operacional.",
+      "One slitting platform can process different material categories, helping buyers avoid purchasing separate machines for every material change.": "Uma única plataforma de corte pode processar diferentes categorias de materiais, ajudando compradores a evitar máquinas separadas para cada troca de material.",
+      "Applicable materials include spunbond, spunlace, needle-punched, wood pulp, meltblown, composite, flushable, hot-air nonwoven, film and paper.": "Os materiais aplicáveis incluem spunbond, spunlace, agulhado, polpa de madeira, meltblown, compostos, dispersíveis, não tecido hot-air, filme e papel."
+    },
+    zh: {
+      "Upgraded Model": "升级机型",
+      "Lower noise, lower vibration and wider material compatibility.": "降低噪声、降低振动，并兼容更多材料。",
+      "The new high-speed slitting machine rendering shows the upgraded model. HDPTH has improved the drive system and base process design to support quieter, more stable operation for modern converting workshops.": "本次高速分切机新图展示的是升级后的机型。HDPTH 对驱动系统和基础工艺进行了升级，更适合现代后整理车间对低噪声、低振动和稳定运行的要求。",
+      "Upgraded drive system helps reduce running noise during high-speed production.": "升级驱动系统，降低设备高速运行时的声噪。",
+      "Upgraded base process design helps lower machine vibration and improve operating stability.": "升级基础工艺，降低设备运行振动量，提升运行稳定性。",
+      "One slitting platform can process different material categories, helping buyers avoid purchasing separate machines for every material change.": "新型分切机可对不同种类材料进行分切，帮助客户减少因材料变化而重复采购新设备。",
+      "Applicable materials include spunbond, spunlace, needle-punched, wood pulp, meltblown, composite, flushable, hot-air nonwoven, film and paper.": "适用材料包括纺粘、水刺、针刺、木浆、熔喷、复合、可冲散、热风无纺布、薄膜和纸张。"
+    }
   }
 };
 
@@ -315,6 +374,15 @@ function translateCommon(html, locale) {
   return html;
 }
 
+function translateRouteSpecific(html, locale, route) {
+  if (locale === "en") return html;
+  const dict = routeSpecificCopy[route]?.[locale] || {};
+  for (const [from, to] of Object.entries(dict).sort((a, b) => b[0].length - a[0].length)) {
+    html = html.replaceAll(from, to);
+  }
+  return html;
+}
+
 function updateH1AndAlt(html, locale, route) {
   const page = meta[locale]?.[route] || meta.en[route] || meta.en["/"];
   html = html.replace(/<h1>[\s\S]*?<\/h1>/i, `<h1>${htmlEscape(page[2])}</h1>`);
@@ -342,6 +410,7 @@ function localizePage(sourceHtml, locale, route) {
   html = upsertHead(html, locale, route);
   html = updateH1AndAlt(html, locale, route);
   html = translateCommon(html, locale);
+  html = translateRouteSpecific(html, locale, route);
   html = localizeAssets(html, route);
   html = insertSwitcher(html, locale, route);
   return html;
