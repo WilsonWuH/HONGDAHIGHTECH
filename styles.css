@@ -1733,7 +1733,14 @@ textarea { min-height: 122px; resize: vertical; }
   color: var(--red);
 }
 
+.language-menu small {
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: .08em;
+}
+
 [dir="rtl"] body { direction: rtl; }
+[dir="rtl"] .language-switcher { margin-left: 0; margin-right: 8px; }
 [dir="rtl"] .language-menu { left: 0; right: auto; }
 [dir="rtl"] .mega-menu { left: auto; right: 50%; transform: translateX(50%); }
 
@@ -1741,6 +1748,7 @@ textarea { min-height: 122px; resize: vertical; }
   .nav { flex-wrap: wrap; padding: 14px 0; }
   .nav-links { order: 3; width: 100%; overflow-x: auto; padding-bottom: 6px; }
   .language-switcher { margin-left: auto; }
+  .language-menu { right: 0; min-width: 164px; }
   .nav-actions { margin-left: auto; }
   .mega-trigger { padding: 0; }
   .mega-trigger::after,

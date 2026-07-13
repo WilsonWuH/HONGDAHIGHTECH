@@ -7,132 +7,153 @@
   },
   "pages": {
     "/": {
-      "seoTitle": "HDPTH | Machines de conversion pour non-tissés",
-      "metaDescription": "HDPTH fabrique des machines de refente, rembobinage, perforation et systèmes de couteaux automatiques pour clients B2B.",
-      "h1": "Machines de conversion non-tissé haute vitesse"
+      "seoTitle": "HDPTH | Machines de conversion non-tissé haute vitesse",
+      "metaDescription": "HDPTH fabrique des machines de refente, rembobinage, perforation et systèmes de couteaux automatiques pour fabricants B2B internationaux.",
+      "h1": "Machines de conversion non-tissé haute vitesse",
+      "imageAltPrefix": "Machines de conversion non-tissé haute vitesse"
     },
     "/products/": {
       "seoTitle": "Produits | Machines HDPTH pour non-tissés",
-      "metaDescription": "Découvrez les machines HDPTH de refente, rembobinage, perforation et couteaux automatiques.",
-      "h1": "Machines de conversion pour non-tissés"
+      "metaDescription": "Découvrez les machines HDPTH de refente, rembobinage, perforation, couteaux automatiques et équipements auxiliaires.",
+      "h1": "Machines de conversion pour non-tissés",
+      "imageAltPrefix": "Machines de conversion pour non-tissés"
     },
     "/products/high-speed-slitting-machines/": {
       "seoTitle": "Machines de refente non-tissé haute vitesse | HDPTH",
-      "metaDescription": "Coupe nette, tension stable, options de couteaux automatiques et paramètres issus du manuel HDPTH.",
-      "h1": "Machines de refente non-tissé haute vitesse"
+      "metaDescription": "Machines HDPTH pour coupe nette, tension stable et conversion de rouleaux personnalisée.",
+      "h1": "Machines de refente non-tissé haute vitesse",
+      "imageAltPrefix": "Machines de refente non-tissé haute vitesse"
     },
     "/products/nonwoven-rewinding-machines/": {
       "seoTitle": "Machines de rembobinage non-tissé | HDPTH",
-      "metaDescription": "Rembobineuses pour formation stable des rouleaux et projets export.",
-      "h1": "Machines de rembobinage non-tissé"
+      "metaDescription": "Rembobineuses pour formation stable des rouleaux, largeur personnalisée et projets export.",
+      "h1": "Machines de rembobinage non-tissé",
+      "imageAltPrefix": "Machines de rembobinage non-tissé"
     },
     "/products/automatic-knife-systems/": {
       "seoTitle": "Systèmes de couteaux automatiques | HDPTH",
-      "metaDescription": "Systèmes de couteaux pour réglage rapide et refente répétable.",
-      "h1": "Systèmes de couteaux automatiques"
+      "metaDescription": "Systèmes de couteaux automatiques pour réglage rapide, refente répétable et lignes de conversion HDPTH.",
+      "h1": "Systèmes de couteaux automatiques",
+      "imageAltPrefix": "Systèmes de couteaux automatiques"
+    },
+    "/products/slitting-rewinding-lines/": {
+      "seoTitle": "Lignes de refente et rembobinage pour rouleaux larges | HDPTH",
+      "metaDescription": "Lignes intégrées de refente et rembobinage pour non-tissés, papier et matériaux flexibles en rouleaux.",
+      "h1": "Lignes intégrées de refente et rembobinage",
+      "imageAltPrefix": "Lignes intégrées de refente et rembobinage"
+    },
+    "/products/auxiliary-equipment/": {
+      "seoTitle": "Équipements auxiliaires et rembobinage de rives | HDPTH",
+      "metaDescription": "Équipements auxiliaires HDPTH pour rembobinage de rives, déroulage automatique, extraction d'arbres et opérations plus propres.",
+      "h1": "Équipements auxiliaires et rembobinage de rives",
+      "imageAltPrefix": "Équipements auxiliaires et rembobinage de rives"
+    },
+    "/products/nonwoven-drying-ovens/": {
+      "seoTitle": "Systèmes de fours de séchage non-tissé | HDPTH",
+      "metaDescription": "Systèmes industriels de séchage à air chaud pour lignes non-tissées avec largeur, flux d'air et intégration personnalisés.",
+      "h1": "Systèmes de fours de séchage non-tissé",
+      "imageAltPrefix": "Systèmes de fours de séchage non-tissé"
     },
     "/applications/": {
       "seoTitle": "Applications | Machines HDPTH",
-      "metaDescription": "Applications dans l'hygiène, le médical, les lingettes et les matériaux industriels.",
-      "h1": "Applications des machines non-tissé"
+      "metaDescription": "Applications des machines HDPTH dans l'hygiène, le médical, les lingettes et les matériaux industriels en rouleaux.",
+      "h1": "Applications des machines non-tissées",
+      "imageAltPrefix": "Applications des machines non-tissées"
     },
     "/about/": {
-      "seoTitle": "À propos de HDPTH",
-      "metaDescription": "HDPTH est un fabricant chinois de machines de refente, rembobinage et perforation pour non-tissés.",
-      "h1": "À propos de HDPTH"
+      "seoTitle": "À propos de HDPTH | Fabricant de machines non-tissées",
+      "metaDescription": "Découvrez HDPTH, fabricant chinois de machines de refente, rembobinage, perforation et équipements auxiliaires.",
+      "h1": "À propos de HDPTH",
+      "imageAltPrefix": "À propos de HDPTH"
     },
     "/factory/": {
-      "seoTitle": "Capacité usine | HDPTH",
-      "metaDescription": "HDPTH exploite une base de fabrication de 6 000 m2 pour machines de conversion non-tissé.",
-      "h1": "Capacité usine"
+      "seoTitle": "Usine et atelier de production HDPTH",
+      "metaDescription": "Découvrez l'atelier réel de 6 000 m2 de HDPTH et sa capacité de fabrication de machines non-tissées.",
+      "h1": "Atelier de production HDPTH",
+      "imageAltPrefix": "Atelier de production HDPTH"
     },
     "/cases/": {
       "seoTitle": "Cas et projets | HDPTH",
-      "metaDescription": "Exemples de projets HDPTH pour acheteurs internationaux.",
-      "h1": "Cas et projets"
+      "metaDescription": "Exemples de projets et références de sites clients pour acheteurs internationaux de machines de conversion non-tissé.",
+      "h1": "Cas et projets",
+      "imageAltPrefix": "Cas et projets"
+    },
+    "/blog/": {
+      "seoTitle": "Blog | Machines de conversion HDPTH",
+      "metaDescription": "Guides techniques pour acheteurs sur la refente, le rembobinage, le contrôle de tension et les matériaux en rouleaux.",
+      "h1": "Blog HDPTH",
+      "imageAltPrefix": "Blog HDPTH"
     },
     "/resources/": {
       "seoTitle": "Ressources | Guides HDPTH",
-      "metaDescription": "Guides d'achat pour choisir des équipements de refente, rembobinage et conversion.",
-      "h1": "Ressources acheteurs"
+      "metaDescription": "Guides d'achat pour choisir des équipements de refente, rembobinage et conversion non-tissé.",
+      "h1": "Ressources acheteurs",
+      "imageAltPrefix": "Ressources acheteurs"
     },
     "/faq/": {
-      "seoTitle": "FAQ | Machines HDPTH",
-      "metaDescription": "Questions fréquentes des acheteurs de machines HDPTH.",
-      "h1": "FAQ acheteurs"
+      "seoTitle": "FAQ | Machines de refente et rembobinage HDPTH",
+      "metaDescription": "Questions fréquentes sur les machines HDPTH de refente, rembobinage, perforation et systèmes de couteaux.",
+      "h1": "FAQ acheteurs",
+      "imageAltPrefix": "FAQ acheteurs"
     },
     "/contact/": {
       "seoTitle": "Contacter HDPTH | Demander un devis",
-      "metaDescription": "Contactez Wilson Wu chez HDPTH pour demander un devis.",
-      "h1": "Demander une configuration machine"
+      "metaDescription": "Contactez Wilson Wu chez HDPTH pour demander un devis de machines de conversion non-tissé.",
+      "h1": "Demander une configuration machine",
+      "imageAltPrefix": "Demander une configuration machine"
     },
     "/inquiry/": {
       "seoTitle": "Formulaire de demande | HDPTH",
-      "metaDescription": "Envoyez une demande RFQ pour machines de refente, rembobinage et perforation.",
-      "h1": "Indiquez votre besoin de production."
+      "metaDescription": "Envoyez une RFQ à HDPTH pour machines de refente, rembobinage, perforation et conversion.",
+      "h1": "Indiquez votre besoin de production.",
+      "imageAltPrefix": "Indiquez votre besoin de production."
     },
     "/download/": {
-      "seoTitle": "Download Catalog | HDPTH",
-      "metaDescription": "Request the HDPTH catalog for nonwoven slitting, rewinding, perforating and automatic knife systems.",
-      "h1": "Télécharger le catalogue HDPTH"
+      "seoTitle": "Télécharger le catalogue | HDPTH",
+      "metaDescription": "Demandez le catalogue HDPTH pour machines de refente, rembobinage, perforation et systèmes de couteaux automatiques.",
+      "h1": "Télécharger le catalogue HDPTH",
+      "imageAltPrefix": "Télécharger le catalogue HDPTH"
     },
     "/guides/nonwoven-slitting-machine-buying-guide/": {
-      "seoTitle": "Nonwoven Slitting Machine Buying Guide | HDPTH",
-      "metaDescription": "A practical buying guide for nonwoven slitting machines covering material, roll width, speed, knife system and RFQ information.",
-      "h1": "Comment choisir une machine de refente non-tissé"
-    },
-    "/blog/choosing-nonwoven-slitting-rewinding-machine/": {
-      "seoTitle": "How to Choose a Nonwoven Slitting Rewinding Machine | HDPTH",
-      "metaDescription": "A practical buyer guide to choosing a nonwoven slitting rewinding machine for hygiene, medical and wipes production.",
-      "h1": "How to Choose a Nonwoven Slitting Rewinding Machine for Hygiene, Medical and Wipes Production"
-    },
-    "/blog/slitting-rewinding-perforating-comparison/": {
-      "seoTitle": "Slitting vs Rewinding vs Perforating Machines | HDPTH",
-      "metaDescription": "Understand the difference between slitting, rewinding and perforating machines for nonwoven and wipes production.",
-      "h1": "Slitting vs Rewinding vs Perforating: Which Nonwoven Converting Line Do You Need?"
-    },
-    "/blog/automatic-tension-control-nonwoven-slitter-rewinder/": {
-      "seoTitle": "Automatic Tension Control in Nonwoven Slitter Rewinders | HDPTH",
-      "metaDescription": "Learn why automatic tension control matters in nonwoven slitter rewinders for clean cutting and stable rolls.",
-      "h1": "Automatic Tension Control in Nonwoven Slitter Rewinders: Why It Matters for Clean Cutting and Stable Rolls"
+      "seoTitle": "Guide d'achat de machine de refente non-tissé | HDPTH",
+      "metaDescription": "Guide pratique pour choisir une machine de refente selon matériau, largeur, vitesse, système de couteaux et RFQ.",
+      "h1": "Comment choisir une machine de refente non-tissé",
+      "imageAltPrefix": "Comment choisir une machine de refente non-tissé"
     }
   },
   "common": {
     "Products": "Produits",
     "Applications": "Applications",
     "Factory": "Usine",
+    "Cases": "Cas",
+    "Certificates": "Certificats",
+    "Blog": "Blog",
+    "News": "Actualités",
     "About": "À propos",
     "Contact": "Contact",
-    "Resources": "Ressources",
     "FAQ": "FAQ",
+    "Resources": "Ressources",
     "Get a Quote": "Demander un devis",
     "Request a Quote": "Demander un devis",
-    "Download Catalog": "Télécharger le catalogue",
-    "View Products": "Voir les produits",
-    "View detail": "Voir le détail",
-    "Request details": "Demander des détails",
     "Submit Inquiry": "Envoyer la demande",
     "Contact Sales": "Contacter les ventes",
-    "Product Categories": "Catégories de produits",
+    "View detail": "Voir le détail",
+    "View machine": "Voir la machine",
+    "Request details": "Demander des détails",
+    "Send RFQ": "Envoyer RFQ",
+    "Request Catalog": "Demander le catalogue",
     "Product Matrix": "Matrice produits",
+    "Product Categories": "Catégories de produits",
     "High-Speed Slitting Machines": "Machines de refente haute vitesse",
     "Nonwoven Rewinding Machines": "Machines de rembobinage non-tissé",
     "Automatic Knife Systems": "Systèmes de couteaux automatiques",
     "Perforating Production Lines": "Lignes de perforation",
-    "Cases & Projects": "Cas et projets",
-    "Technical Data from Product Manual": "Données techniques du manuel produit",
-    "Manual Parameter": "Paramètre du manuel",
-    "Production Speed": "Vitesse de production",
-    "Materials": "Matériaux",
-    "Air Supply": "Alimentation en air",
-    "Installed Power": "Puissance installée",
-    "Effective Operating Power": "Puissance de fonctionnement",
-    "Wilson Wu WhatsApp": "WhatsApp de Wilson Wu",
-    "Manufacturing base": "Base de fabrication"
+    "Auxiliary Equipment": "Équipements auxiliaires",
+    "Cases & Projects": "Cas et projets"
   },
   "apiProviderPlaceholder": {
     "deeplApiKeyEnv": "DEEPL_API_KEY",
     "googleCloudTranslationKeyEnv": "GOOGLE_CLOUD_TRANSLATION_API_KEY",
-    "note": "Use these environment variables if the static dictionary is later regenerated through a translation API."
+    "note": "Reserved for regenerating SEO dictionaries through DeepL or Google Cloud Translation API. Do not use browser auto-translation as indexable page content."
   }
 }

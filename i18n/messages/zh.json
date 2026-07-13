@@ -1,0 +1,159 @@
+{
+  "locale": "zh",
+  "language": {
+    "name": "Chinese",
+    "native": "中文",
+    "dir": "ltr"
+  },
+  "pages": {
+    "/": {
+      "seoTitle": "HDPTH | 高速无纺布后整理与分切复卷设备",
+      "metaDescription": "HDPTH 为全球 B2B 制造商提供无纺布分切、复卷、打孔、自动排刀及辅助后整理设备。",
+      "h1": "高速无纺布后整理与分切复卷设备",
+      "imageAltPrefix": "高速无纺布后整理与分切复卷设备"
+    },
+    "/products/": {
+      "seoTitle": "产品中心 | HDPTH 无纺布后整理设备",
+      "metaDescription": "了解 HDPTH 分切机、复卷机、打孔生产线、自动排刀系统及辅助后整理设备。",
+      "h1": "无纺布后整理设备",
+      "imageAltPrefix": "无纺布后整理设备"
+    },
+    "/products/high-speed-slitting-machines/": {
+      "seoTitle": "高速无纺布分切机 | HDPTH",
+      "metaDescription": "HDPTH 高速无纺布分切机支持整洁切边、稳定张力控制和按项目定制的卷材分切方案。",
+      "h1": "高速无纺布分切机",
+      "imageAltPrefix": "高速无纺布分切机"
+    },
+    "/products/nonwoven-rewinding-machines/": {
+      "seoTitle": "无纺布复卷机 | HDPTH",
+      "metaDescription": "用于稳定成卷、定制幅宽、张力控制和出口项目的无纺布复卷设备。",
+      "h1": "无纺布复卷机",
+      "imageAltPrefix": "无纺布复卷机"
+    },
+    "/products/automatic-knife-systems/": {
+      "seoTitle": "自动排刀系统 | HDPTH",
+      "metaDescription": "自动排刀系统用于快速换规格、重复性分切配置和 HDPTH 高速后整理产线。",
+      "h1": "自动排刀系统",
+      "imageAltPrefix": "自动排刀系统"
+    },
+    "/products/slitting-rewinding-lines/": {
+      "seoTitle": "宽幅卷材分切复卷联线 | HDPTH",
+      "metaDescription": "面向无纺布、纸张及柔性卷材的集成式分切复卷联线，支持定制放卷、分切和收卷布局。",
+      "h1": "集成式分切复卷联线",
+      "imageAltPrefix": "集成式分切复卷联线"
+    },
+    "/products/auxiliary-equipment/": {
+      "seoTitle": "边料复卷与辅助设备 | HDPTH",
+      "metaDescription": "HDPTH 辅助设备支持边料复卷、自动开卷/退卷、自动拔轴和更整洁的卷材后整理流程。",
+      "h1": "边料复卷与辅助设备",
+      "imageAltPrefix": "边料复卷与辅助设备"
+    },
+    "/products/nonwoven-drying-ovens/": {
+      "seoTitle": "无纺布烘箱系统 | HDPTH",
+      "metaDescription": "面向无纺布生产线的工业热风烘干系统，可按幅宽、风量和产线集成要求定制。",
+      "h1": "无纺布烘箱系统",
+      "imageAltPrefix": "无纺布烘箱系统"
+    },
+    "/applications/": {
+      "seoTitle": "应用领域 | HDPTH 无纺布设备",
+      "metaDescription": "HDPTH 无纺布后整理设备适用于卫生用品、医疗材料、湿巾及工业卷材生产。",
+      "h1": "无纺布设备应用领域",
+      "imageAltPrefix": "无纺布设备应用领域"
+    },
+    "/about/": {
+      "seoTitle": "关于 HDPTH | 无纺布后整理设备制造商",
+      "metaDescription": "了解 HDPTH：中国无纺布分切、复卷、打孔及辅助后整理设备制造商。",
+      "h1": "关于 HDPTH",
+      "imageAltPrefix": "关于 HDPTH"
+    },
+    "/factory/": {
+      "seoTitle": "HDPTH 工厂与生产车间",
+      "metaDescription": "查看 HDPTH 真实 6000 平方米生产基地、设备装配区和无纺布后整理设备制造能力。",
+      "h1": "HDPTH 生产车间",
+      "imageAltPrefix": "HDPTH 生产车间"
+    },
+    "/cases/": {
+      "seoTitle": "案例与项目 | HDPTH 无纺布设备",
+      "metaDescription": "面向海外买家的 HDPTH 项目案例和客户现场参考，用于评估分切、复卷及后整理设备能力。",
+      "h1": "案例与项目",
+      "imageAltPrefix": "案例与项目"
+    },
+    "/blog/": {
+      "seoTitle": "博客 | HDPTH 无纺布后整理设备",
+      "metaDescription": "关于无纺布分切、复卷、张力控制和卷材处理的技术采购指南。",
+      "h1": "HDPTH 博客",
+      "imageAltPrefix": "HDPTH 博客"
+    },
+    "/resources/": {
+      "seoTitle": "资源中心 | HDPTH 采购指南",
+      "metaDescription": "帮助买家选择无纺布分切、复卷和后整理设备的资料与指南。",
+      "h1": "采购资源",
+      "imageAltPrefix": "采购资源"
+    },
+    "/faq/": {
+      "seoTitle": "常见问题 | HDPTH 分切复卷设备",
+      "metaDescription": "关于 HDPTH 分切机、复卷机、打孔线和自动排刀系统的买家常见问题。",
+      "h1": "买家常见问题",
+      "imageAltPrefix": "买家常见问题"
+    },
+    "/contact/": {
+      "seoTitle": "联系 HDPTH | 获取报价",
+      "metaDescription": "联系 HDPTH Wilson Wu，获取无纺布分切、复卷和后整理设备报价。",
+      "h1": "提交设备配置需求",
+      "imageAltPrefix": "提交设备配置需求"
+    },
+    "/inquiry/": {
+      "seoTitle": "询盘表单 | HDPTH 无纺布设备",
+      "metaDescription": "向 HDPTH 提交无纺布分切、复卷、打孔和后整理设备 RFQ。",
+      "h1": "告诉我们您的生产需求",
+      "imageAltPrefix": "告诉我们您的生产需求"
+    },
+    "/download/": {
+      "seoTitle": "下载目录 | HDPTH",
+      "metaDescription": "申请 HDPTH 无纺布分切、复卷、打孔和自动排刀系统产品目录。",
+      "h1": "下载 HDPTH 产品目录",
+      "imageAltPrefix": "下载 HDPTH 产品目录"
+    },
+    "/guides/nonwoven-slitting-machine-buying-guide/": {
+      "seoTitle": "无纺布分切机采购指南 | HDPTH",
+      "metaDescription": "实用采购指南：从材料、母卷幅宽、速度、刀具系统和 RFQ 信息选择无纺布分切机。",
+      "h1": "如何选择无纺布分切机",
+      "imageAltPrefix": "如何选择无纺布分切机"
+    }
+  },
+  "common": {
+    "Products": "产品",
+    "Applications": "应用",
+    "Factory": "工厂",
+    "Cases": "案例",
+    "Certificates": "证书",
+    "Blog": "博客",
+    "News": "新闻",
+    "About": "关于我们",
+    "Contact": "联系",
+    "FAQ": "常见问题",
+    "Resources": "资源",
+    "Get a Quote": "获取报价",
+    "Request a Quote": "获取报价",
+    "Submit Inquiry": "提交询盘",
+    "Contact Sales": "联系销售",
+    "View detail": "查看详情",
+    "View machine": "查看设备",
+    "Request details": "索取详情",
+    "Send RFQ": "发送 RFQ",
+    "Request Catalog": "索取目录",
+    "Product Matrix": "产品矩阵",
+    "Product Categories": "产品分类",
+    "High-Speed Slitting Machines": "高速分切机",
+    "Nonwoven Rewinding Machines": "无纺布复卷机",
+    "Automatic Knife Systems": "自动排刀系统",
+    "Perforating Production Lines": "打孔生产线",
+    "Auxiliary Equipment": "辅助设备",
+    "Cases & Projects": "案例与项目"
+  },
+  "apiProviderPlaceholder": {
+    "deeplApiKeyEnv": "DEEPL_API_KEY",
+    "googleCloudTranslationKeyEnv": "GOOGLE_CLOUD_TRANSLATION_API_KEY",
+    "note": "Reserved for regenerating SEO dictionaries through DeepL or Google Cloud Translation API. Do not use browser auto-translation as indexable page content."
+  }
+}

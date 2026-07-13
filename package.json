@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "i18n:build": "node i18n/build-static-i18n.mjs",
     "prebuild": "node scripts/sync-public.mjs",
     "build": "next build",
     "dev": "next dev",

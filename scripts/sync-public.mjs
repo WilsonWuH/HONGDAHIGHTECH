@@ -1,9 +1,15 @@
 import { cp, mkdir, rm, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
+import { execFileSync } from "node:child_process";
 import path from "node:path";
 
 const root = process.cwd();
 const publicDir = path.join(root, "public");
+
+execFileSync(process.execPath, [path.join(root, "i18n", "build-static-i18n.mjs")], {
+  cwd: root,
+  stdio: "inherit"
+});
 
 const copyDirs = [
   "about",
@@ -27,7 +33,8 @@ const copyDirs = [
   "products",
   "pt",
   "resources",
-  "ru"
+  "ru",
+  "zh"
 ];
 
 const copyFiles = [

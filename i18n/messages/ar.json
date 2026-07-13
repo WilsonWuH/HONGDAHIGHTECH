@@ -7,132 +7,153 @@
   },
   "pages": {
     "/": {
-      "seoTitle": "HDPTH | معدات تحويل الأقمشة غير المنسوجة",
-      "metaDescription": "تصنع HDPTH آلات الشق وإعادة اللف والتثقيب وأنظمة السكاكين الأوتوماتيكية لعملاء B2B حول العالم.",
-      "h1": "معدات تحويل الأقمشة غير المنسوجة عالية السرعة"
+      "seoTitle": "HDPTH | معدات تحويل الأقمشة غير المنسوجة عالية السرعة",
+      "metaDescription": "تصنع HDPTH آلات الشق وإعادة اللف والتثقيب وأنظمة السكاكين الأوتوماتيكية لمصنعي B2B حول العالم.",
+      "h1": "معدات تحويل الأقمشة غير المنسوجة عالية السرعة",
+      "imageAltPrefix": "معدات تحويل الأقمشة غير المنسوجة عالية السرعة"
     },
     "/products/": {
-      "seoTitle": "المنتجات | معدات HDPTH لغير المنسوجات",
-      "metaDescription": "استكشف آلات الشق وإعادة اللف والتثقيب وأنظمة السكاكين الأوتوماتيكية من HDPTH.",
-      "h1": "معدات تحويل الأقمشة غير المنسوجة"
+      "seoTitle": "المنتجات | معدات HDPTH للأقمشة غير المنسوجة",
+      "metaDescription": "استكشف آلات الشق وإعادة اللف وخطوط التثقيب وأنظمة السكاكين الأوتوماتيكية والمعدات المساعدة من HDPTH.",
+      "h1": "معدات تحويل الأقمشة غير المنسوجة",
+      "imageAltPrefix": "معدات تحويل الأقمشة غير المنسوجة"
     },
     "/products/high-speed-slitting-machines/": {
       "seoTitle": "آلات شق الأقمشة غير المنسوجة عالية السرعة | HDPTH",
-      "metaDescription": "شق نظيف، شد ثابت، خيارات سكاكين أوتوماتيكية ومعايير من دليل المنتج.",
-      "h1": "آلات شق الأقمشة غير المنسوجة عالية السرعة"
+      "metaDescription": "تدعم آلات HDPTH الشق النظيف والتحكم المستقر في الشد وتحويل اللفات حسب متطلبات المصنع.",
+      "h1": "آلات شق الأقمشة غير المنسوجة عالية السرعة",
+      "imageAltPrefix": "آلات شق الأقمشة غير المنسوجة عالية السرعة"
     },
     "/products/nonwoven-rewinding-machines/": {
       "seoTitle": "آلات إعادة لف الأقمشة غير المنسوجة | HDPTH",
-      "metaDescription": "معدات إعادة لف لتكوين لفات ثابتة ومشاريع تصدير مخصصة.",
-      "h1": "آلات إعادة لف الأقمشة غير المنسوجة"
+      "metaDescription": "آلات إعادة لف لتكوين لفات مستقرة وعرض مخصص ومشاريع تصدير.",
+      "h1": "آلات إعادة لف الأقمشة غير المنسوجة",
+      "imageAltPrefix": "آلات إعادة لف الأقمشة غير المنسوجة"
     },
     "/products/automatic-knife-systems/": {
       "seoTitle": "أنظمة السكاكين الأوتوماتيكية | HDPTH",
-      "metaDescription": "أنظمة سكاكين أوتوماتيكية للإعداد السريع والقطع المتكرر.",
-      "h1": "أنظمة السكاكين الأوتوماتيكية"
+      "metaDescription": "أنظمة سكاكين أوتوماتيكية للإعداد السريع والقطع المتكرر وخطوط تحويل HDPTH.",
+      "h1": "أنظمة السكاكين الأوتوماتيكية",
+      "imageAltPrefix": "أنظمة السكاكين الأوتوماتيكية"
+    },
+    "/products/slitting-rewinding-lines/": {
+      "seoTitle": "خطوط الشق وإعادة اللف لللفات العريضة | HDPTH",
+      "metaDescription": "خطوط متكاملة للشق وإعادة اللف للأقمشة غير المنسوجة والورق والمواد المرنة الملفوفة.",
+      "h1": "خطوط شق وإعادة لف متكاملة",
+      "imageAltPrefix": "خطوط شق وإعادة لف متكاملة"
+    },
+    "/products/auxiliary-equipment/": {
+      "seoTitle": "المعدات المساعدة وإعادة لف الحواف | HDPTH",
+      "metaDescription": "معدات HDPTH المساعدة لإعادة لف الحواف، والفك الأوتوماتيكي، وسحب الأعمدة، وتشغيل أنظف للخط.",
+      "h1": "المعدات المساعدة وإعادة لف الحواف",
+      "imageAltPrefix": "المعدات المساعدة وإعادة لف الحواف"
+    },
+    "/products/nonwoven-drying-ovens/": {
+      "seoTitle": "أنظمة أفران تجفيف الأقمشة غير المنسوجة | HDPTH",
+      "metaDescription": "أنظمة تجفيف صناعية بالهواء الساخن لخطوط الأقمشة غير المنسوجة مع عرض وتدفق هواء وتكامل مخصص.",
+      "h1": "أنظمة أفران تجفيف الأقمشة غير المنسوجة",
+      "imageAltPrefix": "أنظمة أفران تجفيف الأقمشة غير المنسوجة"
     },
     "/applications/": {
       "seoTitle": "التطبيقات | معدات HDPTH",
-      "metaDescription": "تطبيقات في النظافة والطب والمناديل والمواد الصناعية الملفوفة.",
-      "h1": "تطبيقات معدات غير المنسوجات"
+      "metaDescription": "تطبيقات معدات HDPTH في منتجات النظافة والطب والمناديل والمواد الصناعية الملفوفة.",
+      "h1": "تطبيقات معدات الأقمشة غير المنسوجة",
+      "imageAltPrefix": "تطبيقات معدات الأقمشة غير المنسوجة"
     },
     "/about/": {
-      "seoTitle": "حول HDPTH",
-      "metaDescription": "HDPTH مصنع صيني لمعدات شق وإعادة لف وتثقيب الأقمشة غير المنسوجة.",
-      "h1": "حول HDPTH"
+      "seoTitle": "حول HDPTH | مصنع معدات الأقمشة غير المنسوجة",
+      "metaDescription": "تعرف على HDPTH، وهي شركة صينية لتصنيع معدات الشق وإعادة اللف والتثقيب والمعدات المساعدة.",
+      "h1": "حول HDPTH",
+      "imageAltPrefix": "حول HDPTH"
     },
     "/factory/": {
-      "seoTitle": "قدرة المصنع | HDPTH",
-      "metaDescription": "تدير HDPTH قاعدة تصنيع بمساحة 6,000 م2 لمعدات تحويل غير المنسوجات.",
-      "h1": "قدرة المصنع"
+      "seoTitle": "مصنع وورشة إنتاج HDPTH",
+      "metaDescription": "شاهد ورشة HDPTH الحقيقية بمساحة 6,000 متر مربع وقدرتها على تصنيع معدات تحويل الأقمشة غير المنسوجة.",
+      "h1": "ورشة إنتاج HDPTH",
+      "imageAltPrefix": "ورشة إنتاج HDPTH"
     },
     "/cases/": {
-      "seoTitle": "المشاريع والحالات | HDPTH",
-      "metaDescription": "أمثلة مشاريع HDPTH للمشترين الدوليين.",
-      "h1": "المشاريع والحالات"
+      "seoTitle": "الحالات والمشاريع | HDPTH",
+      "metaDescription": "أمثلة مشاريع وصور مواقع عملاء لمساعدة المشترين الدوليين على تقييم معدات تحويل الأقمشة غير المنسوجة.",
+      "h1": "الحالات والمشاريع",
+      "imageAltPrefix": "الحالات والمشاريع"
+    },
+    "/blog/": {
+      "seoTitle": "مدونة HDPTH | معدات التحويل",
+      "metaDescription": "أدلة فنية للمشترين حول الشق وإعادة اللف والتحكم في الشد ومعالجة المواد الملفوفة.",
+      "h1": "مدونة HDPTH",
+      "imageAltPrefix": "مدونة HDPTH"
     },
     "/resources/": {
       "seoTitle": "الموارد | أدلة HDPTH",
       "metaDescription": "أدلة للمشترين لاختيار معدات الشق وإعادة اللف والتحويل.",
-      "h1": "موارد المشترين"
+      "h1": "موارد المشترين",
+      "imageAltPrefix": "موارد المشترين"
     },
     "/faq/": {
-      "seoTitle": "الأسئلة الشائعة | HDPTH",
-      "metaDescription": "أسئلة شائعة للمشترين حول معدات HDPTH.",
-      "h1": "أسئلة المشترين الشائعة"
+      "seoTitle": "الأسئلة الشائعة | آلات HDPTH",
+      "metaDescription": "أسئلة شائعة للمشترين حول آلات HDPTH للشق وإعادة اللف والتثقيب وأنظمة السكاكين.",
+      "h1": "الأسئلة الشائعة للمشترين",
+      "imageAltPrefix": "الأسئلة الشائعة للمشترين"
     },
     "/contact/": {
-      "seoTitle": "اتصل بـ HDPTH | طلب عرض سعر",
-      "metaDescription": "تواصل مع Wilson Wu في HDPTH لطلب عرض سعر.",
-      "h1": "طلب تكوين آلة"
+      "seoTitle": "اتصل بـ HDPTH | اطلب عرض سعر",
+      "metaDescription": "تواصل مع Wilson Wu في HDPTH لطلب عرض سعر لمعدات تحويل الأقمشة غير المنسوجة.",
+      "h1": "اطلب تكوين آلة",
+      "imageAltPrefix": "اطلب تكوين آلة"
     },
     "/inquiry/": {
       "seoTitle": "نموذج الاستفسار | HDPTH",
-      "metaDescription": "أرسل طلب RFQ لمعدات الشق وإعادة اللف والتثقيب.",
-      "h1": "أخبرنا بمتطلبات الإنتاج لديك."
+      "metaDescription": "أرسل RFQ إلى HDPTH لمعدات الشق وإعادة اللف والتثقيب والتحويل.",
+      "h1": "أخبرنا بمتطلبات الإنتاج لديك.",
+      "imageAltPrefix": "أخبرنا بمتطلبات الإنتاج لديك."
     },
     "/download/": {
-      "seoTitle": "Download Catalog | HDPTH",
-      "metaDescription": "Request the HDPTH catalog for nonwoven slitting, rewinding, perforating and automatic knife systems.",
-      "h1": "تحميل كتالوج HDPTH"
+      "seoTitle": "تحميل الكتالوج | HDPTH",
+      "metaDescription": "اطلب كتالوج HDPTH لآلات الشق وإعادة اللف والتثقيب وأنظمة السكاكين الأوتوماتيكية.",
+      "h1": "تحميل كتالوج HDPTH",
+      "imageAltPrefix": "تحميل كتالوج HDPTH"
     },
     "/guides/nonwoven-slitting-machine-buying-guide/": {
-      "seoTitle": "Nonwoven Slitting Machine Buying Guide | HDPTH",
-      "metaDescription": "A practical buying guide for nonwoven slitting machines covering material, roll width, speed, knife system and RFQ information.",
-      "h1": "كيفية اختيار آلة شق للأقمشة غير المنسوجة"
-    },
-    "/blog/choosing-nonwoven-slitting-rewinding-machine/": {
-      "seoTitle": "How to Choose a Nonwoven Slitting Rewinding Machine | HDPTH",
-      "metaDescription": "A practical buyer guide to choosing a nonwoven slitting rewinding machine for hygiene, medical and wipes production.",
-      "h1": "How to Choose a Nonwoven Slitting Rewinding Machine for Hygiene, Medical and Wipes Production"
-    },
-    "/blog/slitting-rewinding-perforating-comparison/": {
-      "seoTitle": "Slitting vs Rewinding vs Perforating Machines | HDPTH",
-      "metaDescription": "Understand the difference between slitting, rewinding and perforating machines for nonwoven and wipes production.",
-      "h1": "Slitting vs Rewinding vs Perforating: Which Nonwoven Converting Line Do You Need?"
-    },
-    "/blog/automatic-tension-control-nonwoven-slitter-rewinder/": {
-      "seoTitle": "Automatic Tension Control in Nonwoven Slitter Rewinders | HDPTH",
-      "metaDescription": "Learn why automatic tension control matters in nonwoven slitter rewinders for clean cutting and stable rolls.",
-      "h1": "Automatic Tension Control in Nonwoven Slitter Rewinders: Why It Matters for Clean Cutting and Stable Rolls"
+      "seoTitle": "دليل شراء آلة شق الأقمشة غير المنسوجة | HDPTH",
+      "metaDescription": "دليل عملي لاختيار آلة الشق حسب المادة وعرض اللفة والسرعة ونظام السكاكين ومعلومات RFQ.",
+      "h1": "كيفية اختيار آلة شق للأقمشة غير المنسوجة",
+      "imageAltPrefix": "كيفية اختيار آلة شق للأقمشة غير المنسوجة"
     }
   },
   "common": {
     "Products": "المنتجات",
     "Applications": "التطبيقات",
     "Factory": "المصنع",
+    "Cases": "الحالات",
+    "Certificates": "الشهادات",
+    "Blog": "المدونة",
+    "News": "الأخبار",
     "About": "من نحن",
     "Contact": "اتصل بنا",
-    "Resources": "الموارد",
     "FAQ": "الأسئلة الشائعة",
+    "Resources": "الموارد",
     "Get a Quote": "اطلب عرض سعر",
     "Request a Quote": "اطلب عرض سعر",
-    "Download Catalog": "تحميل الكتالوج",
-    "View Products": "عرض المنتجات",
-    "View detail": "عرض التفاصيل",
-    "Request details": "طلب التفاصيل",
     "Submit Inquiry": "إرسال الاستفسار",
     "Contact Sales": "تواصل مع المبيعات",
-    "Product Categories": "فئات المنتجات",
+    "View detail": "عرض التفاصيل",
+    "View machine": "عرض الآلة",
+    "Request details": "طلب التفاصيل",
+    "Send RFQ": "إرسال RFQ",
+    "Request Catalog": "طلب الكتالوج",
     "Product Matrix": "مصفوفة المنتجات",
+    "Product Categories": "فئات المنتجات",
     "High-Speed Slitting Machines": "آلات الشق عالية السرعة",
     "Nonwoven Rewinding Machines": "آلات إعادة لف غير المنسوجات",
     "Automatic Knife Systems": "أنظمة السكاكين الأوتوماتيكية",
     "Perforating Production Lines": "خطوط التثقيب",
-    "Cases & Projects": "المشاريع والحالات",
-    "Technical Data from Product Manual": "البيانات الفنية من دليل المنتج",
-    "Manual Parameter": "معيار الدليل",
-    "Production Speed": "سرعة الإنتاج",
-    "Materials": "المواد",
-    "Air Supply": "إمداد الهواء",
-    "Installed Power": "القدرة المركبة",
-    "Effective Operating Power": "قدرة التشغيل الفعلية",
-    "Wilson Wu WhatsApp": "واتساب Wilson Wu",
-    "Manufacturing base": "قاعدة التصنيع"
+    "Auxiliary Equipment": "المعدات المساعدة",
+    "Cases & Projects": "الحالات والمشاريع"
   },
   "apiProviderPlaceholder": {
     "deeplApiKeyEnv": "DEEPL_API_KEY",
     "googleCloudTranslationKeyEnv": "GOOGLE_CLOUD_TRANSLATION_API_KEY",
-    "note": "Use these environment variables if the static dictionary is later regenerated through a translation API."
+    "note": "Reserved for regenerating SEO dictionaries through DeepL or Google Cloud Translation API. Do not use browser auto-translation as indexable page content."
   }
 }

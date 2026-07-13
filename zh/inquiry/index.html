@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>询盘表单 | HDPTH 无纺布设备</title>
+  <meta name="description" content="向 HDPTH 提交无纺布分切、复卷、打孔和后整理设备 RFQ。">
+  <link rel="canonical" href="https://www.hdpth.com/zh/inquiry/">
+  <link rel="alternate" hreflang="en" href="https://www.hdpth.com/en/inquiry/">
+  <link rel="alternate" hreflang="es" href="https://www.hdpth.com/es/inquiry/">
+  <link rel="alternate" hreflang="ru" href="https://www.hdpth.com/ru/inquiry/">
+  <link rel="alternate" hreflang="ar" href="https://www.hdpth.com/ar/inquiry/">
+  <link rel="alternate" hreflang="fr" href="https://www.hdpth.com/fr/inquiry/">
+  <link rel="alternate" hreflang="pt" href="https://www.hdpth.com/pt/inquiry/">
+  <link rel="alternate" hreflang="zh" href="https://www.hdpth.com/zh/inquiry/">
+  <link rel="alternate" hreflang="x-default" href="https://www.hdpth.com/">
+  <link rel="preload" as="style" href="../../styles.css"><style data-critical="true">body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#0b1118;background:#fff}.topbar{background:#0b1118;color:rgba(255,255,255,.78);font-size:13px}.header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid #d9dee6}.container{width:min(1180px,calc(100% - 40px));margin:0 auto}.nav{display:flex;align-items:center;justify-content:space-between;min-height:74px}.hero,.page-hero{background:#0b1118;color:#fff}img{max-width:100%;height:auto;display:block}</style><link rel="stylesheet" href="../../styles.css">
+<link rel="preload" as="image" href="../../assets/images/hero-banner-clean.avif" type="image/avif"></head>
+<body class="inquiry-page">
+  <main class="inquiry-shell">
+    <section class="inquiry-hero">
+      <div class="inquiry-brand">
+        <a class="brand" href="../index.html"><picture><source srcset="/../../assets/images/hdpth-logo-320.webp 320w, /../../assets/images/hdpth-logo-640.webp 640w" sizes="(max-width: 760px) 132px, 164px" type="image/webp"><img class="brand-logo" src="/assets/images/hdpth-logo.png" alt="告诉我们您的生产需求 - HDPTH" width="640" height="173" decoding="async"></picture></a>
+        <a class="inquiry-back" href="../index.html">Back to website</a>
+      </div>
+
+      <div class="inquiry-grid">
+        <div class="inquiry-copy">
+          <p class="inquiry-kicker">B2B Machine Inquiry</p>
+          <h1>告诉我们您的生产需求</h1>
+          <p>Share your material, target width, speed and application. Our team will review your request and recommend a suitable nonwoven converting machine configuration.</p>
+          <div class="inquiry-proof">
+            <span>Slitting</span>
+            <span>Rewinding</span>
+            <span>Perforating</span>
+            <span>自动排刀系统</span>
+            <span>Wilson Wu WhatsApp +86 13645700210</span>
+          </div>
+        </div>
+
+        <form class="inquiry-form" id="b2bInquiryForm" novalidate data-endpoint="/api/inquiry">
+          <input class="form-trap" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form-head">
+            <p class="inquiry-kicker">获取报价</p>
+            <h2>Machine RFQ Form</h2>
+            <p><span class="required-dot"></span> Required fields</p>
+          </div>
+
+          <div class="field-grid">
+            <label class="field">
+              <span>Name <b>*</b></span>
+              <input name="name" autocomplete="name" placeholder="Your full name" required>
+              <small data-error-for="name">Please enter your name.</small>
+            </label>
+
+            <label class="field">
+              <span>Email <b>*</b></span>
+              <input name="email" type="email" autocomplete="email" placeholder="name@company.com" required>
+              <small data-error-for="email">Please enter a valid business email.</small>
+            </label>
+
+            <label class="field">
+              <span>Phone / WhatsApp <b>*</b></span>
+              <input name="phone" type="tel" autocomplete="tel" placeholder="+1 555 123 4567" required inputmode="tel">
+              <small data-error-for="phone">Please enter a valid international phone number.</small>
+            </label>
+
+            <label class="field">
+              <span>Company</span>
+              <input name="company" autocomplete="organization" placeholder="Company name">
+              <small data-error-for="company"></small>
+            </label>
+
+            <label class="field">
+              <span>Country / Region</span>
+              <input name="country" autocomplete="country-name" placeholder="United States, Germany, UAE...">
+              <small data-error-for="country"></small>
+            </label>
+
+            <label class="field">
+              <span>Product Requirement</span>
+              <select name="product">
+                <option value="">Select product type</option>
+                <option>高速分切机</option>
+                <option>无纺布复卷机</option>
+                <option>打孔生产线</option>
+                <option>自动排刀系统</option>
+                <option>Complete Nonwoven Converting Solution</option>
+              </select>
+              <small data-error-for="product"></small>
+            </label>
+          </div>
+
+          <label class="field">
+            <span>Message</span>
+            <textarea name="message" placeholder="Tell us material type, parent roll width, finished roll width, speed target, roll diameter and application."></textarea>
+            <small data-error-for="message"></small>
+          </label>
+
+          <label class="field captcha-field">
+            <span>Anti-spam Check <b>*</b></span>
+            <input name="captcha" inputmode="numeric" placeholder="What is 6 + 3?" required>
+            <small data-error-for="captcha">Please answer the anti-spam question.</small>
+          </label>
+
+          <button class="inquiry-submit" type="submit">
+            <span>提交询盘</span>
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-note">Your inquiry is sent to the HDPTH sales team. You can also contact Wilson Wu on WhatsApp: +86 13645700210.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../inquiry/inquiry-form.js" defer></script>
+<script src="../../social-links.js" defer async=""></script></body>
+</html>
