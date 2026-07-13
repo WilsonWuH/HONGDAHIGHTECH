@@ -39,6 +39,18 @@ const routes = [
   "/guides/nonwoven-slitting-machine-buying-guide/"
 ];
 
+const extraSitemapRoutes = [
+  "/blog/slitter-rewinder-dust-extraction-guide/",
+  "/blog/automatic-core-loading-turret-slitter-rewinder/",
+  "/blog/turret-slitter-rewinder-buyer-guide/",
+  "/blog/load-cell-vs-dancer-tension-control-slitter-rewinder/",
+  "/blog/ce-marking-slitter-rewinder-buyer-checklist/",
+  "/blog/bowed-spreader-roll-slitter-rewinder/",
+  "/blog/slitter-rewinder-roll-unloading-system/",
+  "/blog/simplex-vs-duplex-slitter-rewinder/",
+  "/blog/slitter-rewinder-static-control/"
+];
+
 const meta = {
   en: {
     "/": ["HDPTH | High-Speed Nonwoven Converting Machinery", "HDPTH manufactures nonwoven slitting, rewinding, perforating and automatic knife systems for overseas B2B manufacturers.", "High-Speed Nonwoven Converting Machinery"],
@@ -401,6 +413,9 @@ async function writeSitemap() {
     for (const locale of localeCodes) {
       urls.push(`  <url><loc>${canonical(locale, route)}</loc></url>`);
     }
+  }
+  for (const route of extraSitemapRoutes) {
+    urls.push(`  <url><loc>${BASE_URL}${route}</loc><lastmod>2026-07-13</lastmod></url>`);
   }
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`;
   await writeFile(path.join(ROOT, "sitemap.xml"), xml, "utf8");
