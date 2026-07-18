@@ -12,6 +12,11 @@ const nextConfig = {
         permanent: true
       },
       {
+        source: "/resources/nonwoven-slitter-rewinder-buying-guide/index.html",
+        destination: "/guides/nonwoven-slitting-machine-buying-guide/",
+        permanent: true
+      },
+      {
         source: "/:path*/index.html",
         destination: "/:path*/",
         permanent: true
