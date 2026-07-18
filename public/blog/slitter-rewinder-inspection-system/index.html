@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slitter Rewinder Inspection System: Buyer Specification Guide | HDPTH</title>
+  <meta name="description" content="Specify a slitter rewinder inspection system with practical guidance on web monitoring, defect maps, stop-at-defect workflows, RFQ data and FAT checks.">
+  <link rel="canonical" href="https://www.hdpth.com/blog/slitter-rewinder-inspection-system/">
+  <link rel="preload" as="style" href="../../styles.css">
+  <style data-critical="true">body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#0b1118;background:#fff}.topbar{background:#0b1118;color:rgba(255,255,255,.78);font-size:13px}.header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid #d9dee6}.container{width:min(1180px,calc(100% - 40px));margin:0 auto}.nav{display:flex;align-items:center;justify-content:space-between;min-height:74px}.hero,.page-hero{background:#0b1118;color:#fff}img{max-width:100%;height:auto;display:block}</style>
+  <link rel="stylesheet" href="../../styles.css">
+  <style data-article-responsive="true">
+    @media (max-width: 560px) {
+      body { overflow-x: clip; }
+      .header .container.nav { width: calc(100% - 28px); max-width: calc(100% - 28px); gap: 12px; }
+      .header .nav > .btn { width: auto; flex: 0 0 auto; padding: 12px 16px; }
+      .header .nav-links { min-width: 0; }
+      .page-hero .container, .section .container { width: calc(100% - 28px); max-width: calc(100% - 28px); }
+      .page-hero h1, .page-hero p { max-width: 100%; overflow-wrap: anywhere; }
+      .article-layout, .article-body { width: 100%; min-width: 0; max-width: 100%; }
+      .article-body { padding: 22px; }
+      .article-body figure { margin: 28px 0; max-width: 100%; }
+      .article-body picture, .article-body img { width: 100%; max-width: 100%; }
+      .answer-box, .article-cta, .table-wrap { width: 100%; min-width: 0; max-width: 100%; }
+      .table-wrap { display: block; overflow-x: auto; }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Article",
+      "headline":"Slitter Rewinder Inspection System: Technical Specification and Integration Guide",
+      "description":"Specify a slitter rewinder inspection system with practical guidance on web monitoring, defect maps, stop-at-defect workflows, RFQ data and FAT checks.",
+      "image":"https://www.hdpth.com/assets/images/blog/slitter-rewinder-inspection-system.webp",
+      "author":{"@type":"Organization","name":"HDPTH Technical Editorial Team"},
+      "publisher":{"@type":"Organization","name":"HDPTH"},
+      "datePublished":"2026-07-19",
+      "dateModified":"2026-07-19",
+      "mainEntityOfPage":"https://www.hdpth.com/blog/slitter-rewinder-inspection-system/"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hdpth.com/"},
+        {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.hdpth.com/blog/"},
+        {"@type":"ListItem","position":3,"name":"Slitter Rewinder Inspection System","item":"https://www.hdpth.com/blog/slitter-rewinder-inspection-system/"}
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"What is the difference between video web monitoring and camera-based web inspection?","acceptedAnswer":{"@type":"Answer","text":"Video web monitoring normally helps operators watch selected web areas such as edges, trim paths or registration points. Camera-based web inspection is usually specified when the plant wants automated detection, classification or mapping of defined defects across a wider inspection area. The exact scope depends on the selected inspection hardware and software."}},
+        {"@type":"Question","name":"Should inspection be placed before or after the slitting knives?","acceptedAnswer":{"@type":"Answer","text":"Upstream inspection checks the master web before it is divided into lanes, while downstream monitoring can focus on slit edges, lane position or defects created near the knife section. Some projects may need only one location; others may justify more than one observation point."}},
+        {"@type":"Question","name":"Can HDPTH review a slitter rewinder layout for third-party inspection integration?","acceptedAnswer":{"@type":"Answer","text":"Buyers can ask HDPTH to review machine layout, web path, space reservation, encoder signals, operator access and control-interface requirements for an inspection-ready project. Final third-party camera capability, software functions and acceptance criteria should be confirmed with the inspection supplier and documented in the RFQ."}},
+        {"@type":"Question","name":"Why does web stability matter for inspection accuracy?","acceptedAnswer":{"@type":"Answer","text":"Camera and video systems need a stable web path. If the material flutters, wanders or changes tension through the inspection zone, the image can blur, the defect position can shift, and the system may create false alarms or miss subtle defects. Tension control, web guiding and roller alignment should be checked together."}},
+        {"@type":"Question","name":"What RFQ data should buyers send for an inspection-ready slitter rewinder?","acceptedAnswer":{"@type":"Answer","text":"Send material type, width range, target speed, defect types, required inspection location, lighting or camera preferences if already chosen, roll diameter, core data, defect-handling workflow, stop or mark requirements, reporting needs, site conditions and the FAT evidence expected before shipment."}}
+      ]
+    }
+  </script>
+  <meta property="og:title" content="Slitter Rewinder Inspection System: Buyer Specification Guide">
+  <meta property="og:description" content="A practical guide to specifying inspection-ready slitter rewinders, web monitoring, defect workflows, RFQ data and FAT evidence.">
+  <meta property="og:image" content="https://www.hdpth.com/assets/images/blog/slitter-rewinder-inspection-system.webp">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="../../index.html"><span class="brand-mark"></span>HDPTH</a>
+      <nav class="nav-links">
+        <div class="nav-item">
+          <a class="mega-trigger" href="../../products/index.html">Products</a>
+          <div class="mega-menu">
+            <div class="mega-grid">
+              <div class="mega-section">
+                <p class="mega-kicker">Product Matrix</p>
+                <div class="mega-list">
+                  <a class="mega-link" href="../../products/high-speed-slitting-machines/index.html"><strong>High-Speed Slitting Machines</strong><span>Clean cutting and stable tension for roll converting.</span></a>
+                  <a class="mega-link" href="../../products/nonwoven-rewinding-machines/index.html"><strong>Nonwoven Rewinding Machines</strong><span>Consistent roll formation for downstream production.</span></a>
+                  <a class="mega-link" href="../../products/automatic-knife-systems/index.html"><strong>Automatic Knife Systems</strong><span>Faster setup and repeatable cutting configuration.</span></a>
+                  <a class="mega-link" href="../../products/index.html"><strong>All Converting Equipment</strong><span>Perforating lines, combined machines and auxiliary systems.</span></a>
+                </div>
+              </div>
+              <div class="mega-section">
+                <p class="mega-kicker">Applications</p>
+                <div class="mega-plain">
+                  <a href="../../applications/index.html">Hygiene Products</a>
+                  <a href="../../applications/index.html">Medical Nonwoven Materials</a>
+                  <a href="../../applications/index.html">Disposable Wipes &amp; Flexible Materials</a>
+                  <a href="../../guides/nonwoven-slitting-machine-buying-guide/index.html">Buying Guide</a>
+                </div>
+              </div>
+              <div class="mega-cta">
+                <h3>Need a machine configuration?</h3>
+                <p>Send material, width, speed and application details. HDPTH will recommend the suitable converting setup.</p>
+                <a class="btn btn-red" href="../../inquiry/index.html">Request a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="../../applications/index.html">Applications</a>
+        <a href="../index.html">Blog</a>
+        <a href="../../certificates/index.html">Certificates</a>
+        <a href="../../news/index.html">News</a>
+        <a href="../../contact/index.html">Contact</a>
+      </nav>
+      <a class="btn btn-red" href="../../inquiry/index.html">Get a Quote</a>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">Home / Blog / Slitter Rewinder Inspection System</div>
+        <h1>Slitter Rewinder Inspection System: Technical Specification and Integration Guide</h1>
+        <p>Evaluate inspection-ready machine layouts, web monitoring scope, defect-handling workflow and FAT evidence before approving a slitting and rewinding project.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container article-layout">
+        <article class="article-body">
+          <p class="eyebrow">Published July 19, 2026 | By HDPTH Technical Editorial Team</p>
+          <div class="answer-box"><strong>Short answer:</strong> a slitter rewinder inspection system helps a converter observe, record or react to defects while wide roll material is being slit and rewound. Buyers should specify one when material quality risk, customer documentation, roll defect removal, or high-speed operator visibility makes manual checking insufficient. The right scope may be simple strobe viewing, video web monitoring, a camera-based web inspection system, or a machine layout prepared for third-party inspection integration.</div>
+
+          <figure class="media-panel" style="margin:28px 0">
+            <picture>
+              <source type="image/webp" srcset="../../assets/images/blog/slitter-rewinder-inspection-system-720.webp 720w, ../../assets/images/blog/slitter-rewinder-inspection-system.webp 1440w" sizes="(max-width: 760px) 100vw, 1000px">
+              <img src="../../assets/images/blog/slitter-rewinder-inspection-system.webp" alt="Generic slitter rewinder web inspection bridge with cameras and lighting over a moving roll material web" width="1440" height="960" decoding="async" sizes="(max-width: 760px) 100vw, 1000px" loading="eager" fetchpriority="high">
+            </picture>
+            <figcaption>A web inspection concept should define observation points, lighting access, web stability and operator workflow before the machine layout is frozen.</figcaption>
+          </figure>
+
+          <p>For overseas buyers, inspection is not only a camera question. It is a machine specification question. A camera or monitor can only perform well if the web path is stable, the inspection point is accessible, the lighting is protected from dust and glare, and the operator has a clear method for responding to the defects that matter.</p>
+          <p>Gemini's draft for this article framed the slitter rewinder as a final quality gate. That is the correct buyer question, but it needs careful wording: the slitter rewinder may be the last converting step before finished rolls ship, so it is often the practical place to verify incoming web defects, slit-edge condition, dust problems, coating marks, holes, spots, wrinkles, scratches or lane-specific issues. Whether the inspection system only helps operators see those problems or also creates digital defect records depends on the selected inspection package.</p>
+
+          <h2>Inspection terms buyers should separate</h2>
+          <p>Suppliers may use words like inspection, monitoring, camera system, defect detection and vision system in different ways. Before comparing quotations, define the functional level you actually need. A basic system for watching web behavior is not the same as a web inspection system that classifies defects and exports roll reports.</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Inspection option</th>
+                  <th>Main purpose</th>
+                  <th>What buyers should confirm</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Strobe monitoring</td>
+                  <td>Helps operators visually freeze a moving web pattern or surface area.</td>
+                  <td>Lighting position, operator viewing point, safe access and whether records are required.</td>
+                </tr>
+                <tr>
+                  <td>Video web monitoring</td>
+                  <td>Shows selected web zones such as slit edges, trim paths, print marks or web tracking.</td>
+                  <td>Camera location, field of view, screen position, image capture needs and maintenance access.</td>
+                </tr>
+                <tr>
+                  <td>Camera-based web inspection</td>
+                  <td>Detects and logs defined surface or structural defects according to the inspection supplier's capability.</td>
+                  <td>Defect types, material optics, lighting method, data output, alarm logic and acceptance test method.</td>
+                </tr>
+                <tr>
+                  <td>Stop-at-defect workflow</td>
+                  <td>Uses defect position information to help bring suspect material to an operator-accessible point.</td>
+                  <td>Encoder signal, machine control interface, stopping method, splice table access and repeatable FAT proof.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>When inspection belongs on a slitter rewinder</h2>
+          <p>Not every slitting line needs advanced inspection. A converter running low-risk material, wide tolerances and long internal-use rolls may only need normal operator checks and roll inspection. Inspection becomes more valuable when defects are costly to discover after shipment, when customers request roll records, or when high running speed makes visual monitoring unreliable.</p>
+          <p>Common triggers include medical or hygiene nonwovens where holes and contamination are important, PE film or laminates where gels and scratches can affect downstream printing or sealing, paper and specialty webs where coating marks or edge damage must be found, and multi-lane slitting where one defect may affect only certain finished rolls. Buyers should define defects by business impact, not by a generic wish to "find everything."</p>
+          <p>HDPTH's public product pages show that its converting projects are configured around material, width, speed, knife system, winding method, controls and layout. That same project-based logic should apply to inspection. Review the <a href="../../products/slitting-rewinding-lines/index.html">slitting and rewinding lines</a> page and the <a href="../../products/high-speed-slitting-machines/index.html">high-speed slitting machines</a> page when deciding where inspection hardware could physically fit into the line.</p>
+
+          <h2>Upstream or downstream of the knives?</h2>
+          <p>Gemini's draft highlighted a key layout decision: inspection before or after the slitting section. Upstream inspection checks the master web before it is divided into lanes. This is often simpler for finding incoming material flaws because one inspection span sees the full width. It can also provide a cleaner reference before knife dust, trim removal or lane separation changes the web behavior.</p>
+          <p>Downstream monitoring can be useful when the buyer wants to observe slit edges, lane tracking, ribbon separation, trim removal or knife-related symptoms. It may need more careful framing because the web has already been divided into lanes. Some projects may justify both an upstream inspection position and a downstream video monitoring point, but that decision should be based on real defect risk and plant workflow, not on feature lists.</p>
+
+          <h2>Material behavior drives the inspection method</h2>
+          <p>Web inspection suppliers discuss different lighting and camera approaches because materials behave differently under light. Porous nonwovens, paper, transparent film, opaque film and coated laminates do not produce the same optical signal. Dust, static charge, web flutter, reflective surfaces and edge weave can all affect whether a camera sees a true defect or a process artifact.</p>
+          <p>For nonwovens, buyers may care about holes, thin areas, oil spots, fiber clumps, contamination or edge damage. For paper, coating marks, holes, tears, creases and dirt may be the main concerns. For PE film and flexible materials, scratches, gels, pinholes, inclusions or haze changes may matter. The inspection supplier should confirm what the selected hardware can realistically detect on the buyer's samples, while the machine builder should confirm that the line layout supports stable web presentation.</p>
+          <p>This topic connects with HDPTH's existing guide on <a href="../../blog/slitter-rewinder-roll-defects-troubleshooting/index.html">slitter rewinder roll defects</a>, but the purpose is different. Roll-defect troubleshooting looks at symptoms after the roll is produced. Inspection-system specification asks how the machine should be designed so those defects can be observed, logged or removed during converting.</p>
+
+          <h2>Machine integration points to define early</h2>
+          <p>A buyer should not leave inspection integration until after the mechanical line is designed. Camera bridges, light boxes, monitors, operator workstations, splice tables, cable routing and control interfaces all need physical space. If those items are added late, the project can lose maintainability or require awkward web routing.</p>
+          <p>The inspection zone should have a stable web span. Tension control, web guiding, roller alignment and vibration control matter because a moving camera image depends on a consistent web plane. If the material flutters, wanders or changes tension through the inspection point, the image can blur or the defect location can shift. For background on web stability, see HDPTH's guide to <a href="../../blog/automatic-tension-control-web-guiding-nonwoven-converting/index.html">automatic tension control and web guiding</a>.</p>
+          <p>Dust and static also deserve attention. Converting paper, wood-pulp composites or dry nonwovens can create particles that settle on lenses and light covers. Static can attract contamination toward the web and inspection area. Buyers should ask whether dust extraction, enclosed optical areas, cleaning access or static-control points need to be coordinated with the inspection supplier.</p>
+
+          <div class="article-cta">
+            <h3>Planning an inspection-ready slitting line?</h3>
+            <p>Send your material, width range, target speed, defect concerns, preferred inspection location and workflow requirements through the <a href="../../inquiry/index.html">HDPTH inquiry page</a>. HDPTH can review the converting line layout before quotation.</p>
+            <a class="btn btn-red" href="../../inquiry/index.html">Request Layout Review</a>
+          </div>
+
+          <h2>Defect handling: log, mark, slow, stop or remove?</h2>
+          <p>The most important practical question is what happens after a defect is detected. Some plants only need a visual record. Others need an alarm, a defect map, a printed roll report, a label or mark near the defect, a slow-down sequence, or a stop-at-defect workflow that brings the suspect section to a splice table. These are different automation scopes.</p>
+          <p>In a stop-at-defect concept, the inspection package identifies a defect position and the machine control system uses line length information to stop the web near an accessible point. This is not something buyers should assume from the word "inspection." It requires defined signals, a suitable web path, controlled deceleration, operator access and testable acceptance criteria. If the buyer wants defect removal, the machine also needs a clear splicing or reject-handling procedure.</p>
+          <p>For multi-lane slitting, ask how defect information is assigned to finished rolls. A master-web defect may affect only one slit lane. A downstream edge defect may affect one roll position. The RFQ should state whether the buyer needs roll-by-roll reporting, lane assignment, data export, printed labels or only operator review.</p>
+
+          <h2>RFQ checklist for an inspection-ready project</h2>
+          <p>To receive a meaningful proposal, prepare more than a broad request for a "vision system." Include the specific quality workflow the plant wants to run. A good RFQ should cover:</p>
+          <ul class="check-list">
+            <li>Material family, opacity, surface reflectivity, color range, thickness or basis weight, dust level and static behavior.</li>
+            <li>Parent-roll width, slit widths, number of lanes, finished-roll diameter, core size and target running speed.</li>
+            <li>Defect types of concern, such as holes, spots, gels, scratches, coating voids, edge tears, contamination, wrinkles or lane wander.</li>
+            <li>Preferred inspection location: master web before slitting, slit lanes after knives, rewind area, or a separate inspection rewinder workflow.</li>
+            <li>Expected response: watch only, alarm, log, mark, slow, stop near a splice table, remove material, or export a roll report.</li>
+            <li>Chosen third-party inspection supplier, if already selected, including required space, power, communication and data requirements.</li>
+            <li>FAT evidence required before shipment, including sample defects, test material, screenshots, video angles and reporting files.</li>
+          </ul>
+          <p>HDPTH's <a href="../../products/nonwoven-rewinding-machines/index.html">nonwoven rewinding machines</a> page emphasizes stable tension and controlled rewinding, while the inquiry page asks buyers to submit material, target width, speed, application and product requirements. For an inspection-ready machine, add defect and workflow details to that same RFQ package.</p>
+
+          <h2>Inspection-specific FAT checks</h2>
+          <p>A normal factory acceptance test confirms machine operation, slitting quality, roll formation, controls and shipment readiness. Inspection adds a separate layer. Buyers should define testable criteria before FAT, then compare the machine response against the agreed inspection scope.</p>
+          <p>Useful checks include web stability through the inspection zone during start, acceleration, stable running and deceleration; visibility of the camera or monitor screen; access for cleaning lenses and light covers; signal exchange between inspection hardware and machine controls if included; repeatability of any stop-at-defect workflow; and the quality of reports or exported files if reporting is part of the purchase.</p>
+          <p>Do not rely only on a demonstration with ideal material. If possible, send representative samples with known issues or create agreed sample defects that the inspection supplier can approve for testing. Record whether the test proves only machine integration, only camera detection, or the full workflow from detection to operator action. For broader machinery checks, use HDPTH's <a href="../../blog/slitter-rewinder-factory-acceptance-test-checklist/index.html">slitter rewinder FAT checklist</a>.</p>
+
+          <h2>Shipment and installation preparation</h2>
+          <p>Inspection hardware can be more sensitive than heavy mechanical frames. Before shipment, buyers should confirm how cameras, lenses, monitors, lighting components and control cabinets are protected, documented and packed. If components must be removed for transport, the packing list should make reinstallation clear.</p>
+          <p>At the installation site, prepare the inspection area before the machine arrives. Review power quality, air quality, lighting, dust generation, compressed air requirements for any lens purging system, operator screen location, network access for reports and safe maintenance access. OSHA 29 CFR 1910.212 is a general United States reference for guarding point-of-operation, ingoing nip-point and rotating-part hazards. The buyer's local safety team must apply the correct regional rules to the final installation.</p>
+
+          <h2>Buyer FAQs</h2>
+          <div class="faq-list">
+            <details>
+              <summary>What is the difference between video web monitoring and camera-based web inspection?</summary>
+              <p>Video web monitoring normally helps operators watch selected web areas such as edges, trim paths or registration points. Camera-based web inspection is usually specified when the plant wants automated detection, classification or mapping of defined defects across a wider inspection area. The exact scope depends on the selected inspection hardware and software.</p>
+            </details>
+            <details>
+              <summary>Should inspection be placed before or after the slitting knives?</summary>
+              <p>Upstream inspection checks the master web before it is divided into lanes, while downstream monitoring can focus on slit edges, lane position or defects created near the knife section. Some projects may need only one location; others may justify more than one observation point.</p>
+            </details>
+            <details>
+              <summary>Can HDPTH review a slitter rewinder layout for third-party inspection integration?</summary>
+              <p>Buyers can ask HDPTH to review machine layout, web path, space reservation, encoder signals, operator access and control-interface requirements for an inspection-ready project. Final third-party camera capability, software functions and acceptance criteria should be confirmed with the inspection supplier and documented in the RFQ.</p>
+            </details>
+            <details>
+              <summary>Why does web stability matter for inspection accuracy?</summary>
+              <p>Camera and video systems need a stable web path. If the material flutters, wanders or changes tension through the inspection zone, the image can blur, the defect position can shift, and the system may create false alarms or miss subtle defects. Tension control, web guiding and roller alignment should be checked together.</p>
+            </details>
+            <details>
+              <summary>What RFQ data should buyers send for an inspection-ready slitter rewinder?</summary>
+              <p>Send material type, width range, target speed, defect types, required inspection location, lighting or camera preferences if already chosen, roll diameter, core data, defect-handling workflow, stop or mark requirements, reporting needs, site conditions and the FAT evidence expected before shipment.</p>
+            </details>
+          </div>
+
+          <h2>Sources</h2>
+          <ul>
+            <li><a href="https://www.isravision.com/en-en/industries/nonwoven-inspection-for-machine-builder-and-manufacturer/manufacturer" rel="noopener">ISRA VISION: Nonwoven inspection context</a></li>
+            <li><a href="https://www.isravision.com/en-en/industries/paper-board-tissue-production/paper-board-web-inspection-solutions" rel="noopener">ISRA VISION: Paper and board web inspection solutions</a></li>
+            <li><a href="https://www.bst.elexis.group/en/solutions/100-inspection" rel="noopener">BST: 100% inspection systems</a></li>
+            <li><a href="https://www.bst.elexis.group/en/solutions/video-web-monitoring" rel="noopener">BST: Video web monitoring</a></li>
+            <li><a href="https://www.valmet.com/automation/quality-management/machine-vision/web-inspection-system-wis/" rel="noopener">Valmet: Web inspection system overview</a></li>
+            <li><a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.212" rel="noopener">OSHA 29 CFR 1910.212: General requirements for all machines</a></li>
+          </ul>
+
+          <div class="article-cta">
+            <h3>Define inspection requirements before the machine layout is fixed</h3>
+            <p>Share your material samples, defect concerns, target speeds, roll dimensions, preferred inspection workflow and factory layout limits with HDPTH. A clearer RFQ helps determine whether the project needs simple monitoring, inspection-ready space reservation or a more detailed third-party integration review.</p>
+            <a class="btn btn-red" href="../../inquiry/index.html">Contact HDPTH for Project Review</a>
+          </div>
+        </article>
+        <aside class="article-sidebar">
+          <div class="toc-card">
+            <strong>Buyer focus</strong>
+            <p>Inspection scope</p>
+            <p>Web path and lighting</p>
+            <p>Defect workflow</p>
+            <p>FAT evidence</p>
+            <a href="../../inquiry/index.html">Discuss your project</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h3>HDPTH</h3><p>High-tech nonwoven machinery for global manufacturers.</p></div>
+      <div><h4>Products</h4><a href="../../products/high-speed-slitting-machines/index.html">High-Speed Slitting Machines</a><a href="../../products/nonwoven-rewinding-machines/index.html">Nonwoven Rewinding Machines</a><a href="../../products/automatic-knife-systems/index.html">Automatic Knife Systems</a></div>
+      <div><h4>Company</h4><a href="../../factory/index.html">Factory</a><a href="../../certificates/index.html">Certificates</a><a href="../../contact/index.html">Contact</a></div>
+    </div>
+    <div class="container footer-bottom">HDPTH Technical Editorial Team</div>
+  </footer>
+  <script src="../../social-links.js" defer async></script>
+</body>
+</html>
