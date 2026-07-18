@@ -40,6 +40,7 @@ const routes = [
 ];
 
 const extraSitemapRoutes = [
+  "/blog/slitter-rewinder-inspection-system/",
   "/blog/slitter-rewinder-dust-extraction-guide/",
   "/blog/automatic-core-loading-turret-slitter-rewinder/",
   "/blog/turret-slitter-rewinder-buyer-guide/",
@@ -50,6 +51,10 @@ const extraSitemapRoutes = [
   "/blog/simplex-vs-duplex-slitter-rewinder/",
   "/blog/slitter-rewinder-static-control/"
 ];
+
+const extraSitemapLastmod = {
+  "/blog/slitter-rewinder-inspection-system/": "2026-07-19"
+};
 
 const meta = {
   en: {
@@ -484,7 +489,7 @@ async function writeSitemap() {
     }
   }
   for (const route of extraSitemapRoutes) {
-    urls.push(`  <url><loc>${BASE_URL}${route}</loc><lastmod>2026-07-13</lastmod></url>`);
+    urls.push(`  <url><loc>${BASE_URL}${route}</loc><lastmod>${extraSitemapLastmod[route] || "2026-07-13"}</lastmod></url>`);
   }
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`;
   await writeFile(path.join(ROOT, "sitemap.xml"), xml, "utf8");
