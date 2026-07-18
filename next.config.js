@@ -4,6 +4,25 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true
   },
+  async redirects() {
+    return [
+      {
+        source: "/index.html",
+        destination: "/",
+        permanent: true
+      },
+      {
+        source: "/:path*/index.html",
+        destination: "/:path*/",
+        permanent: true
+      },
+      {
+        source: "/resources/nonwoven-slitter-rewinder-buying-guide/",
+        destination: "/guides/nonwoven-slitting-machine-buying-guide/",
+        permanent: true
+      }
+    ];
+  },
   async headers() {
     return [
       {
