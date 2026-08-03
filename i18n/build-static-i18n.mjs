@@ -49,11 +49,13 @@ const extraSitemapRoutes = [
   "/blog/bowed-spreader-roll-slitter-rewinder/",
   "/blog/slitter-rewinder-roll-unloading-system/",
   "/blog/simplex-vs-duplex-slitter-rewinder/",
-  "/blog/slitter-rewinder-static-control/"
+  "/blog/slitter-rewinder-static-control/",
+  "/blog/web-guide-sensor-slitter-rewinder/"
 ];
 
 const extraSitemapLastmod = {
-  "/blog/slitter-rewinder-inspection-system/": "2026-07-19"
+  "/blog/slitter-rewinder-inspection-system/": "2026-07-19",
+  "/blog/web-guide-sensor-slitter-rewinder/": "2026-08-03"
 };
 
 const meta = {
