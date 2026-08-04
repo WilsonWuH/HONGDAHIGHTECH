@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculating Slitter Rewinder Production Capacity | HDPTH</title>
+  <meta name="description" content="Learn how to calculate true slitter rewinder production capacity. Model roll cycle time and machine efficiency before requesting a quotation.">
+  <link rel="canonical" href="https://www.hdpth.com/blog/slitter-rewinder-production-capacity/">
+  <link rel="preload" as="style" href="../../styles.css">
+  <style data-critical="true">body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#0b1118;background:#fff}.topbar{background:#0b1118;color:rgba(255,255,255,.78);font-size:13px}.header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid #d9dee6}.container{width:min(1180px,calc(100% - 40px));margin:0 auto}.nav{display:flex;align-items:center;justify-content:space-between;min-height:74px}.hero,.page-hero{background:#0b1118;color:#fff}img{max-width:100%;height:auto;display:block}</style>
+  <link rel="stylesheet" href="../../styles.css">
+  <style data-article-responsive="true">
+    @media (max-width: 560px) {
+      body { overflow-x: clip; }
+      .header .container.nav { width: calc(100% - 28px); max-width: calc(100% - 28px); gap: 12px; }
+      .header .nav > .btn { width: auto; flex: 0 0 auto; padding: 12px 16px; }
+      .header .nav-links { min-width: 0; }
+      .page-hero .container, .section .container { width: calc(100% - 28px); max-width: calc(100% - 28px); }
+      .page-hero h1, .page-hero p { max-width: 100%; overflow-wrap: anywhere; }
+      .article-layout, .article-body { width: 100%; min-width: 0; max-width: 100%; }
+      .article-body { padding: 22px; }
+      .article-body figure { margin: 28px 0; max-width: 100%; }
+      .article-body picture, .article-body img { width: 100%; max-width: 100%; }
+      .answer-box, .article-cta, .table-wrap { width: 100%; min-width: 0; max-width: 100%; }
+      .table-wrap { display: block; overflow-x: auto; }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Article",
+      "headline":"Calculating Slitter Rewinder Production Capacity",
+      "description":"Learn how to calculate true slitter rewinder production capacity. Model roll cycle time and machine efficiency before requesting a quotation.",
+      "image":"https://www.hdpth.com/assets/images/blog/slitter-rewinder-production-capacity.webp",
+      "author":{"@type":"Organization","name":"HDPTH Technical Editorial Team"},
+      "publisher":{"@type":"Organization","name":"HDPTH"},
+      "datePublished":"2026-08-04",
+      "dateModified":"2026-08-04",
+      "mainEntityOfPage":"https://www.hdpth.com/blog/slitter-rewinder-production-capacity/"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hdpth.com/"},
+        {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.hdpth.com/blog/"},
+        {"@type":"ListItem","position":3,"name":"Slitter Rewinder Production Capacity","item":"https://www.hdpth.com/blog/slitter-rewinder-production-capacity/"}
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"How do I calculate slitter rewinder production capacity?","acceptedAnswer":{"@type":"Answer","text":"You calculate capacity by first determining the complete roll cycle time, which is the actual run time per finished roll plus the total changeover time. Then, divide your available shift minutes by this cycle time, and multiply by a realistic efficiency factor to account for minor stops and maintenance. This yields the number of rolls produced per shift."}},
+        {"@type":"Question","name":"Why is machine speed different from production capacity?","acceptedAnswer":{"@type":"Answer","text":"Machine speed only measures how fast the web moves during optimal running conditions. It ignores the significant downtime required for finished-roll changeovers, parent roll splicing, knife repositioning, threading, and acceleration or deceleration. Because machines spend a large portion of a shift idle for these necessary tasks, top speed alone cannot dictate actual output."}},
+        {"@type":"Question","name":"What is a realistic efficiency factor for a slitter rewinder?","acceptedAnswer":{"@type":"Answer","text":"As a planning starting point, an efficiency factor between 70% and 85% is commonly used, depending on the facility's operational maturity. This percentage accounts for unplanned downtime, web breaks, operator delays, quality inspections, and routine preventative maintenance. Facilities with highly automated changeovers and non-stop unwinding systems can plan with higher efficiency factors."}},
+        {"@type":"Question","name":"How much does roll changeover time affect output?","acceptedAnswer":{"@type":"Answer","text":"Roll changeover time drastically affects output, especially when producing shorter finished rolls. In scenarios with frequent manual changeovers where operators must unload heavy reels and tape new cores, the machine may spend more than half of its shift stopped. Automating this process is often the fastest way to increase capacity."}},
+        {"@type":"Question","name":"What data should I send a manufacturer to get a reliable capacity estimate?","acceptedAnswer":{"@type":"Answer","text":"You should provide the manufacturer with your specific material type, parent roll dimensions (width, outer diameter, core size), finished roll requirements (slit widths, target diameter, length), desired line speed, and your operational shift pattern. Providing your daily output target allows the manufacturer to recommend the right automation level."}}
+      ]
+    }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="../../index.html"><span class="brand-mark"></span>HDPTH</a>
+      <nav class="nav-links">
+        <div class="nav-item">
+          <a class="mega-trigger" href="../../products/index.html">Products</a>
+          <div class="mega-menu">
+            <div class="mega-grid">
+              <div class="mega-section">
+                <p class="mega-kicker">Product Matrix</p>
+                <div class="mega-list">
+                  <a class="mega-link" href="../../products/high-speed-slitting-machines/index.html"><strong>High-Speed Slitting Machines</strong><span>Clean cutting and stable tension for roll converting.</span></a>
+                  <a class="mega-link" href="../../products/nonwoven-rewinding-machines/index.html"><strong>Nonwoven Rewinding Machines</strong><span>Consistent roll formation for downstream production.</span></a>
+                  <a class="mega-link" href="../../products/automatic-knife-systems/index.html"><strong>Automatic Knife Systems</strong><span>Faster setup and repeatable cutting configuration.</span></a>
+                  <a class="mega-link" href="../../products/index.html"><strong>All Converting Equipment</strong><span>Perforating lines, combined machines and auxiliary systems.</span></a>
+                </div>
+              </div>
+              <div class="mega-section">
+                <p class="mega-kicker">Applications</p>
+                <div class="mega-plain">
+                  <a href="../../applications/index.html">Hygiene Products</a>
+                  <a href="../../applications/index.html">Medical Nonwoven Materials</a>
+                  <a href="../../applications/index.html">Disposable Wipes &amp; Flexible Materials</a>
+                  <a href="../../guides/nonwoven-slitting-machine-buying-guide/index.html">Buying Guide</a>
+                </div>
+              </div>
+              <div class="mega-cta">
+                <h3>Need a machine configuration?</h3>
+                <p>Send material, width, speed and application details. HDPTH will recommend the suitable converting setup.</p>
+                <a class="btn btn-red" href="../../inquiry/index.html">Request a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="../../applications/index.html">Applications</a>
+        <a href="../index.html">Blog</a>
+        <a href="../../certificates/index.html">Certificates</a>
+        <a href="../../news/index.html">News</a>
+        <a href="../../contact/index.html">Contact</a>
+      </nav>
+      <a class="btn btn-red" href="../../inquiry/index.html">Get a Quote</a>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">Home / Blog / Slitter Rewinder Production Capacity</div>
+        <h1>How to Calculate Slitter Rewinder Production Capacity for Your Next RFQ</h1>
+        <p>Model finished-roll cycle times and machine efficiency to estimate real output per shift, compare supplier quotes and specify the right automation.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container article-layout">
+        <article class="article-body">
+          <p class="eyebrow">Published August 4, 2026 | By HDPTH Technical Editorial Team</p>
+          <div class="answer-box"><strong>Short answer:</strong> slitter rewinder production capacity is calculated from the finished-roll cycle time &mdash; actual run time plus changeover time &mdash; multiplied by a realistic efficiency factor, not simply from the machine's maximum rated speed. To estimate output accurately, buyers must model these variables against their specific material, roll dimensions and shift pattern. Working through the calculation before quotation lets production managers specify the line speed and automation level their output target actually requires.</div>
+
+          <figure class="media-panel" style="margin:28px 0">
+            <picture>
+              <source type="image/webp" srcset="../../assets/images/blog/slitter-rewinder-production-capacity-720.webp 720w, ../../assets/images/blog/slitter-rewinder-production-capacity.webp 1440w" sizes="(max-width: 760px) 100vw, 1000px">
+              <img src="../../assets/images/blog/slitter-rewinder-production-capacity.webp" alt="Simplified slitter rewinder line with a parent roll unwinding through slitting knives onto rewind rolls, above a cycle timeline divided into run time and changeover segments" width="1440" height="960" decoding="async" sizes="(max-width: 760px) 100vw, 1000px" loading="eager" fetchpriority="high">
+            </picture>
+            <figcaption>A slitter rewinder's real output per shift is governed by the complete finished-roll cycle, not by rated top speed alone.</figcaption>
+          </figure>
+
+          <p>When overseas factory owners, plant managers and procurement engineers begin evaluating a new or replacement web converting machine, the conversation often starts with a single metric: maximum line speed. Evaluating a machine on its top rated speed alone, however, is a common misstep in capital equipment procurement. True slitter rewinder production capacity is a function of the complete roll cycle &mdash; the time the machine spends actively winding material plus the time it sits idle during changeovers, setup and maintenance.</p>
+          <p>Accurate equipment capacity calculation based on projected output is central to selecting the right slitting machine. By mapping out planned speed, automation and manual-intervention levels, buyers can check whether the machine matches the facility's production plan before committing to a purchase. This guide gives a step-by-step method to estimate how many finished rolls, or total linear meters, a machine can produce per shift. With that number in hand, you can compare supplier quotes, draft a precise request for quotation (RFQ), and justify the automation features you are paying for.</p>
+
+          <h2>Why rated machine speed is not true production capacity</h2>
+          <p>A slitter rewinder capable of running at high line speed will rarely, if ever, produce the output implied by multiplying its rated speed by a full hour of running. The gap between rated speed and actual throughput is driven by essential operational pauses and efficiency losses. To model capacity accurately, buyers must account for the specific events that halt or slow down the web.</p>
+
+          <h3>The impact of roll changeover time</h3>
+          <p>The most significant drain on production capacity is the finished-roll changeover. When a set of rewound rolls reaches its target diameter or length, the machine must decelerate and stop. Operators &mdash; or automated systems &mdash; must then cut the web, secure the tails of the finished rolls, unload the rolls from the rewind shafts, load fresh cores, tape the web to the new cores, and accelerate back to running speed. In operations with frequent rewind reel changeovers where multiple reels are changed each time, productive machine time can fall well below half of the total time consumed.</p>
+
+          <h3>Parent roll changes and web threading</h3>
+          <p>Just as finished rolls require downtime, depletion of the master (parent) roll forces a stoppage unless the machine is equipped with splicing capability. The operator must remove the empty master core, load a new parent roll and splice the web. If the web breaks or a new job starts, threading the material through the idler rollers, tension zones and the slitting section requires careful manual work that consumes shift minutes.</p>
+
+          <h3>Knife setup and slitting width adjustments</h3>
+          <p>In contract manufacturing or facilities with a diverse product mix, finished roll widths change frequently. Manually repositioning shear, razor or score knives across the web path is a meticulous process: operators must measure, adjust, lock down and verify the position of both top and bottom blades. Depending on the number of slit lanes, manual knife setup can keep the machine idle for a substantial part of a width change, directly subtracting from daily capacity.</p>
+
+          <h3>Acceleration, deceleration and inspection</h3>
+          <p>A machine does not jump instantly from zero to its target line speed. Acceleration and deceleration ramps must be controlled to maintain web tension and prevent defects such as telescoping or web breaks, so the average running speed over a roll is lower than the peak speed. Operators may also slow or stop the machine for quality inspection, web guiding adjustments or clearing edge trim blockages &mdash; minor but compounding efficiency losses.</p>
+
+          <h2>The basic capacity calculation method</h2>
+          <p>To arrive at a defensible output figure, move from thinking in meters per minute to evaluating the finished-roll cycle. The roll cycle is the total time required to produce one complete set of finished rolls, from the moment the machine starts accelerating to the moment the next set of cores is loaded and ready to run.</p>
+          <p>The calculation uses two fundamental metrics: run time per roll and total cycle time.</p>
+          <ul>
+            <li><strong>Run time per roll</strong> = finished roll length &divide; planned line speed. This is the time needed to wind the required material at the speed you intend to run.</li>
+            <li><strong>Cycle time</strong> = run time + changeover time. Changeover includes deceleration, unloading, core loading, taping and routine adjustments between rolls.</li>
+            <li><strong>Rolls per shift</strong> = (available shift minutes &times; efficiency factor) &divide; cycle time per roll set. Available shift minutes are total shift time minus planned breaks and maintenance; the efficiency factor covers unplanned downtime, web breaks and operator delays.</li>
+            <li><strong>Meters per shift</strong> = number of roll sets &times; finished roll length, or effective running minutes &times; planned line speed.</li>
+          </ul>
+
+          <h2>A worked example: modeling shift output</h2>
+          <p>To illustrate how these variables interact, here is a standard production scenario. Note that the numbers are hypothetical assumptions chosen by a buyer for planning purposes, not performance guarantees from HDPTH or any other manufacturer.</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Buyer's assumption</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Planned line speed</td>
+                  <td>500 m/min (a conservative running speed for a specific nonwoven material)</td>
+                </tr>
+                <tr>
+                  <td>Finished roll length</td>
+                  <td>2,000 m</td>
+                </tr>
+                <tr>
+                  <td>Roll changeover time</td>
+                  <td>3 minutes (manual core loading and unloading by an experienced crew)</td>
+                </tr>
+                <tr>
+                  <td>Available shift time</td>
+                  <td>480 minutes (8-hour shift, with breaks covered by alternating operators)</td>
+                </tr>
+                <tr>
+                  <td>Efficiency factor</td>
+                  <td>85% (0.85), accounting for parent roll changes, knife adjustments and minor stops</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p><strong>Step 1 &mdash; Calculate run time:</strong> run time per roll = 2,000 m &divide; 500 m/min = 4 minutes.</p>
+          <p><strong>Step 2 &mdash; Calculate total cycle time:</strong> cycle time = 4 minutes run time + 3 minutes changeover = 7 minutes per roll set.</p>
+          <p><strong>Step 3 &mdash; Calculate effective shift minutes:</strong> 480 minutes &times; 0.85 = 408 effective minutes per shift.</p>
+          <p><strong>Step 4 &mdash; Calculate output per shift:</strong> 408 minutes &divide; 7 minutes per cycle = 58 full roll sets per shift. If the master web is slit into 5 lanes, total shift output is 290 individual finished rolls. In linear terms, each lane produces 58 &times; 2,000 m = 116,000 m per shift.</p>
+          <p>Notice how a 3-minute changeover adds nearly as much time as the 4-minute roll itself. If this buyer simply multiplied 500 m/min by 480 minutes, they would project 240,000 m per shift &mdash; more than double the modeled capacity.</p>
+
+          <h2>Key inputs buyers must define before calculating</h2>
+          <p>The accuracy of the capacity calculation depends entirely on the quality of the inputs. Before contacting a manufacturer, procurement engineers and plant managers should lock down several production variables.</p>
+
+          <h3>Material type and web behavior</h3>
+          <p>Different materials dictate different maximum running speeds. HDPTH machines process a wide variety of webs, including nonwoven fabrics (such as spunbond, spunlace, needle-punched, wood pulp, meltblown, composite, flushable and hot-air), PE film, paper, textiles and other flexible roll materials. A robust paper can support high planned line speeds, while a delicate, highly extensible PE film or a lightweight meltblown nonwoven may require a clearly lower planned speed to maintain tension control and avoid stretching.</p>
+
+          <h3>Parent and finished roll specifications</h3>
+          <p>The dimensions of the raw material and final product govern stop-and-start frequency. Define the parent roll width, outer diameter and core size. A larger parent roll means fewer master roll changes per shift. Similarly, finished roll widths, target diameters and lengths determine the run time per cycle. Shorter finished rolls mean more frequent changeovers, reducing overall equipment effectiveness.</p>
+
+          <h3>Slit lanes and rewind configuration</h3>
+          <p>The number of slit lanes dictates how many finished rolls must be handled at every changeover. Producing twenty narrow rolls requires significantly more operator time to tape, unload and re-core than producing three wide rolls. The choice between standard air shafts and differential friction shafts also affects unloading time and tension stability.</p>
+
+          <h3>Changeover method and operator count</h3>
+          <p>Will the machine be run by a single operator or a two-person team? Is the facility relying entirely on manual labor to slide heavy finished rolls off cantilevered shafts, or is auxiliary equipment available? Establishing these baseline operational realities is crucial for estimating a realistic changeover time in the model.</p>
+
+          <h2>How machine features change the equation</h2>
+          <p>When modeled capacity falls short of production targets, the immediate instinct is often to demand a faster machine. However, as the Flexographic Technical Association notes, offline converting machines typically operate at least 1.5 times the speed of the lines that supply the parent rolls, and can be up to 2.5 times faster. Rather than pushing for extreme top speeds that may compromise material integrity, buyers should focus on automation that assists material handling or knife setup, which reduces idle time and raises throughput without an excessively high operating speed.</p>
+
+          <h3>Automating the slitting section</h3>
+          <p>For facilities with a high product mix, investing in <a href="../../products/automatic-knife-systems/index.html">automatic knife systems</a> transforms capacity. Instead of an operator spending long periods manually measuring and locking down individual knife holders, automatic systems provide repeatable, recipe-driven knife positioning. The system traverses and locks knives into exact positions, compressing a lengthy manual process into minutes. This automation is particularly suited to lines with multiple finished roll width requirements and frequent job changeovers.</p>
+
+          <h3>Speeding up the roll changeover</h3>
+          <p>When finished-roll cycles are short &mdash; for example with small consumer or medical rolls &mdash; changeover time becomes the dominant factor in the calculation. <a href="../automatic-core-loading-turret-slitter-rewinder/index.html">Automatic core loading</a> lets the machine stage fresh cores on the rewind shafts without manual intervention, and combining it with automated web cutting and tail taping compresses cycle time considerably. Similarly, integrated <a href="../slitter-rewinder-roll-unloading-system/index.html">roll unloading systems</a> and automatic shaft-pullers move completed rolls off the rewind shafts onto receiving carts or conveyors, saving minutes per cycle and reducing operator fatigue.</p>
+
+          <h3>Eliminating parent roll stoppages</h3>
+          <p>Master roll changes can halt production for a significant period depending on roll weight and the facility's lifting equipment. <a href="../non-stop-unwinding-slitter-rewinder/index.html">Non-stop unwinding</a> systems, such as dual-station automatic unwinders, splice a new parent roll onto the expiring web without halting the line. By removing parent-roll stop time from the shift calculation, the efficiency factor rises. Purpose-built <a href="../../products/nonwoven-rewinding-machines/index.html">nonwoven rewinding machines</a> designed for controlled tension and stable roll formation also help reduce common defects such as telescoping, wrinkles, loose edges and uneven roll build, avoiding the unplanned stops that erode shift efficiency.</p>
+
+          <div class="article-cta">
+            <h3>Compare machine configurations against your output target</h3>
+            <p>Share your material types, parent roll widths, target speeds and roll dimension requirements with HDPTH before quotation, and the engineering team can recommend a converting configuration that matches your modeled capacity.</p>
+            <a class="btn btn-red" href="../../inquiry/index.html">Discuss Your Output Target</a>
+          </div>
+
+          <h2>Using capacity numbers in your request for quotation</h2>
+          <p>Once you have calculated a theoretical capacity using realistic cycle times and efficiency factors, integrate it into the RFQ. Do not simply ask a manufacturer for a "fast slitter." Instead, provide a comprehensive operational profile so the engineering team can propose the right machine architecture.</p>
+          <p>List your master roll inputs (material, width, outer diameter, core size) and required finished roll outputs (slit widths, maximum diameter, length). Crucially, state your target production per shift and your planned shift pattern &mdash; for example: "We intend to process spunbond nonwovens at a target line speed of 600 m/min, requiring 250 finished rolls per 8-hour shift."</p>
+          <p>Manufacturers such as HDPTH offer <a href="../../products/high-speed-slitting-machines/index.html">high-speed slitting machines</a> and integrated automatic row knife slitting lines with production speed ranges of 500&ndash;1,200 m/min, minimum slitting widths of 45&ndash;65 mm and effective winding widths of 1,500&ndash;4,500 mm. Actual speed and knife configuration depend on the material and width. Providing your capacity calculation in the RFQ invites the supplier to confirm whether their proposed level of full-servo PLC control, unwinding automation and trimming recovery can achieve your target cycle times.</p>
+
+          <h2>Verifying capacity at the factory acceptance test</h2>
+          <p>Calculating capacity is only the first step; verifying it before the equipment leaves the manufacturer's facility is equally critical. The factory acceptance test (FAT) is the final opportunity to check that the machine meets the operational metrics you modeled during procurement. Follow a structured <a href="../slitter-rewinder-factory-acceptance-test-checklist/index.html">slitter rewinder factory acceptance test checklist</a> rather than accepting a top-speed demonstration.</p>
+          <p>Insist on measuring a real, complete roll cycle at your planned production speed. Record the exact changeover time from the moment the machine decelerates to the moment the next roll reaches steady-state running speed. Observe and time the knife setup process for a typical width change to validate the automation features you purchased. Comparing these measured cycle times against the model in your RFQ verifies the machine's true production capacity before shipment is authorised.</p>
+
+          <h2>Buyer FAQs</h2>
+          <div class="faq-list">
+            <details>
+              <summary>How do I calculate slitter rewinder production capacity?</summary>
+              <p>You calculate capacity by first determining the complete roll cycle time, which is the actual run time per finished roll plus the total changeover time. Then, divide your available shift minutes by this cycle time, and multiply by a realistic efficiency factor to account for minor stops and maintenance. This yields the number of rolls produced per shift.</p>
+            </details>
+            <details>
+              <summary>Why is machine speed different from production capacity?</summary>
+              <p>Machine speed only measures how fast the web moves during optimal running conditions. It ignores the significant downtime required for finished-roll changeovers, parent roll splicing, knife repositioning, threading, and acceleration or deceleration. Because machines spend a large portion of a shift idle for these necessary tasks, top speed alone cannot dictate actual output.</p>
+            </details>
+            <details>
+              <summary>What is a realistic efficiency factor for a slitter rewinder?</summary>
+              <p>As a planning starting point, an efficiency factor between 70% and 85% is commonly used, depending on the facility's operational maturity. This percentage accounts for unplanned downtime, web breaks, operator delays, quality inspections, and routine preventative maintenance. Facilities with highly automated changeovers and non-stop unwinding systems can plan with higher efficiency factors.</p>
+            </details>
+            <details>
+              <summary>How much does roll changeover time affect output?</summary>
+              <p>Roll changeover time drastically affects output, especially when producing shorter finished rolls. In scenarios with frequent manual changeovers where operators must unload heavy reels and tape new cores, the machine may spend more than half of its shift stopped. Automating this process is often the fastest way to increase capacity.</p>
+            </details>
+            <details>
+              <summary>What data should I send a manufacturer to get a reliable capacity estimate?</summary>
+              <p>You should provide the manufacturer with your specific material type, parent roll dimensions (width, outer diameter, core size), finished roll requirements (slit widths, target diameter, length), desired line speed, and your operational shift pattern. Providing your daily output target allows the manufacturer to recommend the right automation level.</p>
+            </details>
+          </div>
+
+          <h2>Sources</h2>
+          <ul>
+            <li><a href="https://www.flexography.org/industry-news-iq/slitter-rewinder-selecting/" rel="noopener" target="_blank">Flexographic Technical Association: Selecting a Slitter/Rewinder: A Flexographer's Guide</a></li>
+            <li><a href="https://www.catbridge.com/helpful-website-calculators-for-slitter-rewinder-operations/" rel="noopener" target="_blank">Catbridge Machinery: Helpful Website Calculators for Slitter Rewinder Operations</a></li>
+            <li><a href="https://nicely-slitter.com/en/article/Choosing-the-Right-Slitter-Rewinder.html" rel="noopener" target="_blank">Nicely: Choosing the Right Slitter Rewinder</a></li>
+            <li><a href="https://packagingsouthasia.com/type-of-packaging/flexible-packaging/evaluating-slitter/" rel="noopener" target="_blank">Packaging South Asia: Considering and Evaluating Slitter-Rewinders</a></li>
+          </ul>
+
+          <div class="article-cta">
+            <h3>Send your capacity model when requesting a quotation</h3>
+            <p>Contact Wilson Wu and the HDPTH engineering team with your material formats, speed requirements and automation needs, and include your shift output target so the recommended configuration can be checked against your production plan.</p>
+            <a class="btn btn-red" href="../../inquiry/index.html">Request a Project Review</a>
+          </div>
+        </article>
+        <aside class="article-sidebar">
+          <div class="toc-card">
+            <strong>Buyer focus</strong>
+            <p>Finished-roll cycle modeling</p>
+            <p>Efficiency and changeover time</p>
+            <p>RFQ data and FAT evidence</p>
+            <a href="../../inquiry/index.html">Discuss your project</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h3>HDPTH</h3><p>High-tech nonwoven machinery for global manufacturers.</p></div>
+      <div><h4>Products</h4><a href="../../products/high-speed-slitting-machines/index.html">High-Speed Slitting Machines</a><a href="../../products/nonwoven-rewinding-machines/index.html">Nonwoven Rewinding Machines</a><a href="../../products/automatic-knife-systems/index.html">Automatic Knife Systems</a></div>
+      <div><h4>Company</h4><a href="../../factory/index.html">Factory</a><a href="../../certificates/index.html">Certificates</a><a href="../../contact/index.html">Contact</a></div>
+    </div>
+    <div class="container footer-bottom">HDPTH Technical Editorial Team</div>
+  </footer>
+  <script src="../../social-links.js" defer async></script>
+</body>
+</html>
