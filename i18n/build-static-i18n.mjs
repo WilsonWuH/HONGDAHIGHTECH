@@ -51,13 +51,15 @@ const extraSitemapRoutes = [
   "/blog/simplex-vs-duplex-slitter-rewinder/",
   "/blog/slitter-rewinder-static-control/",
   "/blog/web-guide-sensor-slitter-rewinder/",
-  "/blog/slitter-rewinder-production-capacity/"
+  "/blog/slitter-rewinder-production-capacity/",
+  "/blog/nonwoven-embossing-machine-specification/"
 ];
 
 const extraSitemapLastmod = {
   "/blog/slitter-rewinder-inspection-system/": "2026-07-19",
   "/blog/web-guide-sensor-slitter-rewinder/": "2026-08-03",
-  "/blog/slitter-rewinder-production-capacity/": "2026-08-04"
+  "/blog/slitter-rewinder-production-capacity/": "2026-08-04",
+  "/blog/nonwoven-embossing-machine-specification/": "2026-08-05"
 };
 
 const meta = {
