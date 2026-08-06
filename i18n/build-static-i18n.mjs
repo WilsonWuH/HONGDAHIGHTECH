@@ -52,14 +52,16 @@ const extraSitemapRoutes = [
   "/blog/slitter-rewinder-static-control/",
   "/blog/web-guide-sensor-slitter-rewinder/",
   "/blog/slitter-rewinder-production-capacity/",
-  "/blog/nonwoven-embossing-machine-specification/"
+  "/blog/nonwoven-embossing-machine-specification/",
+  "/blog/nonwoven-perforation-design-tear-strength/"
 ];
 
 const extraSitemapLastmod = {
   "/blog/slitter-rewinder-inspection-system/": "2026-07-19",
   "/blog/web-guide-sensor-slitter-rewinder/": "2026-08-03",
   "/blog/slitter-rewinder-production-capacity/": "2026-08-04",
-  "/blog/nonwoven-embossing-machine-specification/": "2026-08-05"
+  "/blog/nonwoven-embossing-machine-specification/": "2026-08-05",
+  "/blog/nonwoven-perforation-design-tear-strength/": "2026-08-06"
 };
 
 const meta = {
