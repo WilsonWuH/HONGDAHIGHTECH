@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Film Slitter Rewinder Specification for PE &amp; PET | HDPTH</title>
+  <meta name="description" content="Learn how to specify a film slitter rewinder for PE and PET film. We cover tension control, slitting methods, static elimination, and RFQ data checklists.">
+  <link rel="canonical" href="https://www.hdpth.com/blog/film-slitter-rewinder-pe-pet/">
+  <link rel="preload" as="style" href="../../styles.css">
+  <style data-critical="true">body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#0b1118;background:#fff}.topbar{background:#0b1118;color:rgba(255,255,255,.78);font-size:13px}.header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid #d9dee6}.container{width:min(1180px,calc(100% - 40px));margin:0 auto}.nav{display:flex;align-items:center;justify-content:space-between;min-height:74px}.hero,.page-hero{background:#0b1118;color:#fff}img{max-width:100%;height:auto;display:block}</style>
+  <link rel="stylesheet" href="../../styles.css">
+  <style data-article-responsive="true">
+    @media (max-width: 560px) {
+      body { overflow-x: clip; }
+      .header .container.nav { width: calc(100% - 28px); max-width: calc(100% - 28px); gap: 12px; }
+      .header .nav > .btn { width: auto; flex: 0 0 auto; padding: 12px 16px; }
+      .header .nav-links { min-width: 0; }
+      .page-hero .container, .section .container { width: calc(100% - 28px); max-width: calc(100% - 28px); }
+      .page-hero h1, .page-hero p { max-width: 100%; overflow-wrap: anywhere; }
+      .article-layout, .article-body { width: 100%; min-width: 0; max-width: 100%; }
+      .article-body { padding: 22px; }
+      .article-body figure { margin: 28px 0; max-width: 100%; }
+      .article-body picture, .article-body img { width: 100%; max-width: 100%; }
+      .answer-box, .article-cta, .table-wrap { width: 100%; min-width: 0; max-width: 100%; }
+      .table-wrap { display: block; overflow-x: auto; }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Article",
+      "headline":"How to Specify a Film Slitter Rewinder for PE and PET",
+      "description":"Learn how to specify a film slitter rewinder for PE and PET film. We cover tension control, slitting methods, static elimination, and RFQ data checklists.",
+      "image":"https://www.hdpth.com/assets/images/blog/film-slitter-rewinder-pe-pet.webp",
+      "author":{"@type":"Organization","name":"HDPTH Technical Editorial Team"},
+      "publisher":{"@type":"Organization","name":"HDPTH"},
+      "datePublished":"2026-08-11",
+      "dateModified":"2026-08-11",
+      "mainEntityOfPage":"https://www.hdpth.com/blog/film-slitter-rewinder-pe-pet/"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hdpth.com/"},
+        {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.hdpth.com/blog/"},
+        {"@type":"ListItem","position":3,"name":"Film Slitter Rewinder Specification for PE and PET","item":"https://www.hdpth.com/blog/film-slitter-rewinder-pe-pet/"}
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"What tension should be used when slitting PE film?","acceptedAnswer":{"@type":"Answer","text":"PE film requires very low, precisely controlled tension because it is soft and highly extensible. The right value depends on film gauge, width and the machine's web-handling design, so it should be confirmed with the supplier during material trials. If tension is too high, the film will stretch, leading to deformed edges and poor roll quality."}},
+        {"@type":"Question","name":"Can one slitter rewinder handle both PE and PET?","acceptedAnswer":{"@type":"Answer","text":"Yes, but the machine must be configured for both. It requires closed-loop tension control that covers low-tension PE running and the higher, stable tension that stiff PET needs, plus the correct slitting knives, often shear with razor as an option for thin films. Confirm the intended gauge range with the supplier before quotation."}},
+        {"@type":"Question","name":"What slitting method is best for thin PE film?","acceptedAnswer":{"@type":"Answer","text":"Razor slitting, either in-air or in-groove, is highly effective and economical for thin, soft PE films. Blades must be changed frequently, because a dull razor stretches the edge before cutting it and produces a deformed roll profile. For thicker PE, shear slitting is generally preferred."}},
+        {"@type":"Question","name":"How do I stop static from affecting slitting quality?","acceptedAnswer":{"@type":"Answer","text":"Specify active static neutralizers, such as ionizing bars, at key points along the web path: after the unwind, immediately before the slitting knives, and just before the rewind shafts. This prevents film from clinging to rollers and slit strips from attracting each other, and reduces operator shocks during roll handling."}},
+        {"@type":"Question","name":"What should I verify during a film slitter rewinder FAT?","acceptedAnswer":{"@type":"Answer","text":"Run your actual production film at target speeds and verify that slit edges are clean and free of micro-cracks on PET or stretching on PE. Check finished rolls for uniform hardness and the absence of telescoping or starring, and monitor tension stability during acceleration, deceleration and steady-state running. Record the time needed for a complete width changeover."}}
+      ]
+    }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="../../index.html"><span class="brand-mark"></span>HDPTH</a>
+      <nav class="nav-links">
+        <div class="nav-item">
+          <a class="mega-trigger" href="../../products/index.html">Products</a>
+          <div class="mega-menu">
+            <div class="mega-grid">
+              <div class="mega-section">
+                <p class="mega-kicker">Product Matrix</p>
+                <div class="mega-list">
+                  <a class="mega-link" href="../../products/high-speed-slitting-machines/index.html"><strong>High-Speed Slitting Machines</strong><span>Clean cutting and stable tension for roll converting.</span></a>
+                  <a class="mega-link" href="../../products/nonwoven-rewinding-machines/index.html"><strong>Nonwoven Rewinding Machines</strong><span>Consistent roll formation for downstream production.</span></a>
+                  <a class="mega-link" href="../../products/automatic-knife-systems/index.html"><strong>Automatic Knife Systems</strong><span>Faster setup and repeatable cutting configuration.</span></a>
+                  <a class="mega-link" href="../../products/index.html"><strong>All Converting Equipment</strong><span>Perforating lines, combined machines and auxiliary systems.</span></a>
+                </div>
+              </div>
+              <div class="mega-section">
+                <p class="mega-kicker">Applications</p>
+                <div class="mega-plain">
+                  <a href="../../applications/index.html">Hygiene Products</a>
+                  <a href="../../applications/index.html">Medical Nonwoven Materials</a>
+                  <a href="../../applications/index.html">Disposable Wipes &amp; Flexible Materials</a>
+                  <a href="../../guides/nonwoven-slitting-machine-buying-guide/index.html">Buying Guide</a>
+                </div>
+              </div>
+              <div class="mega-cta">
+                <h3>Need a machine configuration?</h3>
+                <p>Send material, width, speed and application details. HDPTH will recommend the suitable converting setup.</p>
+                <a class="btn btn-red" href="../../inquiry/index.html">Request a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="../../applications/index.html">Applications</a>
+        <a href="../index.html">Blog</a>
+        <a href="../../certificates/index.html">Certificates</a>
+        <a href="../../news/index.html">News</a>
+        <a href="../../contact/index.html">Contact</a>
+      </nav>
+      <a class="btn btn-red" href="../../inquiry/index.html">Get a Quote</a>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">Home / Blog / Film Slitter Rewinder Specification for PE and PET</div>
+        <h1>How to Specify a Film Slitter Rewinder for PE and PET</h1>
+        <p>A buyer-focused specification guide covering material behavior, tension control, slitting methods, static elimination and RFQ data for PE and PET film converting lines.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container article-layout">
+        <article class="article-body">
+          <p class="eyebrow">Published August 11, 2026 | By HDPTH Technical Editorial Team</p>
+          <div class="answer-box"><strong>Short answer:</strong> specifying a film slitter rewinder for PE and PET means matching tension zones, slitting method and winding configuration to the film's physical properties. PE demands low-tension handling and static elimination to prevent edge stretching; PET requires precise shear slitting and higher, stable tension to manage stiffness and brittle edges. Confirming this specification with material trials supports clean edges, uniform roll hardness and stable roll formation.</div>
+
+          <figure class="media-panel" style="margin:28px 0">
+            <picture>
+              <source type="image/webp" srcset="../../assets/images/blog/film-slitter-rewinder-pe-pet-720.webp 720w, ../../assets/images/blog/film-slitter-rewinder-pe-pet.webp 1440w" sizes="(max-width: 760px) 100vw, 1000px">
+              <img src="../../assets/images/blog/film-slitter-rewinder-pe-pet.webp" alt="Simplified film slitter rewinder line with a transparent parent film roll unwinding through static bars and shear knives over an anvil roll onto dual rewind shafts with touch rolls" width="1440" height="960" decoding="async" sizes="(max-width: 760px) 100vw, 1000px" loading="eager" fetchpriority="high">
+            </picture>
+            <figcaption>A film slitter rewinder has to match tension, slitting and winding controls to the film's mechanical behavior &mdash; not to a generic catalog specification.</figcaption>
+          </figure>
+
+          <p>Converting wide parent rolls of polymer film into finished slit rolls is mechanically demanding. Plant managers and engineers evaluating a new film slitting machine face a fundamental challenge: different polymer films behave very differently under tension and at the slitting knife. A machine configured for heavy paper or nonwovens can stretch, deform or damage thin polymer films.</p>
+          <p>To achieve clean slit edges, uniform roll hardness and defect-free finished rolls, buyers need to match the machine's web handling to the material being converted. This guide covers the engineering requirements for a film slitter rewinder handling two common but contrasting packaging films: polyethylene (PE) and polyester (PET).</p>
+
+          <h2>Why PE and PET film need a different specification approach</h2>
+          <p>When writing an RFQ for a slitter rewinder, it helps to start from the material. Polymer films do not share the physical characteristics of paper or nonwoven fabrics. Paper is relatively stable and snaps if over-tensioned; nonwovens are porous and fibrous. Polymer films are non-porous, insulating and subject to highly variable elongation.</p>
+          <p>PE film is soft, highly ductile and extensible. Excess tension makes the web elongate in the machine direction and narrow across it &mdash; a phenomenon known as necking &mdash; and PE is prone to edge stretch at the slitting interface plus strong static charge during converting. The Delish Group's technical review of multi-material film slitting makes the same point: PE is soft and highly ductile, its edges stretch and deform easily, and static builds up readily.</p>
+          <p>PET film, in contrast, has high stiffness and good dimensional stability, with low elongation and a demand for dimensional accuracy. That stiffness brings a distinct vulnerability: PET edges are brittle. A dull, misaligned or vibrating blade can create micro-cracks that generate dust and weaken the roll profile. Standard web-handling approaches are therefore not enough for either material; the machine should be engineered around the target film's behavior.</p>
+
+          <h2>Core specification parameters for a film slitter rewinder</h2>
+          <p>Before looking at sub-systems, the specification must define the macro-parameters that dictate frame size, drive sizing and structural rigidity:</p>
+          <ul>
+            <li><strong>Web width:</strong> the maximum and minimum parent roll width and the effective winding width. Wide-web film lines can exceed 3,000 mm, so idler rollers must resist deflection.</li>
+            <li><strong>Line speed:</strong> the target production speed in m/min. Practical speed depends on film thickness, width and behavior; HDPTH's product manual lists 500&ndash;1200 m/min for its automatic row knife slitting machine, with actual speed depending on material and width.</li>
+            <li><strong>Unwind and rewind diameter:</strong> the maximum outer diameter of the parent roll and of the finished slit rolls.</li>
+            <li><strong>Core size:</strong> typically 3-inch (75 mm) or 6-inch (150 mm) inside diameter, which determines chucks and rewind shafts.</li>
+            <li><strong>Finished roll width:</strong> the minimum and maximum slit strip widths, which determine the type and spacing of the knife holders.</li>
+            <li><strong>Roll weight:</strong> used to size torque and structural loads for the unwind stands and rewind shafts.</li>
+            <li><strong>Edge quality target:</strong> acceptable tolerances for edge straightness, roll profile and the absence of slitting dust or burrs.</li>
+          </ul>
+          <p>The Flexographic Technical Association's slitter/rewinder selection guidance recommends defining the full range of parent roll and finished roll properties first, because those specifications eliminate machine types by size and weight limits. It also suggests offline converting machines typically run at least 1.5 times faster than the supplying line, and up to about 2.5 times faster where throughput demands it.</p>
+
+          <h2>PE vs PET behavior and machine impact</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Property</th>
+                  <th>PE film</th>
+                  <th>PET film</th>
+                  <th>Machine impact</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Stiffness and extensibility</td>
+                  <td>Soft, ductile and extensible; necks under excess tension</td>
+                  <td>Stiff, with low elongation and high dimensional stability</td>
+                  <td>Tension zones need a wide, sensitive control range; drives and frames sized for stable low-tension handling</td>
+                </tr>
+                <tr>
+                  <td>Edge behavior when cut</td>
+                  <td>Edges stretch and deform if blades are dull</td>
+                  <td>Brittle edges; micro-cracks and dust if cut incorrectly</td>
+                  <td>Sharp knives, the right slitting method and disciplined blade maintenance are essential; slit edges checked at FAT</td>
+                </tr>
+                <tr>
+                  <td>Static generation</td>
+                  <td>Strong static buildup; film clings to rollers and attracts dust</td>
+                  <td>Insulating film also generates static during high-speed travel</td>
+                  <td>Active static elimination specified after unwind, before the knives and before rewind</td>
+                </tr>
+                <tr>
+                  <td>Required tension</td>
+                  <td>Very low, precisely controlled tension</td>
+                  <td>Higher, stable tension to keep the web flat and tracking</td>
+                  <td>Closed-loop tension control with isolated unwind, slitting and rewind zones</td>
+                </tr>
+                <tr>
+                  <td>Winding behavior</td>
+                  <td>Trapped air softens rolls; low nip pressure avoids stretching</td>
+                  <td>Air entrapment causes telescoping; stiffer layers tolerate higher nip pressure</td>
+                  <td>Center or center-surface winding with adjustable touch-roll pressure</td>
+                </tr>
+                <tr>
+                  <td>Typical slitting method</td>
+                  <td>Razor for thin films; shear for thicker films</td>
+                  <td>Shear slitting is the usual choice</td>
+                  <td>A dual razor/shear capability may be specified for mixed production</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>Choosing the slitting method for film</h2>
+          <p>The blade-to-film interaction determines finished edge quality, so choosing the cutting method is one of the most important decisions in the specification. For a broader comparison, see our guide to <a href="../razor-vs-shear-vs-score-slitting-methods/index.html">razor vs shear vs score slitting methods</a>.</p>
+          <h3>Razor slitting</h3>
+          <p>Razor slitting is widely used for thin, extensible films like PE. The web passes a stationary razor blade either in-air (unsupported at the cut point) or in-groove (blade running inside a grooved idler roller). It is cost-effective and cuts soft films cleanly, but blades wear quickly; a dull razor stretches the PE edge before cutting it, producing a fluted, deformed edge.</p>
+          <h3>Shear slitting</h3>
+          <p>Shear slitting uses a rotating top blade against a driven bottom anvil blade, like a pair of scissors. It is the usual choice for stiff films such as PET, thick films and multilayers, because it shears the material instead of dragging a stationary edge through it. Blade overlap, overspeed ratios and cut angles all matter. Catbridge's Model 900-M duplex center slitter rewinder, for example, combines shear knife positioning with closed-loop tension control, touch rolls and a static neutralizer, with razor slitting available as an option.</p>
+          <p>For frequent order changes across multiple slit widths, <a href="../../products/automatic-knife-systems/index.html">automatic knife systems</a> reduce manual blade repositioning time and support repeatable cut widths.</p>
+          <h3>Burst/score slitting</h3>
+          <p>Burst slitting presses a blade against a hardened backing cylinder to crush-cut the material. It works well for paper and some nonwovens, but it is rarely specified for thin PE or PET films, because it leaves a poor edge quality and can stretch extensible polymers.</p>
+
+          <h2>Tension control and taper tension for film</h2>
+          <p>Web tension must be controlled from parent-roll unwind to finished-roll take-off. The machine should have isolated tension zones &mdash; typically unwind, slitting and rewind &mdash; separated by driven nip rollers.</p>
+          <p>Because PE is highly extensible, it needs very low tension to prevent necking, so sensitive load cells and low-friction idlers are part of the specification. PET, conversely, needs higher, stable tension to keep the stiff web tracking straight. A machine built for both materials needs a wide, adjustable tension range.</p>
+          <p>At the rewind station, taper tension should be specified: it gradually reduces winding tension as roll diameter grows, preventing the outer layers from crushing the core (starring) or pushing inner layers sideways (telescoping). HDPTH's custom <a href="../../products/slitting-rewinding-lines/index.html">slitting and rewinding lines</a> combine controlled unwinding, web handling and automated slitting, with factory testing that verifies tension stability, roll quality and operating sequence before delivery.</p>
+
+          <h2>Static control in film slitting</h2>
+          <p>Polymer films are excellent electrical insulators, so high-speed travel over idler rollers builds triboelectric charge. Uncontrolled static makes slit strips cling to machine frames, wrap around rollers or attract dust &mdash; a real problem for packaging films where clarity is part of the product &mdash; and it can deliver uncomfortable shocks to operators during roll handling.</p>
+          <p>A proper specification includes active static elimination, typically ionizing bars at the unwind station, immediately before the slitting knives, and just before the rewind shafts. For control points and verification, see our article on <a href="../slitter-rewinder-static-control/index.html">static control on slitter rewinders</a>.</p>
+
+          <div class="article-cta">
+            <h3>Planning a flexible materials converting project?</h3>
+            <p>Ensure your next machine is engineered precisely for your web width, speed and material requirements. Send an RFQ to the HDPTH engineering team to discuss customized slitter rewinder configurations for your facility.</p>
+            <a class="btn btn-red" href="../../inquiry/index.html">Discuss your project with HDPTH</a>
+          </div>
+
+          <h2>Winding method and roll quality</h2>
+          <p>How the slit strips are wound determines final roll quality. Film slitter rewinders use center winding, surface winding or a center-surface combination, with duplex center-surface rewinders widely used for flexible packaging films. In center winding, torque is applied directly to the rewind shaft; in surface winding, the rolls are driven by contact with a powered drum. Our comparison of <a href="../center-winding-vs-surface-winding-slitter-rewinder/index.html">center winding vs surface winding</a> explains how each method affects roll hardness and material suitability.</p>
+          <p>High-speed winding also drags a boundary layer of air into the roll. Trapped air makes rolls soft and prone to telescoping, so pneumatic touch rolls (lay-on rolls) are typically specified to press against the winding roll and expel the air.</p>
+
+          <h2>Rewind shafts, cores and roll handling</h2>
+          <p>Extruded films often have small thickness variations across the web, sometimes called gauge bands. On a solid shaft, thicker strips build a larger diameter and pull tighter while thinner strips wind loosely. <a href="../differential-rewind-shafts-slitter-rewinder/index.html">Differential rewind shafts</a> solve this with independently slipping friction elements, so every slit roll receives controlled torque regardless of minor diameter differences.</p>
+          <p>Roll handling belongs in the specification too: finished film rolls are heavy, so roll pushers, automatic shaft pullers and unloading systems improve ergonomics and cut changeover time. HDPTH supplies auxiliary equipment including edge trim rewinders, a dual-station automatic unwinder and an automatic shaft-puller for line integration.</p>
+
+          <h2>Web guiding and edge monitoring</h2>
+          <p>A parent roll rarely unwinds perfectly straight, so the machine should include an edge position control (EPC) or line position control (LPC) system that shifts the unwind stand laterally to keep the web aligned before it reaches the knives.</p>
+          <p>Sensor choice matters for clear films: photoelectric sensors can struggle with transparent PE and PET edges because light passes through, so ultrasonic edge sensors are often specified. Our <a href="../web-guide-sensor-slitter-rewinder/index.html">web guide sensor selection guide</a> compares ultrasonic, optical and CCD options. Edge trim removal also needs a plan, whether vacuum trim extraction or edge trim rewinders, so waste margins do not tangle.</p>
+
+          <h2>RFQ data checklist for PE/PET film</h2>
+          <p>Provide the following data in your RFQ so the quotation matches the machine to the task:</p>
+          <ol>
+            <li><strong>Material grade and gauge:</strong> the specific PE and PET grades, with minimum and maximum thickness in microns or mils.</li>
+            <li><strong>Parent roll dimensions:</strong> maximum width, outer diameter, weight and core size.</li>
+            <li><strong>Finished roll format:</strong> minimum and maximum slit widths, maximum rewind diameter and rewind core sizes.</li>
+            <li><strong>Speed target:</strong> the desired operating speed in m/min.</li>
+            <li><strong>Tension range:</strong> expected PLI (pounds per linear inch) or N/m requirements, if known.</li>
+            <li><strong>Slitting method preference:</strong> razor, shear or a dual-purpose setup.</li>
+            <li><strong>Roll quality requirements:</strong> acceptable tolerances for telescoping, edge profile and roll hardness.</li>
+            <li><strong>Trial samples:</strong> a commitment to provide physical parent rolls of the production material for factory testing.</li>
+          </ol>
+
+          <h2>Factory acceptance testing (FAT) and acceptance criteria for film</h2>
+          <p>The factory acceptance test is the buyer's final chance to verify performance before shipment, and for film it must run on the buyer's actual PE and PET material. Verify slit edges under magnification for burrs, stretching or micro-cracks; measure roll hardness from core to outer diameter; check for telescoping and starring; monitor tension stability during acceleration, deceleration and steady-state running; confirm the static elimination system; and time a complete width changeover. Our <a href="../slitter-rewinder-factory-acceptance-test-checklist/index.html">slitter rewinder factory acceptance test checklist</a> provides a fuller set of items.</p>
+
+          <h2>Installation preparation and shipment</h2>
+          <p>Before the machine arrives, prepare the floor layout for the machine footprint and the material-handling pathways for loading parent rolls and unloading finished product, and route utilities such as clean compressed air and three-phase power to the installation point. Confirm that guarding covers point-of-operation areas and ingoing nip points; 29 CFR 1910.212 sets out this general requirement in the United States.</p>
+
+          <h2>The HDPTH project-based approach</h2>
+          <p>HDPTH builds custom slitting equipment for hygiene, medical, disposable, paper, film and flexible material converters, and one <a href="../../products/high-speed-slitting-machines/index.html">high-speed slitting machine</a> platform can process several material categories, including film and paper, so buyers can avoid separate machines for every material change. Configurations for film projects are project-based: material, width, speed, knife system, winding method and controls are confirmed from customer requirements before quotation.</p>
+          <p>For wide-web projects, HDPTH offers an integrated 3500 mm slitting configuration with automatic knife positioning. <a href="../../products/automatic-knife-systems/index.html">Automatic knife systems</a> run at 500&ndash;1200 m/min on the automatic row knife line, cover minimum slit widths of 45&ndash;65 mm and effective winding widths of 1500&ndash;4500 mm, and use full-servo PLC control. HDPTH <a href="../../products/nonwoven-rewinding-machines/index.html">rewinding machines</a> cover custom rewinding widths from 1,000&ndash;4,500 mm, rewinding diameters up to 2,500 mm and core sizes from 75&ndash;250 mm. Factory testing verifies tension stability, roll quality and operating sequence before delivery.</p>
+
+          <h2>Buyer FAQs</h2>
+          <div class="faq-list">
+            <details>
+              <summary>What tension should be used when slitting PE film?</summary>
+              <p>PE film requires very low, precisely controlled tension because it is soft and highly extensible. The right value depends on film gauge, width and the machine's web-handling design, so it should be confirmed with the supplier during material trials. If tension is too high, the film will stretch, leading to deformed edges and poor roll quality.</p>
+            </details>
+            <details>
+              <summary>Can one slitter rewinder handle both PE and PET?</summary>
+              <p>Yes, but the machine must be configured for both. It requires closed-loop tension control that covers low-tension PE running and the higher, stable tension that stiff PET needs, plus the correct slitting knives, often shear with razor as an option for thin films. Confirm the intended gauge range with the supplier before quotation.</p>
+            </details>
+            <details>
+              <summary>What slitting method is best for thin PE film?</summary>
+              <p>Razor slitting, either in-air or in-groove, is highly effective and economical for thin, soft PE films. Blades must be changed frequently, because a dull razor stretches the edge before cutting it and produces a deformed roll profile. For thicker PE, shear slitting is generally preferred.</p>
+            </details>
+            <details>
+              <summary>How do I stop static from affecting slitting quality?</summary>
+              <p>Specify active static neutralizers, such as ionizing bars, at key points along the web path: after the unwind, immediately before the slitting knives, and just before the rewind shafts. This prevents film from clinging to rollers and slit strips from attracting each other, and reduces operator shocks during roll handling.</p>
+            </details>
+            <details>
+              <summary>What should I verify during a film slitter rewinder FAT?</summary>
+              <p>Run your actual production film at target speeds and verify that slit edges are clean and free of micro-cracks on PET or stretching on PE. Check finished rolls for uniform hardness and the absence of telescoping or starring, and monitor tension stability during acceleration, deceleration and steady-state running. Record the time needed for a complete width changeover.</p>
+            </details>
+          </div>
+
+          <h2>Sources</h2>
+          <ul>
+            <li><a href="https://www.flexography.org/industry-news-iq/slitter-rewinder-selecting/" rel="noopener" target="_blank">Flexographic Technical Association: Selecting a Slitter/Rewinder &mdash; A Flexographer's Guide</a></li>
+            <li><a href="https://www.catbridge.com/machinery/slitter-rewinders/duplex-slitter-rewinders/model-900-m-duplex-center-slitter-rewinder/" rel="noopener" target="_blank">Catbridge Machinery: Model 900-M Duplex Center Slitter Rewinder</a></li>
+            <li><a href="https://www.delishgroup.com/news/202508051186.html" rel="noopener" target="_blank">Delish Group: From PE to Aluminum Foil &mdash; Multi-Material Slitting Solutions for Film Slitting Machines</a></li>
+            <li><a href="https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-O/section-1910.212" rel="noopener" target="_blank">eCFR: 29 CFR 1910.212 General Requirements for All Machines</a></li>
+          </ul>
+
+          <div class="article-cta">
+            <h3>Ready to specify a film slitter rewinder for PE and PET?</h3>
+            <p>Share your film grades, parent roll dimensions, finished roll format and speed target with the HDPTH engineering team, or contact Wilson Wu via WhatsApp at +86 13645700210. Material trials and factory testing are part of the project-based configuration review.</p>
+            <a class="btn btn-red" href="../../inquiry/index.html">Send an RFQ to HDPTH</a>
+          </div>
+        </article>
+        <aside class="article-sidebar">
+          <div class="toc-card">
+            <strong>Buyer focus</strong>
+            <p>PE and PET film behavior</p>
+            <p>Tension, slitting and static control</p>
+            <p>RFQ data checklist and FAT evidence</p>
+            <a href="../../inquiry/index.html">Discuss your project</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h3>HDPTH</h3><p>High-tech nonwoven machinery for global manufacturers.</p></div>
+      <div><h4>Products</h4><a href="../../products/high-speed-slitting-machines/index.html">High-Speed Slitting Machines</a><a href="../../products/nonwoven-rewinding-machines/index.html">Nonwoven Rewinding Machines</a><a href="../../products/automatic-knife-systems/index.html">Automatic Knife Systems</a></div>
+      <div><h4>Company</h4><a href="../../factory/index.html">Factory</a><a href="../../certificates/index.html">Certificates</a><a href="../../contact/index.html">Contact</a></div>
+    </div>
+    <div class="container footer-bottom">HDPTH Technical Editorial Team</div>
+  </footer>
+  <script src="../../social-links.js" defer async></script>
+</body>
+</html>

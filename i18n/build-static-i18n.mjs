@@ -40,6 +40,7 @@ const routes = [
 ];
 
 const extraSitemapRoutes = [
+  "/blog/film-slitter-rewinder-pe-pet/",
   "/blog/slitter-rewinder-inspection-system/",
   "/blog/slitter-rewinder-dust-extraction-guide/",
   "/blog/automatic-core-loading-turret-slitter-rewinder/",
@@ -57,6 +58,7 @@ const extraSitemapRoutes = [
 ];
 
 const extraSitemapLastmod = {
+  "/blog/film-slitter-rewinder-pe-pet/": "2026-08-11",
   "/blog/slitter-rewinder-inspection-system/": "2026-07-19",
   "/blog/web-guide-sensor-slitter-rewinder/": "2026-08-03",
   "/blog/slitter-rewinder-production-capacity/": "2026-08-04",
