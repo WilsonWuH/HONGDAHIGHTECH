@@ -54,7 +54,22 @@ const extraSitemapRoutes = [
   "/blog/web-guide-sensor-slitter-rewinder/",
   "/blog/slitter-rewinder-production-capacity/",
   "/blog/nonwoven-embossing-machine-specification/",
-  "/blog/nonwoven-perforation-design-tear-strength/"
+  "/blog/nonwoven-perforation-design-tear-strength/",
+  "/blog/slitter-rewinder-knife-clearance-overlap/",
+  "/blog/slitter-knife-sharpening/",
+  "/blog/slitter-rewinder-web-accumulator/",
+  "/blog/paper-slitter-rewinder-specification/",
+  "/blog/taper-tension-slitter-rewinder/",
+  "/blog/slitter-rewinder-roll-hardness-testing/",
+  "/blog/slitter-rewinder-web-break-detection/",
+  "/blog/spunlace-slitting-rewinding-machine/",
+  "/blog/nonwoven-roll-winding-machine-medical-materials/",
+  "/blog/slitter-rewinder-rewind-torque-control/",
+  "/blog/slitter-rewinder-commissioning-checklist/",
+  "/news/daily/2026-08-19/",
+  "/news/daily/2026-08-20/",
+  "/news/daily/2026-08-21/",
+  "/news/daily/2026-08-22/"
 ];
 
 const extraSitemapLastmod = {
@@ -63,7 +78,22 @@ const extraSitemapLastmod = {
   "/blog/web-guide-sensor-slitter-rewinder/": "2026-08-03",
   "/blog/slitter-rewinder-production-capacity/": "2026-08-04",
   "/blog/nonwoven-embossing-machine-specification/": "2026-08-05",
-  "/blog/nonwoven-perforation-design-tear-strength/": "2026-08-06"
+  "/blog/nonwoven-perforation-design-tear-strength/": "2026-08-06",
+  "/blog/slitter-rewinder-knife-clearance-overlap/": "2026-08-12",
+  "/blog/slitter-knife-sharpening/": "2026-08-13",
+  "/blog/slitter-rewinder-web-accumulator/": "2026-08-14",
+  "/blog/paper-slitter-rewinder-specification/": "2026-08-15",
+  "/blog/taper-tension-slitter-rewinder/": "2026-08-16",
+  "/blog/slitter-rewinder-roll-hardness-testing/": "2026-08-17",
+  "/blog/slitter-rewinder-web-break-detection/": "2026-08-18",
+  "/blog/spunlace-slitting-rewinding-machine/": "2026-08-19",
+  "/blog/nonwoven-roll-winding-machine-medical-materials/": "2026-08-20",
+  "/blog/slitter-rewinder-rewind-torque-control/": "2026-08-21",
+  "/blog/slitter-rewinder-commissioning-checklist/": "2026-08-22",
+  "/news/daily/2026-08-19/": "2026-08-19",
+  "/news/daily/2026-08-20/": "2026-08-20",
+  "/news/daily/2026-08-21/": "2026-08-21",
+  "/news/daily/2026-08-22/": "2026-08-22"
 };
 
 const meta = {
