@@ -1,25 +1,12 @@
-// Cloudflare Pages Function：询盘表单提交 → Resend 发信
-// 由 app/api/inquiry/route.js（Next.js 版）1:1 迁移，逻辑保持一致。
-// 环境变量（在 Cloudflare Pages 项目设置中配置）：
-//   RESEND_API_KEY     必填
-//   INQUIRY_TO_EMAIL   可选，收件邮箱，逗号分隔
-//   INQUIRY_FROM_EMAIL 可选，发件邮箱
+// Cloudflare Pages Function：询盘表单提交 → FormSubmit 发信
+// 与 senfu 官网使用相同的 FormSubmit 收件邮箱，无需任何 API 密钥。
+// 前端请求方式与原 Resend 版本完全兼容（POST /api/inquiry，响应 {ok, message}）。
 
-const RESEND_API_URL = "https://api.resend.com/emails";
-const FALLBACK_TO_EMAIL = "wh1007209170@gmail.com";
-const FALLBACK_FROM_EMAIL = "HDPTH Website <onboarding@resend.dev>";
+const FORMSUBMIT_ENDPOINT = "https://formsubmit.co/ajax/wh1007209170@gmail.com";
+const FALLBACK_PAGE = "HDPTH website";
 
 function clean(value, maxLength = 500) {
   return String(value || "").trim().slice(0, maxLength);
-}
-
-function escapeHtml(value) {
-  return clean(value, 5000)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
 }
 
 function labelFromKey(key) {
@@ -54,37 +41,7 @@ function firstValue(fields, keys) {
   return "";
 }
 
-function buildEmailHtml(fields, page) {
-  const rows = Object.entries(fields)
-    .filter(([key]) => key !== "website" && key !== "captcha")
-    .map(
-      ([key, value]) =>
-        `<tr><th style="text-align:left;padding:8px 12px;border-bottom:1px solid #e5e7eb;background:#f9fafb;">${escapeHtml(
-          labelFromKey(key)
-        )}</th><td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;">${escapeHtml(value)}</td></tr>`
-    )
-    .join("");
-
-  return `
-    <div style="font-family:Arial,Helvetica,sans-serif;color:#111827;line-height:1.55;">
-      <h1 style="font-size:22px;margin:0 0 16px;">New HDPTH Website Inquiry</h1>
-      <p style="margin:0 0 16px;">A visitor submitted an inquiry from the HDPTH website.</p>
-      <table style="border-collapse:collapse;width:100%;max-width:760px;border:1px solid #e5e7eb;">${rows}</table>
-      <p style="margin:18px 0 0;"><strong>Page:</strong> ${escapeHtml(page)}</p>
-      <p style="margin:8px 0 0;color:#6b7280;">Please reply directly to the customer's email when possible.</p>
-    </div>
-  `;
-}
-
-function buildEmailText(fields, page) {
-  const lines = Object.entries(fields)
-    .filter(([key]) => key !== "website" && key !== "captcha")
-    .map(([key, value]) => `${labelFromKey(key)}: ${value}`);
-
-  return ["New HDPTH Website Inquiry", "", ...lines, "", `Page: ${page}`].join("\n");
-}
-
-export async function onRequestPost({ request, env }) {
+export async function onRequestPost({ request }) {
   let payload;
 
   try {
@@ -95,6 +52,7 @@ export async function onRequestPost({ request, env }) {
 
   const fields = normalizeFields(payload);
 
+  // 蜜罐字段：正常用户不会填写
   if (fields.website) {
     return Response.json({ ok: true });
   }
@@ -118,47 +76,59 @@ export async function onRequestPost({ request, env }) {
     return Response.json({ ok: false, message: "Please enter a valid phone number." }, { status: 400 });
   }
 
-  const apiKey = env.RESEND_API_KEY;
-  const to = (env.INQUIRY_TO_EMAIL || FALLBACK_TO_EMAIL)
-    .split(",")
-    .map((value) => value.trim())
-    .filter(Boolean);
-  const from = env.INQUIRY_FROM_EMAIL || FALLBACK_FROM_EMAIL;
-  const page = clean(payload?.page || payload?.source || request.headers.get("referer") || "HDPTH website", 1000);
+  const page = clean(payload?.page || payload?.source || request.headers.get("referer") || FALLBACK_PAGE, 1000);
   const country = firstValue(fields, ["country", "country_region"]);
   const product = firstValue(fields, ["product", "product_requirement"]);
-
-  if (!apiKey) {
-    console.error("Inquiry email is not configured: missing RESEND_API_KEY.");
-    return Response.json(
-      { ok: false, message: "Email service is not configured." },
-      { status: 500 }
-    );
-  }
 
   const subjectParts = ["New HDPTH inquiry", name];
   if (country) subjectParts.push(country);
   if (product) subjectParts.push(product);
 
-  const resendResponse = await fetch(RESEND_API_URL, {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      from,
-      to,
-      reply_to: email,
-      subject: subjectParts.join(" - "),
-      html: buildEmailHtml(fields, page),
-      text: buildEmailText(fields, page),
-    }),
+  // 组装 FormSubmit AJAX 载荷：下划线开头为控制字段，其余为表单内容
+  const formPayload = {
+    _subject: subjectParts.join(" - "),
+    _template: "table",
+    _captcha: "false",
+    _replyto: email,
+    Name: name,
+    Email: email,
+  };
+  if (phone) formPayload.Phone = phone;
+  if (country) formPayload.Country = country;
+  if (product) formPayload.Product = product;
+  formPayload.Page = page;
+
+  // 其余自定义字段一并带上（跳过已用过的键和控制字段）
+  const usedKeys = new Set(
+    Object.entries(fields)
+      .filter(([, v]) => [name, email, phone, country, product].includes(v))
+      .map(([k]) => k)
+  );
+  Object.entries(fields).forEach(([key, value]) => {
+    if (key === "website" || key === "captcha") return;
+    if (usedKeys.has(key)) return;
+    const label = labelFromKey(key);
+    if (!(label in formPayload)) formPayload[label] = value;
   });
 
-  if (!resendResponse.ok) {
-    const errorBody = await resendResponse.text();
-    console.error("Inquiry email delivery failed:", resendResponse.status, errorBody);
+  let formSubmitResponse;
+  try {
+    formSubmitResponse = await fetch(FORMSUBMIT_ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(formPayload),
+    });
+  } catch (err) {
+    console.error("FormSubmit request failed:", err);
+    return Response.json({ ok: false, message: "Email delivery failed." }, { status: 502 });
+  }
+
+  if (!formSubmitResponse.ok) {
+    const errorBody = await formSubmitResponse.text();
+    console.error("FormSubmit delivery failed:", formSubmitResponse.status, errorBody);
     return Response.json(
       { ok: false, message: "Email delivery failed." },
       { status: 502 }
