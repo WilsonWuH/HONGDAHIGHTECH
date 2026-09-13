@@ -1,0 +1,6 @@
+# Cloudflare Pages 重定向规则（原 next.config.js redirects 迁移）
+# 注意顺序：精确规则在前，通配规则在后
+/index.html / 301
+/resources/nonwoven-slitter-rewinder-buying-guide/index.html /guides/nonwoven-slitting-machine-buying-guide/ 301
+/resources/nonwoven-slitter-rewinder-buying-guide/ /guides/nonwoven-slitting-machine-buying-guide/ 301
+/*/index.html /:1/ 301

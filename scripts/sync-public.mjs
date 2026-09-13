@@ -44,7 +44,10 @@ const copyFiles = [
   "sitemap.xml",
   "social-links.js",
   "social-links.json",
-  "styles.css"
+  "styles.css",
+  // Cloudflare Pages 配置文件
+  "_redirects",
+  "_headers"
 ];
 
 async function copyIfExists(source, target) {

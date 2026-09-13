@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe Management and Line Data on Slitter Rewinders: A Buyer Guide | HDPTH</title>
+  <meta name="description" content="Learn what recipe management should cover on a slitter rewinder, which line data to log for traceability and OEE, and how to verify integration at FAT.">
+  <link rel="canonical" href="https://www.hdpth.com/blog/slitter-rewinder-recipe-management-line-data/">
+  <link rel="preload" as="style" href="../../styles.css">
+  <style data-critical="true">body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#0b1118;background:#fff}.topbar{background:#0b1118;color:rgba(255,255,255,.78);font-size:13px}.header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid #d9dee6}.container{width:min(1180px,calc(100% - 40px));margin:0 auto}.nav{display:flex;align-items:center;justify-content:space-between;min-height:74px}.hero,.page-hero{background:#0b1118;color:#fff}img{max-width:100%;height:auto;display:block}</style>
+  <link rel="stylesheet" href="../../styles.css">
+  <style data-article-responsive="true">
+    @media (max-width: 560px) {
+      body { overflow-x: clip; }
+      .header .container.nav { width: calc(100% - 28px); max-width: calc(100% - 28px); gap: 12px; }
+      .header .nav > .btn { width: auto; flex: 0 0 auto; padding: 12px 16px; }
+      .header .nav-links { min-width: 0; }
+      .page-hero .container, .section .container { width: calc(100% - 28px); max-width: calc(100% - 28px); }
+      .page-hero h1, .page-hero p { max-width: 100%; overflow-wrap: anywhere; }
+      .article-layout, .article-body { width: 100%; min-width: 0; max-width: 100%; }
+      .article-body { padding: 22px; }
+      .article-body figure { margin: 28px 0; max-width: 100%; }
+      .article-body picture, .article-body img { width: 100%; max-width: 100%; }
+      .answer-box, .article-cta, .table-wrap { width: 100%; min-width: 0; max-width: 100%; }
+      .table-wrap { display: block; overflow-x: auto; }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Article",
+      "headline":"Recipe Management and Line Data on Slitter Rewinders: A Buyer Guide",
+      "description":"Learn what recipe management should cover on a slitter rewinder, which line data to log for traceability and OEE, and how to verify integration at FAT.",
+      "image":"https://www.hdpth.com/assets/images/blog/slitter-rewinder-recipe-management-line-data.webp",
+      "author":{"@type":"Organization","name":"HDPTH Technical Editorial Team"},
+      "publisher":{"@type":"Organization","name":"HDPTH"},
+      "datePublished":"2026-09-14",
+      "dateModified":"2026-09-14",
+      "mainEntityOfPage":"https://www.hdpth.com/blog/slitter-rewinder-recipe-management-line-data/"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hdpth.com/"},
+        {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.hdpth.com/blog/"},
+        {"@type":"ListItem","position":3,"name":"Recipe Management and Line Data on Slitter Rewinders","item":"https://www.hdpth.com/blog/slitter-rewinder-recipe-management-line-data/"}
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"What is a recipe on a slitter rewinder?",
+          "acceptedAnswer":{"@type":"Answer","text":"A recipe is a stored, named set of machine settings for one product: slit pattern and knife positions, unwind and rewind tension profiles, taper tension curves, speed limits, length targets, counters, and any auxiliary settings such as static bars or perforation timing. Calling a recipe should configure all of these together, consistently."}
+        },
+        {
+          "@type":"Question",
+          "name":"Which line data should a slitter rewinder record?",
+          "acceptedAnswer":{"@type":"Answer","text":"At minimum: order and batch identity, recipe version, produced length and roll count, downtime events with reasons, alarm history, and the key process values such as actual tension and speed. Buyers with traceability requirements should also link finished rolls to the order and batch records."}
+        },
+        {
+          "@type":"Question",
+          "name":"How does recipe management reduce changeover errors?",
+          "acceptedAnswer":{"@type":"Answer","text":"It removes manual re-entry of settings that change between products. Instead of an operator typing slit widths and tension values by hand, the operator selects the product and the machine configures itself, with changes shown for confirmation. This shortens changeovers and prevents transcription mistakes."}
+        },
+        {
+          "@type":"Question",
+          "name":"Can a slitter rewinder connect to a factory MES or ERP system?",
+          "acceptedAnswer":{"@type":"Answer","text":"Yes, if the control system supports a standard interface such as OPC UA or a documented field for order download and result upload. Buyers should define the scope in the RFQ, because the difference between viewing data on the HMI and exchanging structured orders with a factory system is a project decision, not a default feature."}
+        },
+        {
+          "@type":"Question",
+          "name":"What should buyers verify about recipes at FAT?",
+          "acceptedAnswer":{"@type":"Answer","text":"Create, edit, back up, restore and call at least two real recipes; confirm that the machine physically configures itself as the recipe describes; confirm that edits are logged with user identity; and demonstrate the export format of the production data so it can be checked against the buyer's traceability requirements."}
+        }
+      ]
+    }
+  </script>
+  <meta property="og:title" content="Recipe Management and Line Data on Slitter Rewinders: A Buyer Guide">
+  <meta property="og:description" content="A buyer-focused guide to recipe management, production data logging, MES integration and FAT verification for slitter rewinders.">
+  <meta property="og:image" content="https://www.hdpth.com/assets/images/blog/slitter-rewinder-recipe-management-line-data.webp">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="../../index.html"><span class="brand-mark"></span>HDPTH</a>
+      <nav class="nav-links">
+        <div class="nav-item">
+          <a class="mega-trigger" href="../../products/index.html">Products</a>
+          <div class="mega-menu">
+            <div class="mega-grid">
+              <div class="mega-section">
+                <p class="mega-kicker">Product Matrix</p>
+                <div class="mega-list">
+                  <a class="mega-link" href="../../products/high-speed-slitting-machines/index.html"><strong>High-Speed Slitting Machines</strong><span>Clean cutting and stable tension for roll converting.</span></a>
+                  <a class="mega-link" href="../../products/nonwoven-rewinding-machines/index.html"><strong>Nonwoven Rewinding Machines</strong><span>Consistent roll formation for downstream production.</span></a>
+                  <a class="mega-link" href="../../products/automatic-knife-systems/index.html"><strong>Automatic Knife Systems</strong><span>Faster setup and repeatable cutting configuration.</span></a>
+                  <a class="mega-link" href="../../products/index.html"><strong>All Converting Equipment</strong><span>Perforating lines, combined machines and auxiliary systems.</span></a>
+                </div>
+              </div>
+              <div class="mega-section">
+                <p class="mega-kicker">Applications</p>
+                <div class="mega-plain">
+                  <a href="../../applications/index.html">Hygiene Products</a>
+                  <a href="../../applications/index.html">Medical Nonwoven Materials</a>
+                  <a href="../../applications/index.html">Disposable Wipes &amp; Flexible Materials</a>
+                  <a href="../../guides/nonwoven-slitting-machine-buying-guide/index.html">Buying Guide</a>
+                </div>
+              </div>
+              <div class="mega-cta">
+                <h3>Need a machine configuration?</h3>
+                <p>Send material, width, speed and application details. HDPTH will recommend the suitable converting setup.</p>
+                <a class="btn btn-red" href="../../inquiry/index.html">Request a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="../../applications/index.html">Applications</a>
+        <a href="../index.html">Blog</a>
+        <a href="../../certificates/index.html">Certificates</a>
+        <a href="../../news/index.html">News</a>
+        <a href="../../contact/index.html">Contact</a>
+      </nav>
+      <a class="btn btn-red" href="../../inquiry/index.html">Get a Quote</a>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">Home / Blog / Recipe Management and Line Data on Slitter Rewinders</div>
+        <h1>Recipe Management and Line Data on Slitter Rewinders: A Buyer Guide</h1>
+        <p>Use this guide to define what a machine recipe must store and recall, which production data to log for traceability and OEE, and how to prove both at FAT.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container article-layout">
+        <article class="article-body">
+          <p class="eyebrow">Published September 14, 2026 | By HDPTH Technical Editorial Team</p>
+          <div class="answer-box"><strong>Short answer:</strong> recipe management and line data are the difference between a machine that runs well when an experienced operator is present and a line that runs well every shift. Specify that all product-related settings live in named, versioned recipes that configure the machine in one call, define which production data must be logged and exportable, and verify both behaviors with real recipes during FAT, including backup, restore, and the export file format.</div>
+
+          <figure class="media-panel" style="margin:28px 0">
+            <picture>
+              <source type="image/webp" srcset="../../assets/images/blog/slitter-rewinder-recipe-management-line-data-800.webp 800w, ../../assets/images/blog/slitter-rewinder-recipe-management-line-data.webp 1600w" sizes="(max-width: 760px) 100vw, 1000px">
+              <img src="../../assets/images/blog/slitter-rewinder-recipe-management-line-data.webp" alt="Operator selecting a stored product recipe on the HMI touchscreen of a slitter rewinder while the line stands ready at the unwind station" width="1600" height="960" decoding="async" sizes="(max-width: 760px) 100vw, 1000px" loading="eager" fetchpriority="high">
+            </picture>
+            <figcaption>Calling a recipe should configure slit pattern, tensions, speed limits and counters together, not as a list of screens an operator must visit in order.</figcaption>
+          </figure>
+
+          <p>On many converting lines, the machine's real product knowledge lives in three places: the HMI, a binder of printed setup sheets, and the memory of the longest-serving operator. That arrangement works until the operator is on holiday, a second shift takes over, or a customer asks for the process data behind a specific batch. Recipe management replaces that informal arrangement with named, versioned setting sets, and line data logging replaces memory with records.</p>
+          <p>This guide explains what a slitter rewinder recipe should contain, which production data is worth logging, how the machine connects to factory systems, and what to verify at FAT. It complements the <a href="../../blog/automatic-knife-positioning-slitter-rewinder-buyers-guide/">automatic knife positioning buyer guide</a>, because automated knife setup only delivers its full value when the target positions are recalled from a recipe instead of being typed in by hand.</p>
+
+          <h2>What a slitter rewinder recipe should contain</h2>
+          <p>A recipe is more than a speed setting. For each product, the recipe should store and recall as one unit:</p>
+          <ul class="check-list">
+            <li>Slit pattern: number of lanes, slit widths, and knife positions, including automatic knife targets where the machine supports them.</li>
+            <li>Tension profile: unwind tension, taper tension curve, rewind tension profile, and any diameter-dependent compensation.</li>
+            <li>Speed and ramp limits for the product, including any customer-specific acceleration behavior.</li>
+            <li>Length and count targets, core and roll definitions, and roll label or counter behavior.</li>
+            <li>Auxiliary settings: static bars, perforation timing, web cleaners, dust extraction levels, and any glue or splice parameters the product uses.</li>
+          </ul>
+          <p>Two properties matter as much as the content. First, <strong>completeness</strong>: if an operator still has to remember two settings that are not in the recipe, the recipe system has a hole that will eventually produce a bad roll. Second, <strong>versioning</strong>: when a recipe is edited, the machine should keep the old version identifiable, because traceability investigations often ask what settings were active on a specific date.</p>
+
+          <h2>Manual setup versus recipe-driven setup</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Aspect</th>
+                  <th>Manual setup</th>
+                  <th>Recipe-driven setup</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Changeover time</td>
+                  <td>Depends on operator experience and note quality</td>
+                  <td>One selection configures the machine; operator confirms the change list</td>
+                </tr>
+                <tr>
+                  <td>Transcription errors</td>
+                  <td>Slit widths and tensions retyped by hand at every changeover</td>
+                  <td>Eliminated for stored values; edits are deliberate and logged</td>
+                </tr>
+                <tr>
+                  <td>Repeatability</td>
+                  <td>Same product can run differently on different shifts</td>
+                  <td>Same recipe version produces the same machine configuration</td>
+                </tr>
+                <tr>
+                  <td>Traceability</td>
+                  <td>Settings reconstructed from memory or paper</td>
+                  <td>Recipe version stored with the batch record</td>
+                </tr>
+                <tr>
+                  <td>Improvement loop</td>
+                  <td>Informal; good settings travel by word of mouth</td>
+                  <td>Best-known settings become the recipe; changes are deliberate</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The pattern is the same one that justifies automatic tension control in the <a href="../../blog/load-cell-vs-dancer-tension-control-slitter-rewinder/">load cell versus dancer guide</a>: converting quality improves when the machine holds the intended value instead of whatever the operator had time to set.</p>
+
+          <h2>Which line data to log, and why</h2>
+          <p>Data logging serves three buyers at once: quality needs traceability, production needs OEE, and maintenance needs condition history. A practical logging scope covers:</p>
+          <ul class="check-list">
+            <li><strong>Order and batch identity:</strong> which recipe version ran, for which order, producing which rolls.</li>
+            <li><strong>Production totals:</strong> produced length, roll count, yield, and waste events with roll-level identification.</li>
+            <li><strong>Downtime and reasons:</strong> start and end of stops with operator-selectable reason codes, so OEE is calculated from real categories instead of guesses.</li>
+            <li><strong>Alarm history:</strong> timestamped alarms with acknowledgement, which is also the raw material for the <a href="../../blog/slitter-rewinder-web-break-detection/">web break analysis</a> and other recurring problems.</li>
+            <li><strong>Key process values:</strong> actual tension and speed trends, at a sampling rate that captures what the quality team needs without flooding storage.</li>
+          </ul>
+          <p>The export question belongs in the RFQ. A machine that can only show this data on its own screen creates a transcription job; a machine that exports a structured file (CSV or an equivalent format) with a documented layout turns the same data into something a factory system can consume.</p>
+
+          <figure class="media-panel" style="margin:28px 0">
+            <picture>
+              <source type="image/webp" srcset="../../assets/images/blog/slitter-rewinder-recipe-management-line-data-detail-800.webp 800w, ../../assets/images/blog/slitter-rewinder-recipe-management-line-data-detail.webp 1600w" sizes="(max-width: 760px) 100vw, 1000px">
+              <img src="../../assets/images/blog/slitter-rewinder-recipe-management-line-data-detail.webp" alt="Production supervisor reviewing exported roll production and downtime data on an office workstation next to the converting line through a window" width="1600" height="960" decoding="async" loading="lazy">
+            </picture>
+            <figcaption>The test of a data logging scope is simple: can the factory pull a batch record and an OEE breakdown without walking to the machine?</figcaption>
+          </figure>
+
+          <h2>Connecting the machine to factory systems</h2>
+          <p>Integration is a spectrum, and buyers should choose the level deliberately. The simplest level is standalone logging with manual export, which suits factories without a production system. The middle level is a supervised line network where several machines report to one shop-floor view. The deepest level is bidirectional integration with a MES or ERP layer: orders download to the machine, results upload automatically.</p>
+          <p>For the deeper levels, ask which interface the control system uses and how it is documented. Open protocols such as OPC UA are a defensible default because they are vendor-neutral and widely supported by industrial systems, and security requirements for the remote access path should follow recognized industrial network security practice. The scope of integration is a project decision with real engineering effort attached, so it belongs in the first RFQ, not as an addition after delivery.</p>
+
+          <div class="article-cta">
+            <h3>Need recipe scope and data integration defined for your line?</h3>
+            <p>Send your product list, changeover frequency, and traceability requirements through the <a href="../../inquiry/index.html">inquiry page</a>. HDPTH will propose the recipe structure and the data interface for your project before quotation.</p>
+            <a class="btn btn-red" href="../../inquiry/index.html">Start Your RFQ</a>
+          </div>
+
+          <h2>What FAT should prove about recipes and data</h2>
+          <p>Recipe and data functions fail quietly, so FAT must exercise them, not just show that the screens exist. Ask the supplier to demonstrate, with the buyer's real products:</p>
+          <p>First, create and edit at least two recipes, then call each one and verify that the machine physically configures itself: knife positions match the pattern, tension setpoints appear, and limits change with the product. Second, back up all recipes to external media, wipe or alter them, restore, and run again. Third, make an edit and confirm the version and user identity are logged. Fourth, produce a short run and export the batch record, then open the export on the buyer's own laptop and check that every field the traceability system needs is present and readable. Finally, demonstrate a downtime event with a reason code and show where it appears in the OEE data.</p>
+          <p>Buyers building a full acceptance plan should fold these checks into the <a href="../../blog/slitter-rewinder-factory-acceptance-test-checklist/">FAT checklist</a> so they cannot be skipped when the schedule is tight, and can review how the control architecture fits the wider line in the <a href="../../blog/slitter-rewinder-commissioning-checklist/">commissioning checklist</a>.</p>
+
+          <h2>What to put in the RFQ</h2>
+          <p>A complete RFQ section for this scope contains: the number of products and recipes expected at commissioning; the full list of settings that must live inside a recipe; the data fields to be logged and the export format; the integration level expected (standalone, supervised, or MES-connected) with the interface standard; user management and access level requirements; and backup, restore, and version history expectations. If customer audits or destination-market traceability rules apply, name them, because they raise the bar on the batch record content.</p>
+          <p>Suppliers who build project-specific control systems will respond with a concrete proposal. Vague answers here are a reliable signal that changeover knowledge will stay informal after delivery.</p>
+
+          <h2>Buyer FAQs</h2>
+          <div class="faq-list">
+            <details>
+              <summary>What is a recipe on a slitter rewinder?</summary>
+              <p>A recipe is a stored, named set of machine settings for one product: slit pattern and knife positions, unwind and rewind tension profiles, taper tension curves, speed limits, length targets, counters, and any auxiliary settings such as static bars or perforation timing. Calling a recipe should configure all of these together, consistently.</p>
+            </details>
+            <details>
+              <summary>Which line data should a slitter rewinder record?</summary>
+              <p>At minimum: order and batch identity, recipe version, produced length and roll count, downtime events with reasons, alarm history, and the key process values such as actual tension and speed. Buyers with traceability requirements should also link finished rolls to the order and batch records.</p>
+            </details>
+            <details>
+              <summary>How does recipe management reduce changeover errors?</summary>
+              <p>It removes manual re-entry of settings that change between products. Instead of an operator typing slit widths and tension values by hand, the operator selects the product and the machine configures itself, with changes shown for confirmation. This shortens changeovers and prevents transcription mistakes.</p>
+            </details>
+            <details>
+              <summary>Can a slitter rewinder connect to a factory MES or ERP system?</summary>
+              <p>Yes, if the control system supports a standard interface such as OPC UA or a documented field for order download and result upload. Buyers should define the scope in the RFQ, because the difference between viewing data on the HMI and exchanging structured orders with a factory system is a project decision, not a default feature.</p>
+            </details>
+            <details>
+              <summary>What should buyers verify about recipes at FAT?</summary>
+              <p>Create, edit, back up, restore and call at least two real recipes; confirm that the machine physically configures itself as the recipe describes; confirm that edits are logged with user identity; and demonstrate the export format of the production data so it can be checked against the buyer's traceability requirements.</p>
+            </details>
+          </div>
+
+          <h2>Sources</h2>
+          <ul>
+            <li><a href="https://reference.opcfoundation.org/" rel="noopener">OPC Foundation: OPC Unified Architecture specification</a></li>
+            <li><a href="https://www.iec.ch/blog/iec-62443-standard-industrial-cybersecurity" rel="noopener">IEC 62443: Industrial communication networks security</a></li>
+            <li><a href="https://www.iso.org/standard/70520.html" rel="noopener">ISO 22400: Automation systems in manufacturing &mdash; Key performance indicators for manufacturing operations management</a></li>
+          </ul>
+
+          <div class="article-cta">
+            <h3>Put recipes and line data into the machine scope</h3>
+            <p>Send your product structure and data requirements to HDPTH through the <a href="../../inquiry/index.html">inquiry form</a>. For related control topics, review the <a href="../../blog/automatic-tension-control-web-guiding-nonwoven-converting/">automatic tension control guide</a> and the <a href="../../blog/slitter-rewinder-rewind-torque-control/">rewind torque control guide</a>.</p>
+            <a class="btn btn-red" href="../../inquiry/index.html">Contact HDPTH for Project Review</a>
+          </div>
+        </article>
+        <aside class="article-sidebar">
+          <div class="toc-card">
+            <strong>Buyer focus</strong>
+            <p>Recipe content and versioning</p>
+            <p>Changeover consistency</p>
+            <p>Traceability and OEE data</p>
+            <p>MES integration scope</p>
+            <a href="../../inquiry/index.html">Discuss your project</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h3>HDPTH</h3><p>High-tech nonwoven machinery for global manufacturers.</p></div>
+      <div><h4>Products</h4><a href="../../products/high-speed-slitting-machines/index.html">High-Speed Slitting Machines</a><a href="../../products/nonwoven-rewinding-machines/index.html">Nonwoven Rewinding Machines</a><a href="../../products/automatic-knife-systems/index.html">Automatic Knife Systems</a></div>
+      <div><h4>Company</h4><a href="../../factory/index.html">Factory</a><a href="../../certificates/index.html">Certificates</a><a href="../../contact/index.html">Contact</a></div>
+    </div>
+    <div class="container footer-bottom">HDPTH Technical Editorial Team</div>
+  </footer>
+  <script src="../../social-links.js" defer async></script>
+</body>
+</html>

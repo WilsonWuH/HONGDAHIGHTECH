@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slitter Rewinder Vibration and Noise: Buyer Specification and Acceptance Limits | HDPTH</title>
+  <meta name="description" content="Learn what causes vibration and noise on slitter rewinders, which limits to specify in the RFQ, and how to verify both at FAT and commissioning.">
+  <link rel="canonical" href="https://www.hdpth.com/blog/slitter-rewinder-vibration-noise-acceptance/">
+  <link rel="preload" as="style" href="../../styles.css">
+  <style data-critical="true">body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#0b1118;background:#fff}.topbar{background:#0b1118;color:rgba(255,255,255,.78);font-size:13px}.header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid #d9dee6}.container{width:min(1180px,calc(100% - 40px));margin:0 auto}.nav{display:flex;align-items:center;justify-content:space-between;min-height:74px}.hero,.page-hero{background:#0b1118;color:#fff}img{max-width:100%;height:auto;display:block}</style>
+  <link rel="stylesheet" href="../../styles.css">
+  <style data-article-responsive="true">
+    @media (max-width: 560px) {
+      body { overflow-x: clip; }
+      .header .container.nav { width: calc(100% - 28px); max-width: calc(100% - 28px); gap: 12px; }
+      .header .nav > .btn { width: auto; flex: 0 0 auto; padding: 12px 16px; }
+      .header .nav-links { min-width: 0; }
+      .page-hero .container, .section .container { width: calc(100% - 28px); max-width: calc(100% - 28px); }
+      .page-hero h1, .page-hero p { max-width: 100%; overflow-wrap: anywhere; }
+      .article-layout, .article-body { width: 100%; min-width: 0; max-width: 100%; }
+      .article-body { padding: 22px; }
+      .article-body figure { margin: 28px 0; max-width: 100%; }
+      .article-body picture, .article-body img { width: 100%; max-width: 100%; }
+      .answer-box, .article-cta, .table-wrap { width: 100%; min-width: 0; max-width: 100%; }
+      .table-wrap { display: block; overflow-x: auto; }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Article",
+      "headline":"Slitter Rewinder Vibration and Noise: Buyer Specification and Acceptance Limits",
+      "description":"Learn what causes vibration and noise on slitter rewinders, which limits to specify in the RFQ, and how to verify both at FAT and commissioning.",
+      "image":"https://www.hdpth.com/assets/images/blog/slitter-rewinder-vibration-noise-acceptance.webp",
+      "author":{"@type":"Organization","name":"HDPTH Technical Editorial Team"},
+      "publisher":{"@type":"Organization","name":"HDPTH"},
+      "datePublished":"2026-09-14",
+      "dateModified":"2026-09-14",
+      "mainEntityOfPage":"https://www.hdpth.com/blog/slitter-rewinder-vibration-noise-acceptance/"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hdpth.com/"},
+        {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.hdpth.com/blog/"},
+        {"@type":"ListItem","position":3,"name":"Slitter Rewinder Vibration and Noise Acceptance","item":"https://www.hdpth.com/blog/slitter-rewinder-vibration-noise-acceptance/"}
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"What are the most common causes of vibration on a slitter rewinder?",
+          "acceptedAnswer":{"@type":"Answer","text":"The most common causes are out-of-round or unbalanced unwind rolls, worn or poorly balanced knife holders, bearings that are preloaded or worn, frame resonance at certain running speeds, and web tension settings that excite the natural frequency of the span between rollers."}
+        },
+        {
+          "@type":"Question",
+          "name":"Should buyers specify vibration limits in the RFQ?",
+          "acceptedAnswer":{"@type":"Answer","text":"Yes. A practical RFQ states the maximum machine speed, the housing vibration velocity limit at defined measurement points, the material and roll quality the machine must demonstrate, and the reference standard used to judge the results, so that acceptance is measurable rather than subjective."}
+        },
+        {
+          "@type":"Question",
+          "name":"What noise level should a slitter rewinder meet?",
+          "acceptedAnswer":{"@type":"Answer","text":"Many buyers ask the supplier to declare the A-weighted sound pressure level at the operator position at maximum speed, measured under defined conditions. The applicable workplace noise limits depend on the destination country, so the buyer should state those requirements in the RFQ and verify them during acceptance."}
+        },
+        {
+          "@type":"Question",
+          "name":"How is vibration verified at factory acceptance testing?",
+          "acceptedAnswer":{"@type":"Answer","text":"The supplier runs the machine at representative speeds with representative material or a defined substitute, measures vibration velocity at agreed bearing housings with a calibrated instrument, records the spectra, and compares the results against the limits written in the purchase specification."}
+        },
+        {
+          "@type":"Question",
+          "name":"Can vibration problems appear only after installation?",
+          "acceptedAnswer":{"@type":"Answer","text":"Yes. Foundation stiffness, anchor quality, alignment, and the interaction with nearby equipment can change the vibration behavior after installation. That is why buyers should keep a commissioning recheck in the contract instead of treating FAT as the final word."}
+        }
+      ]
+    }
+  </script>
+  <meta property="og:title" content="Slitter Rewinder Vibration and Noise: Buyer Specification and Acceptance Limits">
+  <meta property="og:description" content="A buyer-focused guide to specifying and verifying vibration and noise limits on slitter rewinders across RFQ, FAT and commissioning.">
+  <meta property="og:image" content="https://www.hdpth.com/assets/images/blog/slitter-rewinder-vibration-noise-acceptance.webp">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="../../index.html"><span class="brand-mark"></span>HDPTH</a>
+      <nav class="nav-links">
+        <div class="nav-item">
+          <a class="mega-trigger" href="../../products/index.html">Products</a>
+          <div class="mega-menu">
+            <div class="mega-grid">
+              <div class="mega-section">
+                <p class="mega-kicker">Product Matrix</p>
+                <div class="mega-list">
+                  <a class="mega-link" href="../../products/high-speed-slitting-machines/index.html"><strong>High-Speed Slitting Machines</strong><span>Clean cutting and stable tension for roll converting.</span></a>
+                  <a class="mega-link" href="../../products/nonwoven-rewinding-machines/index.html"><strong>Nonwoven Rewinding Machines</strong><span>Consistent roll formation for downstream production.</span></a>
+                  <a class="mega-link" href="../../products/automatic-knife-systems/index.html"><strong>Automatic Knife Systems</strong><span>Faster setup and repeatable cutting configuration.</span></a>
+                  <a class="mega-link" href="../../products/index.html"><strong>All Converting Equipment</strong><span>Perforating lines, combined machines and auxiliary systems.</span></a>
+                </div>
+              </div>
+              <div class="mega-section">
+                <p class="mega-kicker">Applications</p>
+                <div class="mega-plain">
+                  <a href="../../applications/index.html">Hygiene Products</a>
+                  <a href="../../applications/index.html">Medical Nonwoven Materials</a>
+                  <a href="../../applications/index.html">Disposable Wipes &amp; Flexible Materials</a>
+                  <a href="../../guides/nonwoven-slitting-machine-buying-guide/index.html">Buying Guide</a>
+                </div>
+              </div>
+              <div class="mega-cta">
+                <h3>Need a machine configuration?</h3>
+                <p>Send material, width, speed and application details. HDPTH will recommend the suitable converting setup.</p>
+                <a class="btn btn-red" href="../../inquiry/index.html">Request a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="../../applications/index.html">Applications</a>
+        <a href="../index.html">Blog</a>
+        <a href="../../certificates/index.html">Certificates</a>
+        <a href="../../news/index.html">News</a>
+        <a href="../../contact/index.html">Contact</a>
+      </nav>
+      <a class="btn btn-red" href="../../inquiry/index.html">Get a Quote</a>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">Home / Blog / Slitter Rewinder Vibration and Noise Acceptance</div>
+        <h1>Slitter Rewinder Vibration and Noise: Buyer Specification and Acceptance Limits</h1>
+        <p>Use this guide to put measurable vibration and noise limits into your slitter rewinder RFQ, understand where vibration comes from, and verify both at FAT and after installation.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container article-layout">
+        <article class="article-body">
+          <p class="eyebrow">Published September 14, 2026 | By HDPTH Technical Editorial Team</p>
+          <div class="answer-box"><strong>Short answer:</strong> vibration and noise are measurable machine behaviors, and they should be specified and accepted the same way as speed or slit width. Put a vibration velocity limit at agreed measurement points and a declared sound pressure level at the operator position into the purchase specification, verify both at FAT with representative material, and keep a commissioning recheck in the contract because foundation and installation can shift the results.</div>
+
+          <figure class="media-panel" style="margin:28px 0">
+            <picture>
+              <source type="image/webp" srcset="../../assets/images/blog/slitter-rewinder-vibration-noise-acceptance-800.webp 800w, ../../assets/images/blog/slitter-rewinder-vibration-noise-acceptance.webp 1600w" sizes="(max-width: 760px) 100vw, 1000px">
+              <img src="../../assets/images/blog/slitter-rewinder-vibration-noise-acceptance.webp" alt="Maintenance engineer mounting a vibration accelerometer on the bearing housing of a slitter rewinder frame while the machine runs at production speed" width="1600" height="960" decoding="async" sizes="(max-width: 760px) 100vw, 1000px" loading="eager" fetchpriority="high">
+            </picture>
+            <figcaption>Vibration acceptance is a measurement task at defined points, not an impression formed while standing next to the machine.</figcaption>
+          </figure>
+
+          <p>Most slitter rewinder purchases are written around width, speed, material range, and roll quality. Vibration and noise are usually left as impressions: the machine looked smooth during the demo, or the showroom was quieter than the buyer expected. That approach works until the machine reaches full production speed in the buyer's own plant, where vibration shows up as web flutter, edge quality drift, bearing wear, and operator complaints, and where noise limits are enforced by workplace regulation rather than by preference.</p>
+          <p>This guide explains where slitter rewinder vibration comes from, which limits can realistically be written into a contract, and how to verify them at FAT and commissioning. It follows the same buyer-first approach as the <a href="../../blog/slitter-rewinder-roll-defects-troubleshooting/">roll defects troubleshooting guide</a>, because vibration is one of the root causes behind many of the defects that guide helps you diagnose.</p>
+
+          <h2>Where slitter rewinder vibration actually comes from</h2>
+          <p>Vibration on a converting line rarely has a single cause. It is usually a combination of rotating imbalance, structural response, and process forces. The main sources a buyer should understand are:</p>
+          <ul class="check-list">
+            <li><strong>Unwind roll eccentricity and imbalance:</strong> a heavy roll that is out of round or mounted eccentrically acts like a rotating excitation source, and the effect grows with speed.</li>
+            <li><strong>Knife and holder condition:</strong> a worn, chipped, or poorly balanced knife assembly introduces periodic cutting forces that appear as banding on the slit edge and as vibration at knife-passing frequency.</li>
+            <li><strong>Bearings and drive components:</strong> preloaded, worn, or damaged bearings produce characteristic frequencies that a spectrum analysis can identify long before the operator feels them.</li>
+            <li><strong>Structural resonance:</strong> every frame has natural frequencies. If a running speed or a tension-related excitation lands on one, the machine amplifies what would otherwise be a small force.</li>
+            <li><strong>Web behavior:</strong> long free spans, insufficient nip load, or unstable tension control allow the web itself to flap or oscillate, feeding energy back into the frame.</li>
+          </ul>
+          <p>The practical consequence for buyers is that vibration is a system property, not a component property. That is why it belongs in the machine specification, where the supplier controls the whole system, rather than being discovered roll by roll in production.</p>
+
+          <h2>Which limits can be specified in the RFQ</h2>
+          <p>Vibration and noise limits only work when they are measurable and tied to defined conditions. A practical specification contains the following elements:</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Specification item</th>
+                  <th>What to define</th>
+                  <th>Why it matters</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Measurement points</td>
+                  <td>Named bearing housings on unwind, slitting, and rewind stations</td>
+                  <td>Prevents arguments about where the sensor was placed</td>
+                </tr>
+                <tr>
+                  <td>Measured quantity</td>
+                  <td>RMS vibration velocity, typically in the 10&ndash;1000 Hz band</td>
+                  <td>Velocity correlates with machine condition better than raw acceleration at converting speeds</td>
+                </tr>
+                <tr>
+                  <td>Operating condition</td>
+                  <td>Percentage of maximum speed, material type, roll diameter, and tension during the test</td>
+                  <td>A limit means nothing without the condition it applies to</td>
+                </tr>
+                <tr>
+                  <td>Limit value</td>
+                  <td>A number agreed with the supplier, informed by a recognized classification such as ISO 20816 machine groups</td>
+                  <td>Turns acceptance from opinion into data</td>
+                </tr>
+                <tr>
+                  <td>Noise declaration</td>
+                  <td>A-weighted sound pressure level at the operator position at maximum speed, measured under a defined method</td>
+                  <td>Connects the machine to workplace noise limits at the destination</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Buyers do not need to invent these numbers from zero. Vibration severity classification standards for industrial machines give defensible bands, and the supplier can state what its design achieves at the quoted maximum speed. What matters is that both parties sign the same numbers before the machine is built.</p>
+
+          <h2>How vibration and noise are verified at FAT</h2>
+          <p>Factory acceptance testing should include a measurement session, not just a visual run. A credible sequence looks like this:</p>
+          <p>First, the machine runs at agreed speeds with the buyer's material or a defined substitute, and the operator station runs through the full speed range. Second, a calibrated vibration instrument measures RMS velocity at each named bearing housing, and the readings are recorded with the running condition. Third, the spectrum is reviewed so that any dominant frequency can be traced to a source, such as a knife-passing frequency or an unwind imbalance. Fourth, the sound pressure level is measured at the operator position with the machine at maximum speed and with the agreed background noise conditions.</p>
+          <p>The results belong in the FAT report with the same status as mechanical checks. If a reading exceeds the limit, the supplier should identify the source, correct it, and repeat the measurement. For buyers building an overall acceptance framework, this pairs naturally with the <a href="../../blog/slitter-rewinder-factory-acceptance-test-checklist/">FAT checklist</a> and the <a href="../../blog/slitter-rewinder-commissioning-checklist/">commissioning checklist</a>.</p>
+
+          <figure class="media-panel" style="margin:28px 0">
+            <picture>
+              <source type="image/webp" srcset="../../assets/images/blog/slitter-rewinder-vibration-noise-acceptance-detail-800.webp 800w, ../../assets/images/blog/slitter-rewinder-vibration-noise-acceptance-detail.webp 1600w" sizes="(max-width: 760px) 100vw, 1000px">
+              <img src="../../assets/images/blog/slitter-rewinder-vibration-noise-acceptance-detail.webp" alt="Close-up of a portable vibration analyzer displaying a measured spectrum next to a running converting machine frame" width="1600" height="960" decoding="async" loading="lazy">
+            </picture>
+            <figcaption>A spectrum readout lets both parties see which frequency dominates, which turns a disagreement into a diagnosis.</figcaption>
+          </figure>
+
+          <h2>Why installation changes the result</h2>
+          <p>A machine that passed FAT can still vibrate differently after installation. Foundation stiffness, anchor bolt quality, shaft alignment, and the influence of neighboring equipment all modify the structural response. This is not a contradiction of FAT; it is a second layer of acceptance. The purchase contract should therefore include a commissioning recheck at representative production speeds, with the same measurement points and limits as FAT, plus a defined path for corrective action if the readings have moved.</p>
+          <p>Buyers planning the installation side in parallel should review the <a href="../../blog/slitter-rewinder-site-preparation-checklist/">site preparation checklist</a>, because foundation and utility planning directly influence the vibration behavior the machine will show in the plant.</p>
+
+          <h2>What to put in the RFQ</h2>
+          <p>To make vibration and noise acceptance real, the RFQ should include: the maximum production speed the limit applies to; the material families and roll diameters used during the test; the named measurement points; the limit values and the classification reference; the noise declaration requirement with the operator position and measurement method; and the requirement that both FAT and commissioning measurements appear in the acceptance report. If the destination market has specific workplace noise regulations, name them, so the supplier designs and documents accordingly.</p>
+          <p>Suppliers who already measure these values internally will answer without hesitation. Suppliers who resist a measurable limit are asking the buyer to accept all vibration risk after delivery, and that risk is much more expensive to fix after installation than to specify before quotation.</p>
+
+          <div class="article-cta">
+            <h3>Want vibration and noise limits written into your machine specification?</h3>
+            <p>Send your material, width, maximum speed, and destination workplace requirements through the <a href="../../inquiry/index.html">inquiry page</a>. HDPTH will propose measurable acceptance values for the RFQ and include both in the FAT plan.</p>
+            <a class="btn btn-red" href="../../inquiry/index.html">Start Your RFQ</a>
+          </div>
+
+          <h2>Buyer FAQs</h2>
+          <div class="faq-list">
+            <details>
+              <summary>What are the most common causes of vibration on a slitter rewinder?</summary>
+              <p>The most common causes are out-of-round or unbalanced unwind rolls, worn or poorly balanced knife holders, bearings that are preloaded or worn, frame resonance at certain running speeds, and web tension settings that excite the natural frequency of the span between rollers.</p>
+            </details>
+            <details>
+              <summary>Should buyers specify vibration limits in the RFQ?</summary>
+              <p>Yes. A practical RFQ states the maximum machine speed, the housing vibration velocity limit at defined measurement points, the material and roll quality the machine must demonstrate, and the reference standard used to judge the results, so that acceptance is measurable rather than subjective.</p>
+            </details>
+            <details>
+              <summary>What noise level should a slitter rewinder meet?</summary>
+              <p>Many buyers ask the supplier to declare the A-weighted sound pressure level at the operator position at maximum speed, measured under defined conditions. The applicable workplace noise limits depend on the destination country, so the buyer should state those requirements in the RFQ and verify them during acceptance.</p>
+            </details>
+            <details>
+              <summary>How is vibration verified at factory acceptance testing?</summary>
+              <p>The supplier runs the machine at representative speeds with representative material or a defined substitute, measures vibration velocity at agreed bearing housings with a calibrated instrument, records the spectra, and compares the results against the limits written in the purchase specification.</p>
+            </details>
+            <details>
+              <summary>Can vibration problems appear only after installation?</summary>
+              <p>Yes. Foundation stiffness, anchor quality, alignment, and the interaction with nearby equipment can change the vibration behavior after installation. That is why buyers should keep a commissioning recheck in the contract instead of treating FAT as the final word.</p>
+            </details>
+          </div>
+
+          <h2>Sources</h2>
+          <ul>
+            <li><a href="https://www.iso.org/standard/72100.html" rel="noopener">ISO 20816-1: Mechanical vibration &mdash; Measurement and evaluation of machine vibration</a></li>
+            <li><a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.95" rel="noopener">OSHA 29 CFR 1910.95: Occupational noise exposure</a></li>
+            <li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32006L0042" rel="noopener">EU Machinery Directive 2006/42/EC: essential health and safety requirements</a></li>
+          </ul>
+
+          <div class="article-cta">
+            <h3>Define the acceptance numbers before the machine is built</h3>
+            <p>Send your production requirements and destination regulations to HDPTH through the <a href="../../inquiry/index.html">inquiry form</a>. If you are still comparing machine types, review the <a href="../../blog/nonwoven-slitter-rewinder-buying-guide/">nonwoven slitter rewinder buying guide</a> and the <a href="../../blog/slitter-rewinder-roll-defects-troubleshooting/">roll defects troubleshooting guide</a>.</p>
+            <a class="btn btn-red" href="../../inquiry/index.html">Contact HDPTH for Project Review</a>
+          </div>
+        </article>
+        <aside class="article-sidebar">
+          <div class="toc-card">
+            <strong>Buyer focus</strong>
+            <p>Vibration sources explained</p>
+            <p>Measurable RFQ limits</p>
+            <p>FAT and commissioning evidence</p>
+            <p>Workplace noise compliance</p>
+            <a href="../../inquiry/index.html">Discuss your project</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h3>HDPTH</h3><p>High-tech nonwoven machinery for global manufacturers.</p></div>
+      <div><h4>Products</h4><a href="../../products/high-speed-slitting-machines/index.html">High-Speed Slitting Machines</a><a href="../../products/nonwoven-rewinding-machines/index.html">Nonwoven Rewinding Machines</a><a href="../../products/automatic-knife-systems/index.html">Automatic Knife Systems</a></div>
+      <div><h4>Company</h4><a href="../../factory/index.html">Factory</a><a href="../../certificates/index.html">Certificates</a><a href="../../contact/index.html">Contact</a></div>
+    </div>
+    <div class="container footer-bottom">HDPTH Technical Editorial Team</div>
+  </footer>
+  <script src="../../social-links.js" defer async></script>
+</body>
+</html>
