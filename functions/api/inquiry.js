@@ -113,11 +113,15 @@ export async function onRequestPost({ request }) {
 
   let formSubmitResponse;
   try {
+    // FormSubmit 校验请求来源（Origin/Referer），Worker 发起的 fetch 默认没有这些头，需显式补上
+    const siteOrigin = new URL(request.url).origin;
     formSubmitResponse = await fetch(FORMSUBMIT_ENDPOINT, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
+        Origin: siteOrigin,
+        Referer: siteOrigin + "/",
       },
       body: JSON.stringify(formPayload),
     });
