@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slitter Rewinder Motor and Drive Selection Buyer’s Guide: VFD vs Servo | HDPTH</title>
+  <meta name="description" content="Drives decide whether a slitter rewinder holds tension through acceleration, decel and roll build. A buyer’s guide to VFD vs servo selection, tension-zone sizing, regenerative loads and PLC integration.">
+  <link rel="canonical" href="https://www.hdpth.com/blog/slitter-rewinder-motor-drive-selection-buyer-guide/">
+  <meta property="og:title" content="Slitter Rewinder Motor and Drive Selection Buyer’s Guide: VFD vs Servo | HDPTH">
+  <meta property="og:description" content="Drives decide whether a slitter rewinder holds tension through acceleration, decel and roll build. A buyer’s guide to VFD vs servo selection, tension-zone sizing, regenerative loads and PLC integration.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.hdpth.com/blog/slitter-rewinder-motor-drive-selection-buyer-guide/">
+  <meta property="og:image" content="https://www.hdpth.com/assets/images/blog/slitter-rewinder-motor-drive-selection-buyer-guide.webp">
+  <link rel="preload" as="style" href="../../styles.css">
+  <style data-critical="true">body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#0b1118;background:#fff}.topbar{background:#0b1118;color:rgba(255,255,255,.78);font-size:13px}.header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid #d9dee6}.container{width:min(1180px,calc(100% - 40px));margin:0 auto}.nav{display:flex;align-items:center;justify-content:space-between;min-height:74px}.hero,.page-hero{background:#0b1118;color:#fff}img{max-width:100%;height:auto;display:block}</style>
+  <link rel="stylesheet" href="../../styles.css">
+  <style data-article-responsive="true">
+    @media (max-width:560px){body{overflow-x:clip}.header .container.nav{width:calc(100% - 28px);max-width:calc(100% - 28px);gap:12px}.header .nav>.btn{width:auto;flex:0 0 auto;padding:12px 16px}.header .nav-links{min-width:0}.page-hero .container,.section .container{width:calc(100% - 28px);max-width:calc(100% - 28px)}.page-hero h1,.page-hero p{max-width:100%;overflow-wrap:anywhere}.article-layout,.article-body{width:100%;min-width:0;max-width:100%}.article-body{padding:22px}.article-body figure{margin:28px 0;max-width:100%}.article-body picture,.article-body img{width:100%;max-width:100%}.answer-box,.article-cta,.table-wrap{width:100%;min-width:0;max-width:100%}.table-wrap{display:block;overflow-x:auto}}
+  </style>
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Article","headline":"Slitter Rewinder Motor and Drive Selection Buyer’s Guide: VFD vs Servo","description":"Drives decide whether a slitter rewinder holds tension through acceleration, decel and roll build. A buyer’s guide to VFD vs servo selection, tension-zone sizing, regenerative loads and PLC integration.","image":"https://www.hdpth.com/assets/images/blog/slitter-rewinder-motor-drive-selection-buyer-guide.webp","author":{"@type":"Organization","name":"HDPTH Technical Editorial Team"},"publisher":{"@type":"Organization","name":"HDPTH"},"datePublished":"2026-09-21","dateModified":"2026-09-21","mainEntityOfPage":"https://www.hdpth.com/blog/slitter-rewinder-motor-drive-selection-buyer-guide/"}
+  </script>
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hdpth.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.hdpth.com/blog/"},{"@type":"ListItem","position":3,"name":"Slitter Rewinder Motor and Drive Selection Buyer’s Guide: VFD vs Servo","item":"https://www.hdpth.com/blog/slitter-rewinder-motor-drive-selection-buyer-guide/"}]}
+  </script>
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should a slitter rewinder use VFDs or servo drives?","acceptedAnswer":{"@type":"Answer","text":"Most machines use both, assigned by duty rather than by budget. Vector-controlled AC drives with induction or permanent-magnet motors suit unwind braking, rewind torque, pull rolls and trim extraction, where the duty is continuous torque over a wide speed range. Servo drives earn their cost where response and position matter — automatic knife positioning, lay-on roller actuation, turret indexing and dancer or load-cell trimming stages. Ask each supplier which axes are servo and why; the answer shows how the machine actually controls tension."}},{"@type":"Question","name":"How is a drive sized for a winding tension zone?","acceptedAnswer":{"@type":"Answer","text":"Sizing starts from the worst case in the roll cycle. The drive must deliver peak torque at maximum roll diameter while accelerating the full inertia of the built roll within the specified ramp, and hold controllable torque down to core diameter, where the motor runs slowest and cooling is weakest. Require continuous and overload torque, constant-power range, gearbox ratio, inertia ratio and thermal margin at your duty cycle. An average-case drive droops at the end of every parent roll."}},{"@type":"Question","name":"When does a slitter rewinder need regenerative handling?","acceptedAnswer":{"@type":"Answer","text":"Whenever the machine removes energy from the web or from rotating mass: braking a large parent roll, decelerating a heavy finished roll, or holding an overhauling load during a stop. That energy is dissipated in braking resistors, shared across a common DC bus with motoring axes, or returned to the supply through a regenerative front end. Specify the method, its continuous and peak power rating, and behaviour during a mains disturbance. Resistors are cheap but waste energy and add cabinet heat."}},{"@type":"Question","name":"What should buyers require for drive and PLC integration?","acceptedAnswer":{"@type":"Answer","text":"One control philosophy rather than independent drives. Tension setpoints and taper profiles belong in the machine recipe, drive status and faults should appear on the HMI as plain text, and the PLC should own the speed and torque references for every zone. Ask for a documented fieldbus, per-axis diagnostics showing torque, speed and temperature, and a jitter figure for the drive-to-PLC cycle time: uneven update rates between tension zones cause hunting that no gain tuning fixes."}},{"@type":"Question","name":"Which motor efficiency class should be specified in the EU?","acceptedAnswer":{"@type":"Answer","text":"Motors and variable speed drives placed on the EU market are covered by ecodesign requirements, and industrial motors are supplied in efficiency classes defined by the IEC standard for rotating electrical machines. Require the supplier to state the class of every motor above the applicable threshold, confirm the drives meet the ecodesign requirements, and ship the documentation with the technical file."}}]}
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="../../index.html"><span class="brand-mark"></span>HDPTH</a>
+      <nav class="nav-links">
+        <div class="nav-item"><a class="mega-trigger" href="../../products/index.html">Products</a><div class="mega-menu"><div class="mega-grid"><div class="mega-section"><p class="mega-kicker">Product Matrix</p><div class="mega-list"><a class="mega-link" href="../../products/high-speed-slitting-machines/index.html"><strong>High-Speed Slitting Machines</strong><span>Clean cutting and stable tension for roll converting.</span></a><a class="mega-link" href="../../products/nonwoven-rewinding-machines/index.html"><strong>Nonwoven Rewinding Machines</strong><span>Consistent roll formation for downstream production.</span></a><a class="mega-link" href="../../products/automatic-knife-systems/index.html"><strong>Automatic Knife Systems</strong><span>Faster setup and repeatable cutting configuration.</span></a><a class="mega-link" href="../../products/index.html"><strong>All Converting Equipment</strong><span>Perforating lines, combined machines and auxiliary systems.</span></a></div></div><div class="mega-section"><p class="mega-kicker">Applications</p><div class="mega-plain"><a href="../../applications/index.html">Hygiene Products</a><a href="../../applications/index.html">Medical Nonwoven Materials</a><a href="../../applications/index.html">Disposable Wipes &amp; Flexible Materials</a><a href="../../guides/nonwoven-slitting-machine-buying-guide/index.html">Buying Guide</a></div></div><div class="mega-cta"><h3>Need a machine configuration?</h3><p>Send material, width, speed and application details. HDPTH will recommend the suitable converting setup.</p><a class="btn btn-red" href="../../inquiry/index.html">Request a Quote</a></div></div></div></div>
+        <a href="../../applications/index.html">Applications</a><a href="../index.html">Blog</a><a href="../../certificates/index.html">Certificates</a><a href="../../news/index.html">News</a><a href="../../contact/index.html">Contact</a>
+      </nav>
+      <a class="btn btn-red" href="../../inquiry/index.html">Get a Quote</a>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero"><div class="container"><div class="breadcrumbs">Home / Blog / Slitter Rewinder Motor and Drive Selection Buyer’s Guide: VFD vs Servo</div><h1>Motor and Drive Selection for Slitter Rewinders: VFD vs Servo, Tension-Zone Sizing and Regeneration</h1><p>Tension is a torque problem before it is a control problem — the drive package decides how well a machine holds tension at full roll, at core, and during every stop in between.</p></div></section>
+    <section class="section"><div class="container article-layout"><article class="article-body">
+      <p class="eyebrow">Published September 21, 2026 | By HDPTH Technical Editorial Team</p>
+      <div class="answer-box"><strong>Short answer:</strong> select drives by axis duty, not by brand. Vector AC drives suit continuous-torque axes — unwind braking, rewind torque, pull rolls; servo drives belong where response and position matter, such as knife positioning and lay-on roller actuation. Size every winding axis against the worst point of the roll cycle, and specify where regenerated energy goes before comparing prices.</div>
+
+      <figure><picture><source type="image/webp" srcset="../../assets/images/blog/slitter-rewinder-motor-drive-selection-buyer-guide-800.webp 800w, ../../assets/images/blog/slitter-rewinder-motor-drive-selection-buyer-guide.webp 1600w" sizes="(max-width:760px) 100vw,850px"><img src="../../assets/images/blog/slitter-rewinder-motor-drive-selection-buyer-guide.webp" alt="Open electrical control cabinet of a slitter rewinder showing variable frequency and servo drives with cooling and cabling" width="1600" height="973" decoding="async" loading="eager" fetchpriority="high"></picture><figcaption>Generic concept: a drive cabinet is a system — rating, cooling, regeneration and bus sharing matter more than the label on the door.</figcaption></figure>
+
+      <p>Buyers rarely see drive sizing on an offer. The quotation lists motor powers and a drive family, while the real engineering stays hidden until commissioning — where undersized axes and missing braking capacity turn into telescoped rolls and hunting tension. This guide covers the questions that expose those problems while the machine is still a specification.</p>
+
+      <h2>What each axis actually has to do</h2>
+      <p>A slitter rewinder is a chain of torque sources with different duties. The unwind holds the web back against line tension and absorbs the energy of a heavy parent roll. Pull or nip rolls define line speed and hold it against slip and diameter change. The rewind builds torque as the roll grows while surface speed stays constant. Around them sit auxiliary axes — knife positioning, lay-on roller, turret index, trim extraction — whose duty is position, pressure or speed, not tension. Classifying axes by duty is the first step in choosing between a general-purpose drive and a servo axis.</p>
+
+      <h2>VFD vs servo: assign by duty, not by budget</h2>
+      <p>A modern vector-controlled AC drive with an induction or permanent-magnet motor delivers full rated torque at low speed and covers the continuous-duty axes economically — unwind, rewind, pull rolls and extraction. Servo drives add fast torque response, high overload capability and precise position control, which is what knife positioning, lay-on roller actuation and indexing need. Servo costs more per axis, so paying for it on a trim blower is waste — and omitting it on a knife positioning axis is a false economy. Ask bidders to list each axis with its drive type and the reason.</p>
+
+      <h2>Sizing for tension zones</h2>
+      <p>Sizing has to be done against the extremes of the roll cycle. At maximum roll diameter the rewind needs the highest torque at the lowest shaft speed, possibly at the edge of its constant-power range; at core diameter it needs the same tension at the highest shaft speed. A drive that is adequate on average droops at the end of every parent roll, which operators compensate for by hand. Drive sizing therefore belongs alongside the <a href="../slitter-rewinder-tension-zone-architecture-buyer-guide/index.html">tension zone architecture</a> decision: zone boundaries define where the torque has to appear.</p>
+
+      <div class="table-wrap"><table><thead><tr><th>Sizing input</th><th>What to require from the supplier</th><th>Consequence if ignored</th></tr></thead><tbody>
+        <tr><td>Torque envelope</td><td>Continuous and overload torque across the full diameter range, with gearbox ratio</td><td>Tension droop at full roll</td></tr>
+        <tr><td>Inertia</td><td>Roll inertia at maximum diameter and motor inertia ratio, checked against the acceleration ramp</td><td>Slow ramp-up, overshoot on decel</td></tr>
+        <tr><td>Speed range</td><td>Constant-power range and minimum controllable speed at rated torque</td><td>Jerky threading at low speed</td></tr>
+        <tr><td>Thermal duty</td><td>Thermal margin at your duty cycle and ambient temperature</td><td>Drive derates after a long shift and faults in the afternoon</td></tr>
+        <tr><td>Regeneration</td><td>Method, continuous and peak power, and behaviour on mains disturbance</td><td>Overvoltage trips during emergency stops and decel</td></tr>
+      </tbody></table></div>
+
+      <h2>Regenerative loads: where the energy goes</h2>
+      <p>Regeneration is normal on a rewinder, not an exotic case. Braking a large parent roll, decelerating a heavy finished roll and holding an overhauling load during a stop all push energy back into the DC link, and if nothing absorbs it the drive trips on overvoltage. Three architectures handle it: braking resistors that dissipate energy as heat; a common DC bus that lets motoring axes consume what braking axes produce; and a regenerative front end that returns energy to the supply. Resistors are cheapest but add cabinet heat, which affects the <a href="../slitter-rewinder-energy-efficiency-buyer-guide/index.html">energy balance of the line</a>. Specify the method, its ratings and its behaviour during a mains dip.</p>
+
+      <h2>Integration with tension control and the PLC</h2>
+      <p>Drives do not control tension on their own; the PLC does, using them as torque and speed actuators. All zones must work from one clock and one set of references, so require a documented fieldbus with a stated cycle time, tension setpoints and taper profiles stored in the recipe, and per-axis diagnostics as plain text rather than code. Uneven update rates between zones are a hidden cause of tension hunting — no gain tuning fixes a loop whose feedback arrives irregularly, whether feedback comes from <a href="../load-cell-vs-dancer-tension-control-slitter-rewinder/index.html">load cells or a dancer</a>.</p>
+
+      <h2>What to write into the specification</h2>
+      <ul class="check-list">
+        <li>Axis list with motor power, gearbox, drive type and the duty reason for each choice.</li>
+        <li>Torque and speed envelope across the full roll diameter range, with thermal margin at your duty cycle.</li>
+        <li>Regeneration method and ratings, plus behaviour on mains disturbance and emergency stop.</li>
+        <li>Motor efficiency classes and drive compliance documentation for the market of installation.</li>
+        <li>Fieldbus and cycle time, recipe-stored tension profiles, plain-text per-axis diagnostics.</li>
+        <li>Acceptance test with tension traces over acceleration, decel, splice and roll change.</li>
+      </ul>
+
+      <figure><picture><source type="image/webp" srcset="../../assets/images/blog/slitter-rewinder-motor-drive-selection-buyer-guide-detail-800.webp 800w, ../../assets/images/blog/slitter-rewinder-motor-drive-selection-buyer-guide-detail.webp 1600w" sizes="(max-width:760px) 100vw,850px"><img src="../../assets/images/blog/slitter-rewinder-motor-drive-selection-buyer-guide-detail.webp" alt="Technician reviewing drive parameters on the HMI of a slitter rewinder during commissioning" width="1600" height="973" decoding="async" loading="lazy"></picture><figcaption>Generic detail concept: torque traces belong in acceptance, not in a debug session after handover.</figcaption></figure>
+
+      <div class="article-cta"><h3>Specifying a new machine or retrofit?</h3><p>Send HDPTH your material range, widths, speeds, roll diameters and duty cycle. We will size the drive package per axis — regeneration and control integration included — and document it in the offer.</p><a class="btn btn-red" href="../../inquiry/index.html">Submit Your Project Inquiry</a></div>
+
+      <h2>Questions to put to every vendor</h2>
+      <ul class="check-list">
+        <li>Which axes are servo, which are vector AC, and what is the engineering reason for each?</li>
+        <li>What continuous and overload torque do you guarantee at maximum roll diameter and at core?</li>
+        <li>How is regenerated energy handled, at what rating, and what happens on a mains dip?</li>
+        <li>What fieldbus and cycle time connect drives to PLC, and are tension profiles stored per recipe?</li>
+        <li>Will you provide torque and tension traces at FAT on my heaviest and lightest material?</li>
+      </ul>
+
+      <div class="article-cta"><h3>Planning the rest of the handover?</h3><p>Read our guides on <a href="../slitter-rewinder-rewind-torque-control/index.html">rewind torque control</a> and <a href="../slitter-rewinder-factory-acceptance-test-checklist/index.html">factory acceptance testing</a> to align the drive package with your commissioning requirements.</p><a class="btn btn-red" href="../../inquiry/index.html">Contact HDPTH</a></div>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq-list">
+        <details><summary>Should a slitter rewinder use VFDs or servo drives?</summary><p>Most machines use both, assigned by duty rather than by budget. Vector-controlled AC drives with induction or permanent-magnet motors suit unwind braking, rewind torque, pull rolls and trim extraction, where the duty is continuous torque over a wide speed range. Servo drives earn their cost where response and position matter — automatic knife positioning, lay-on roller actuation, turret indexing and dancer or load-cell trimming stages. Ask each supplier which axes are servo and why; the answer shows how the machine actually controls tension.</p></details>
+        <details><summary>How is a drive sized for a winding tension zone?</summary><p>Sizing starts from the worst case in the roll cycle. The drive must deliver peak torque at maximum roll diameter while accelerating the full inertia of the built roll within the specified ramp, and hold controllable torque down to core diameter, where the motor runs slowest and cooling is weakest. Require continuous and overload torque, constant-power range, gearbox ratio, inertia ratio and thermal margin at your duty cycle. An average-case drive droops at the end of every parent roll.</p></details>
+        <details><summary>When does a slitter rewinder need regenerative handling?</summary><p>Whenever the machine removes energy from the web or from rotating mass: braking a large parent roll, decelerating a heavy finished roll, or holding an overhauling load during a stop. That energy is dissipated in braking resistors, shared across a common DC bus with motoring axes, or returned to the supply through a regenerative front end. Specify the method, its continuous and peak power rating, and behaviour during a mains disturbance. Resistors are cheap but waste energy and add cabinet heat.</p></details>
+        <details><summary>What should buyers require for drive and PLC integration?</summary><p>One control philosophy rather than independent drives. Tension setpoints and taper profiles belong in the machine recipe, drive status and faults should appear on the HMI as plain text, and the PLC should own the speed and torque references for every zone. Ask for a documented fieldbus, per-axis diagnostics showing torque, speed and temperature, and a jitter figure for the drive-to-PLC cycle time: uneven update rates between tension zones cause hunting that no gain tuning fixes.</p></details>
+        <details><summary>Which motor efficiency class should be specified in the EU?</summary><p>Motors and variable speed drives placed on the EU market are covered by ecodesign requirements, and industrial motors are supplied in efficiency classes defined by the IEC standard for rotating electrical machines. Require the supplier to state the class of every motor above the applicable threshold, confirm the drives meet the ecodesign requirements, and ship the documentation with the technical file.</p></details>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://eur-lex.europa.eu/eli/reg/2019/1781/oj" rel="noopener">EU Regulation 2019/1781: ecodesign requirements for electric motors and variable speed drives</a></li>
+        <li><a href="https://webstore.iec.ch/en/publication/60985" rel="noopener">IEC 60034-30-1: rotating machines — efficiency classes for line-operated AC motors</a></li>
+        <li><a href="https://webstore.iec.ch/en/publication/26036" rel="noopener">IEC: IEC 60204-1, electrical equipment of machines</a></li>
+        <li><a href="https://acim.nidec.com/drives/control-techniques/-/media/Project/Nidec/ControlTechniques/Documents/industry-solutions/ES-WebHandling.pdf" rel="noopener">Nidec Control Techniques: web handling drive application reference</a></li>
+        <li><a href="https://www.energy.gov/eere/amo/advanced-manufacturing-office" rel="noopener">US DOE Advanced Manufacturing Office: motor system efficiency resources</a></li>
+      </ul>
+    </article></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-grid"><div><h3>HDPTH</h3><p>High-tech nonwoven machinery for global manufacturers.</p></div><div><h4>Products</h4><a href="../../products/high-speed-slitting-machines/index.html">High-Speed Slitting Machines</a><a href="../../products/nonwoven-rewinding-machines/index.html">Nonwoven Rewinding Machines</a><a href="../../products/automatic-knife-systems/index.html">Automatic Knife Systems</a></div><div><h4>Company</h4><a href="../../factory/index.html">Factory</a><a href="../../certificates/index.html">Certificates</a><a href="../../contact/index.html">Contact</a></div></div><div class="container footer-bottom">HDPTH Technical Editorial Team</div></footer>
+  <script src="../../social-links.js" defer async></script>
+</body>
+</html>
