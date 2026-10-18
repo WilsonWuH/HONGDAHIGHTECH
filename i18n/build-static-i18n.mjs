@@ -1,5 +1,5 @@
 import { mkdir, rm, writeFile } from "node:fs/promises";
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 const ROOT = path.resolve(".");
@@ -533,6 +533,29 @@ async function writeSitemap() {
   for (const route of extraSitemapRoutes) {
     urls.push(`  <url><loc>${BASE_URL}${route}</loc><lastmod>${extraSitemapLastmod[route] || "2026-07-13"}</lastmod></url>`);
   }
+  // Preserve manually maintained blog article entries from the existing sitemap.xml
+  // (publish task adds <url> entries with real lastmod before pushing), then ensure
+  // every blog/<slug>/ page is listed even if it was never added manually.
+  const manual = new Map();
+  try {
+    const cur = readFileSync(path.join(ROOT, "sitemap.xml"), "utf8");
+    const re = /<url><loc>https:\/\/www\.hdpth\.com(\/blog\/[^<]+\/)<\/loc><lastmod>([^<]+)<\/lastmod><\/url>/g;
+    let m;
+    while ((m = re.exec(cur))) manual.set(m[1], m[2]);
+  } catch {}
+  for (const route of extraSitemapRoutes) manual.delete(route);
+  for (const [route, lastmod] of manual) {
+    urls.push(`  <url><loc>${BASE_URL}${route}</loc><lastmod>${lastmod}</lastmod></url>`);
+  }
+  try {
+    const today = new Date().toISOString().slice(0, 10);
+    for (const entry of readdirSync(path.join(ROOT, "blog"))) {
+      const route = `/blog/${entry}/`;
+      if (!existsSync(path.join(ROOT, "blog", entry, "index.html"))) continue;
+      if (extraSitemapRoutes.includes(route) || manual.has(route)) continue;
+      urls.push(`  <url><loc>${BASE_URL}${route}</loc><lastmod>${today}</lastmod></url>`);
+    }
+  } catch {}
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`;
   await writeFile(path.join(ROOT, "sitemap.xml"), xml, "utf8");
 }
